@@ -411,7 +411,7 @@
 **Undo:** `0`
 **Notes:** Only available on Copilot+ PCs (Windows 11 24H2 or newer, requires NPU).
 
-### Disable Search Box Suggestions
+### Disable Bing search results
 **Info:** Windows Search is cluttered mess with suggestions from Microsoft, the day’s highlights, Top apps, AI Tools, Trending searches, Games for you, Trending news from the web, and, to make matters worse, there’s the Copilot logo on the top left. 
 **Registry:** `HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer`  
 **Value:** `DisableSearchBoxSuggestions`  
