@@ -10,11 +10,6 @@ url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins
 description=Removes preinstalled Windows default apps to declutter the system.
 url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Remove default apps.ps1
 
-[Remove Windows AI]
-description=Disables and removes AI-related features and integrations in Windows.
-Developer: zoicware | Web: https://github.com/zoicware/RemoveWindowsAI
-url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Remove Windows AI.ps1
-
 [Restart Explorer]
 description=Restarts the Windows Explorer process to apply changes or recover from crashes.
 url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Restart Explorer.ps1
@@ -64,3 +59,7 @@ url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins
 [Remove Ask Copilot (NX)]
 description=Removes the 'Ask Copilot' option from the context menu for files and folders.
 url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Remove Ask Copilot (NX).ps1
+
+[WingetPackageManager]
+description=Winget Package Manager allows you to easily install, update, and manage application packages from the Install tab. Compatible with Winslop version 26.3.21 and higher.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/winget-apps.ini

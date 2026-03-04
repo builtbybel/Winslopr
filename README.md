@@ -1,38 +1,38 @@
+> **Note:**  
+> "winslop" might refer to Windows 11 in some corners of the internet.  
+> **Winslop**, however, is an actual tool designed to clean it up.
+> 
 # Built to remove things. Not to impress you.
 
 > *“We need to get beyond the arguments of slop vs sophistication…”*  
 > — Satya Nadella
 > 
-> Slop describes unnecessary, low-value system components that are added by default, consume resources, and reduce user control without providing meaningful benefit.
-
-<img width="1536" height="1024" alt="Winslop" src="https://github.com/user-attachments/assets/3c165b1a-22c2-4122-bc9a-a305ef07dbc2" />
+> “Slop” = stuff that ships by default, wastes resources, and takes control away, while doing basically nothing for you
 
 This started as a joke.
 Then Microsoft said “slop vs sophistication” out loud and it stopped being one.
 If this tool needs marketing, it probably shouldnt exist 😆
 
 
-To be clear:  
-**Windows is not bad.**  
-I actually like it.
-
+To be clear:
+**Windows isn’t bad.** I actually like it.
 **But the direction of Windows 11 is.**  
-And I probably hate it more than I'm willing to admit.
-So I shipped this again. Cheaper than therapy. Comes with toggles.
+So I built this again. Cheaper than therapy. Comes with toggles.
 
-**The slop is.**
+## What it does
+
 Winslop does exactly what the name suggests:
-- removes slop  
-- reduces slop  
-- makes slop visible  
-- gives control back to the user  
+- removes slop
+- tones down what can’t be removed
+- shows what’s running / enabled
+- gives you control back
 
-Winslop is what happens when you take that idea seriously.
-Not anti-Windows, not anti-AI, just anti-slop.
+No cloud. No assistants. No “smart” magic.
+Just local changes, explicit choices, and a way back.
 
-It removes the unnecessary stuff, tones down the rest and shows you exactly what’s going on.
-No cloud, no assistants, no magic.
-Everything is local, deterministic and reversible.
+Everything is deterministic and reversible.
+
+## Where it comes from
 
 **Under the hood this is a very small, very focused fork of my earlier project [CrapFixer](https://github.com/builtbybel/CrapFixer)**.
 Localization never really happened there.

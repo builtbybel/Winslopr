@@ -5,6 +5,7 @@
 - [System](#system)
 - [Microsoft Edge](#microsoft-edge)
 - [UI & Personalization](#ui--personalization)
+- [Taskbar](#taskbar)
 - [Gaming](#gaming)
 - [Privacy & Telemetry](#privacy--telemetry)
 - [Ads & Recommendations](#ads--recommendations)
@@ -84,13 +85,6 @@
 **Registry 2:** `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings` → `ShowHibernateOption = 0`  
 **Command:** `powercfg /hibernate off`  
 **Undo:** `HibernateEnabled = 1`, `ShowHibernateOption = 1`, `powercfg /hibernate on`
-
-### Enable End Task
-**Info:** Adds 'End Task' to the Windows 11 taskbar context menu, allowing you to directly kill unresponsive apps.  
-**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarDeveloperSettings`  
-**Value:** `TaskbarEndTask`  
-**Recommended:** `1`  
-**Undo:** `0`
 
 ---
 
@@ -195,13 +189,6 @@
 **DoFeature sets:** `1`  
 **Undo:** `0`
 
-### Hide search box on taskbar
-**Info:** This feature will hide search box on taskbar  
-**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search`  
-**Value:** `SearchboxTaskbarMode`  
-**Recommended:** `0`  
-**Undo:** `2`
-
 ### Hide Most used apps in start menu
 **Info:** This feature will hide Most used apps in start menu for all users  
 **Registry:** `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer`  
@@ -209,31 +196,10 @@
 **Recommended:** `2`  
 **Undo:** `1`
 
-### Hide Task view button on taskbar
-**Info:** This feature will hide the Task view button on taskbar  
-**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`  
-**Value:** `ShowTaskViewButton`  
-**Recommended:** `0`  
-**Undo:** `1`
-
 ### Disable Bing Search
 **Info:** This feature disables Bing integration in Windows Search.  
 **Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search`  
 **Value:** `BingSearchEnabled`  
-**Recommended:** `0`  
-**Undo:** `1`
-
-### Disable Search Box Suggestions
-**Info:** This feature disables Bing search and web suggestions in the Windows Start Menu.  
-**Registry:** `HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer`  
-**Value:** `DisableSearchBoxSuggestions`  
-**Recommended:** `1`  
-**Undo:** `0`
-
-### Align Start button to left
-**Info:** This feature will align the Start button to left  
-**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`  
-**Value:** `TaskbarAl`  
 **Recommended:** `0`  
 **Undo:** `1`
 
@@ -274,6 +240,92 @@
 
 ---
 
+## Taskbar
+
+### Align Start button to left
+**Supported on:** Windows 11  
+**Info:** Aligns the Start button to the left side of the taskbar (Windows 11).  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`  
+**Value:** `TaskbarAl`  
+**Recommended:** `0`  
+**Undo:** `1`
+
+### Hide search box on taskbar
+**Supported on:** Windows 11  
+**Info:** Hides the search box / search entry on the taskbar.  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search`  
+**Value:** `SearchboxTaskbarMode`  
+**Recommended:** `0`  
+**Undo:** `2`
+
+### Hide Task view button on taskbar
+**Supported on:** Windows 11  
+**Info:** Hides the Task View button on the taskbar.  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`  
+**Value:** `ShowTaskViewButton`  
+**Recommended:** `0`  
+**Undo:** `1`
+
+### Enable End Task
+**Supported on:** Windows 11 (newer builds; not available on Windows 10)  
+**Info:** Adds “End Task” to the Windows 11 taskbar context menu to quickly kill unresponsive apps.  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarDeveloperSettings`  
+**Value:** `TaskbarEndTask`  
+**Recommended:** `1`  
+**Undo:** `0`
+
+### Make taskbar small
+**Supported on:** Windows 10 (native). Windows 11: limited/depends on build; not always supported.  
+**Info:** Enables small taskbar icons (more compact taskbar).  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`  
+**Value:** `TaskbarSmallIcons`  
+**Recommended:** `1`  
+**Undo:** `0`
+
+### Always show all system tray icons
+**Supported on:** Windows 10
+**Info:** Shows all notification area (system tray) icons instead of hiding some behind the overflow menu.  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer`  
+**Value:** `EnableAutoTray`  
+**Recommended:** `0`  
+**Undo:** `1`
+
+### Remove 'Meet Now' button from system tray
+**Supported on:** Windows 10 (Meet Now). Not applicable on Windows 11.  
+**Info:** Removes the “Meet Now” button from the notification area / system tray.  
+**Registry:** `HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer`  
+**Value:** `HideSCAMeetNow`  
+**Recommended:** `1`  
+**Undo:** `0`
+
+### Disable Widgets
+**Supported on:** Windows 11  
+**Info:** Enables the Widgets button / Widgets experience on the taskbar (policy based) that displays personalized news, weather, calendar, and other information.  
+**Registry (CU):** `HKEY_CURRENT_USER\Software\Policies\Microsoft\Dsh`  
+**Registry (LM):** `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Dsh`  
+**Value:** `AllowNewsAndInterests`  
+**Recommended:** `0`  
+**Undo:** `1`
+
+### Disable News and Interests
+**Supported on:** Windows 10 (News & Interests / Feeds). Not applicable on Windows 11.  
+**Info:** Disables “News and Interests” / Feeds integration via policy (may affect feeds depending on Windows version).  
+**Registry (CU):** `HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Windows Feeds`  
+**Registry (LM):** `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Windows Feeds`  
+**Value:** `EnableFeeds`  
+**Recommended:** `0`  
+**Undo:** `1`
+
+### Clean Taskbar
+**Supported on:** Windows 10, Windows 11  
+**Info:** Clears pinned taskbar items by emptying the Taskband “Favorites” value and restarts Explorer.  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband`  
+**Value:** `Favorites` (REG_BINARY)  
+**Action:** Set to empty byte array, then restart Explorer  
+**Undo:** Not supported (pin layout cannot be reliably restored)
+
+---
+
 ## Gaming
 
 ### Disable Game DVR
@@ -306,32 +358,117 @@
 
 ## Privacy & Telemetry
 
-### Turn off Telemetry data collection
-**Info:** This feature will turn off telemetry data collection and prevent the data from being sent to Microsoft.  
-**Registry 1:** `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DataCollection` → `AllowTelemetry = 0`  
-**Registry 2:** `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\DiagTrack` → `Start = 4`  
-**Undo:** `AllowTelemetry = 1`, `Start = 2`
 
 ### Disable activity history
-**Info:** Disable activity history (prevents Windows from tracking and storing your activity)  
+**Supported on:** Windows 10, Windows 11  
+**Info:** Disables activity history (prevents Windows from tracking and storing your activity).  
 **Registry:** `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System`  
 **Value:** `PublishUserActivities`  
 **Recommended:** `0`  
 **Undo:** `1`
 
+### Disable App Launch Tracking
+**Supported on:** Windows 10, Windows 11  
+**Info:** Disables tracking of app launches (reduces Start/Search personalization like “most used apps”).  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced`  
+**Value:** `Start_TrackProgs`  
+**Recommended:** `0`  
+**Undo:** Deletes `Start_TrackProgs` (returns to Windows default behavior)
+
+### Reduce Diagnostic Data (Basic)
+**Supported on:** Windows 10, Windows 11  
+**Info:** Sets diagnostic data level to **Basic/Required (1)** across multiple registry/policy locations (where applicable).  
+**Recommended:** `1`  
+**Undo:** Restores a more permissive/default-ish state (sets some values to `3` and removes policy values where possible)
+
+**Registry changes (Do):**
+- `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack`  
+  - `ShowedToastAtLevel = 1`
+- `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\DataCollection`  
+  - `AllowTelemetry = 1`
+- `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection` *(may require Admin)*  
+  - `AllowTelemetry = 1`
+- `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection`  
+  - `AllowTelemetry = 1`  
+  - `MaxTelemetryAllowed = 1`
+- `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection` *(may require Admin)*  
+  - `AllowTelemetry = 1`  
+  - `MaxTelemetryAllowed = 1`
+
+**Undo (details):**
+- Sets `ShowedToastAtLevel = 3`
+- Deletes policy values:  
+  - `HKCU\SOFTWARE\Policies\Microsoft\Windows\DataCollection\AllowTelemetry`  
+  - `HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection\AllowTelemetry` *(may require Admin)*
+- Sets non-policy keys to `3` (`AllowTelemetry`, `MaxTelemetryAllowed`) where possible
+
 ### Disable location tracking
-**Info:** Disable location tracking (prevents Windows from accessing your location)  
+**Supported on:** Windows 10, Windows 11  
+**Info:** Prevents Windows from accessing your location.  
 **Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\LocationAndSensors`  
 **Value:** `LocationEnabled`  
 **Recommended:** `0`  
 **Undo:** `1`
 
+### Disable Lock Screen Slideshow
+**Supported on:** Windows 10, Windows 11  
+**Info:** Disables the lock screen slideshow option.  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager`  
+**Value:** `SlideshowEnabled`  
+**Recommended:** `0`  
+**Undo:** Deletes `SlideshowEnabled` (returns to Windows default behavior)
+
+### Disable Narrator Online Services
+**Supported on:** Windows 10, Windows 11  
+**Info:** Disables Narrator online services (cloud-backed features).  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Narrator\NoRoam`  
+**Value:** `OnlineServicesEnabled`  
+**Recommended:** `0`  
+**Undo:** Deletes `OnlineServicesEnabled` (returns to Windows default behavior)
+
+### Disable Online Speech Recognition
+**Supported on:** Windows 10, Windows 11  
+**Info:** Disables online speech recognition and disables input personalization via policy.  
+**Recommended:** `0`  
+**Undo:** Restores speech setting to `1` and removes policy values where possible
+
+**Registry changes (Do):**
+- `HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy`  
+  - `HasAccepted = 0`
+- `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\InputPersonalization`  
+  - `AllowInputPersonalization = 0`
+- `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization` *(may require Admin)*  
+  - `AllowInputPersonalization = 0`
+
+**Undo (details):**
+- Sets `HasAccepted = 1`
+- Deletes policy values:  
+  - `HKCU\SOFTWARE\Policies\Microsoft\InputPersonalization\AllowInputPersonalization`  
+  - `HKLM\SOFTWARE\Policies\Microsoft\InputPersonalization\AllowInputPersonalization` *(may require Admin)*
+
 ### Disable Privacy Settings Experience at sign-in
-**Info:** This feature will disable Privacy Settings Experience at sign-in.  
+**Supported on:** Windows 10, Windows 11  
+**Info:** Disables Privacy Settings Experience at sign-in (OOBE privacy prompts).  
 **Registry:** `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OOBE`  
 **Value:** `DisablePrivacyExperience`  
-**DoFeature sets:** `1`  
+**Recommended:** `1`  
 **Undo:** `0`
+
+### Prevent Silent App Installation
+**Supported on:** Windows 10, Windows 11  
+**Info:** Prevents silent background installation of suggested/promoted apps.  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager`  
+**Value:** `SilentInstalledAppsEnabled`  
+**Recommended:** `0`  
+**Undo:** `1`
+
+### Disable Spotlight on Lock Screen
+**Supported on:** Windows 10, Windows 11  
+**Info:** Disables rotating Windows Spotlight images on the lock screen.  
+**Registry:** `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager`  
+**Value:** `RotatingLockScreenEnabled`  
+**Recommended:** `0`  
+**Undo:** `1`
 
 ---
 
@@ -358,6 +495,13 @@
 **Recommended:** `1`  
 **Undo:** `0`
 **Notes:** Only available on Copilot+ PCs (Windows 11 24H2 or newer, requires NPU).
+
+### Disable Bing search results
+**Info:** Windows Search is cluttered mess with suggestions from Microsoft, the day’s highlights, Top apps, AI Tools, Trending searches, Games for you, Trending news from the web, and, to make matters worse, there’s the Copilot logo on the top left. 
+**Registry:** `HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer`  
+**Value:** `DisableSearchBoxSuggestions`  
+**Recommended:** `1`  
+**Undo:** `0`
 
 ---
 
@@ -498,10 +642,7 @@
 **Undo:** Not provided (you would need to reinstall apps manually).
 
 ### Remove Windows AI
-**Info:** Downloads and executes an external script intended to remove Windows AI components.  
-**Command:** `iwr https://raw.githubusercontent.com/zoicware/RemoveWindowsAI/main/RemoveWindowsAi.ps1 | iex`  
-**Requirements:** Internet connection.  
-**Notes:** This runs remote code directly in PowerShell. Only use if you trust the source.
+This script is no longer available as a plugin. You can now find it as an extension with its own interface in the tools section.
 
 ### Restart Explorer
 **Info:** Restarts Windows Explorer (explorer.exe). Useful after registry tweaks so changes apply immediately.  

@@ -1,32 +1,29 @@
 # Plugins
 
-Winslop supports plugins to extend the app with actions that go beyond simple “toggle a registry value”.
-Typical use cases:
-- run PowerShell based tools / scripts
-- perform multi-step fixes
-- integrate external utilities
+Winslop plugins are **PowerShell scripts (`.ps1`) with an INI-style header**.
+Winslop reads the header to decide what to run (Check / Do / Undo) and may validate results via [Expect].
 
-> Tip: If you're looking for the built-in Windows tweaks, see the Feature Reference: [features.md](features.md).  
-> For extensions in general, see: [extensions.md](extensions.md).
+Plugins can:
+- modify registry / services / files via commands
+- run built-in Windows tools (e.g. `cleanmgr`, `powercfg`, `dism`, `winget`)
+- launch external utilities (if present)
+- optionally execute extra PowerShell logic after the INI sections
+
+> Built-in Windows toggles are documented in: [features.md](features.md)  
+> Extensions / external add-ons are documented in: [extensions.md](extensions.md)
 
 ---
 
 ## Plugin file format
 
-Plugins are PowerShell scripts (`.ps1`) that Winslop can run as “Tools / Extensions”.
-They use a simple INI-like header format that defines **what to check** and **what to do**.
+A plugin is a `.ps1` file that may contain:
 
-- `[Commands]` (required for Winslop plugin actions)
-- `[Expect]` (optional, enables validation of the `Check` output)
+- `[Commands]` (required)
+- `[Expect]` (optional)
 
-Everything outside these sections is treated as a normal PowerShell script body.
-
-
-> For built-in tweaks (toggles), see: [features.md](features.md)  
-> For extensions/add-ons in general, see: [extensions.md](extensions.md)
+Everything outside these sections is treated as normal PowerShell script content.
 
 ---
-
 ## Recommended plugin structure
 
 Keep plugins:
@@ -48,7 +45,6 @@ The demo pack uses a simple rule-driven model:
 
 ---
 
-
 ## Naming and Help anchors
 
 Winslop’s help system can link directly into GitHub docs by using the plugin title as an anchor.
@@ -66,24 +62,46 @@ Example:
 
 ---
 
-## [Commands] section
+## [Commands]
 
-The `[Commands]` section contains metadata and the actual commands Winslop will run.
+`[Commands]` defines the metadata and the actions Winslop can run.
 
-**Supported keys:**
-- `Info` — short description shown to the user
-- `Check` — command(s) executed first to read current state
-- `Do` — command(s) executed when the user applies the fix/action
-- `Undo` — command(s) executed to revert the change (if supported)
+Supported keys:
+- `Info` — shown in the UI as plugin description
+- `Check` — executed first to read current state (its output may be validated)
+- `Do` — executed when the user applies the action/fix
+- `Undo` — executed to revert changes (if supported)
 
-**Notes:**
-- Multiple commands can be chained with `&&`
+Notes:
+- You can chain multiple commands using `&&`
 - Output from all commands is logged
-- `Check` output is used for validation if `[Expect]` is present
+- `Check` can include extra output (e.g. `whoami`); only keys listed in `[Expect]` are validated
+
+---
+
+## [Expect] (optional validation)
+
+`[Expect]` lists key/value pairs that must appear in the `Check` output.
+
+- Only entries listed in `[Expect]` are validated
+- Any other output is ignored (but still logged)
+- Typical use case: validate `reg query` output like `AllowTelemetry    REG_DWORD    0x0`
 
 Example:
 
 ```ini
+[Expect]
+AllowTelemetry=0x0
+BingSearchEnabled=0x0
+```
+
+---
+
+## Real-world examples
+
+### Disable Bing Search (plugin)
+
+```powershell
 # Disable Bing Search.ps1
 
 [Commands]
@@ -94,16 +112,6 @@ Undo=reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v BingSear
 
 [Expect]
 BingSearchEnabled=0x0
+```
 
-
-# Disable File Explorer Ads.ps1
-
-[Commands]
-Info=Disables File Explorer ads (sync provider notifications) and restarts Explorer
-Check=reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v ShowSyncProviderNotifications
-Do=reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v ShowSyncProviderNotifications /t REG_DWORD /d 0 /f && taskkill /f /im explorer.exe && start explorer.exe && echo Explorer restarted
-Undo=reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v ShowSyncProviderNotifications /t REG_DWORD /d 1 /f && taskkill /f /im explorer.exe && start explorer.exe && echo Explorer restarted
-
-[Expect]
-ShowSyncProviderNotifications=0x0
 
