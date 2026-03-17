@@ -59,12 +59,28 @@
   <data name="MenuPaypal.Text"><value>Donate via PayPal</value></data>
 
   <!-- ============================================================ -->
-  <!-- XAML x:Uid: MainWindow — Settings flyout                     -->
+  <!-- XAML x:Uid: SettingsPage                                      -->
   <!-- ============================================================ -->
-  <data name="MenuManagePlugins.Text"><value>Manage Plugins</value></data>
-  <data name="MenuCheckUpdates.Text"><value>Check for updates</value></data>
+  <data name="Settings_Title.Text"><value>Settings</value></data>
+  <data name="Settings_Language.Text"><value>Language</value></data>
+  <data name="Settings_Appearance.Text"><value>Appearance</value></data>
+  <data name="Settings_ThemeSystem"><value>Use system setting</value></data>
+  <data name="Settings_ThemeLight"><value>Light</value></data>
+  <data name="Settings_ThemeDark"><value>Dark</value></data>
+  <data name="Settings_RestartTitle"><value>Restart required</value></data>
+  <data name="Settings_RestartMessage"><value>Please restart the app for the change to take effect.</value></data>
+  <data name="Settings_Extensions.Text"><value>Extensions</value></data>
+  <data name="Settings_ExtensionsSubtext.Text"><value>Manage native plugins and standalone tools.</value></data>
+  <data name="Settings_ToolScripts.Text"><value>Extensions</value></data>
+  <data name="Settings_ToolScriptsDescription.Text"><value>Standalone scripts that open and run from the Tools page.</value></data>
+  <data name="Settings_OpenToolsPage.Text"><value>Open Tools Page</value></data>
+  <data name="Settings_Plugins.Text"><value>Plugins</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>Native plugins that integrate with the Features on the Home page.</value></data>
+  <data name="Settings_ManagePlugins.Text"><value>Manage Plugins</value></data>
+  <data name="Settings_About.Text"><value>About this app</value></data>
+  <data name="Settings_CheckUpdates.Text"><value>Check for updates</value></data>
+  <data name="Settings_Feedback.Text"><value>Send feedback</value></data>
   <data name="MenuHelp.Text"><value>Help</value></data>
-  <data name="MenuLanguage.Text"><value>Language</value></data>
 
   <!-- ============================================================ -->
   <!-- XAML x:Uid: MainWindow — Search & More options menu           -->
@@ -280,6 +296,20 @@
   <data name="Log_SkippedRestore"><value>Skipped restore</value></data>
   <data name="Log_ProperlyConfigured"><value>Feature: {0} is properly configured.</value></data>
   <data name="Log_RequiresAttention"><value>Feature: {0} requires attention.</value></data>
+  <data name="Summary_Fix"><value>{0} fixed, {1} skipped, {2} failed</value></data>
+  <data name="Summary_FixTitleDone"><value>Changes applied</value></data>
+  <data name="Summary_FixTitleWarning"><value>Changes applied with errors</value></data>
+  <data name="Summary_Fixed"><value>Fixed</value></data>
+  <data name="Summary_Skipped"><value>Skipped</value></data>
+  <data name="Summary_Failed"><value>Failed</value></data>
+  <data name="Summary_FixAllGood"><value>All selected changes were applied successfully.</value></data>
+  <data name="Summary_FixHasErrors"><value>Some changes could not be applied. Check the log for details.</value></data>
+  <data name="Summary_Restore"><value>{0} restored, {1} skipped, {2} failed</value></data>
+  <data name="Summary_RestoreTitleDone"><value>Restore completed</value></data>
+  <data name="Summary_RestoreTitleWarning"><value>Restore completed with errors</value></data>
+  <data name="Summary_Restored"><value>Restored</value></data>
+  <data name="Summary_RestoreAllGood"><value>All selected features were restored successfully.</value></data>
+  <data name="Summary_RestoreHasErrors"><value>Some features could not be restored. Check the log for details.</value></data>
 
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Analysis summary (FeaturesPage.xaml.cs)    -->

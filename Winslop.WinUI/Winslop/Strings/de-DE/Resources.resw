@@ -59,12 +59,29 @@
   <data name="MenuPaypal.Text"><value>Spenden via PayPal</value></data>
 
   <!-- ============================================================ -->
-  <!-- XAML x:Uid: MainWindow — Settings flyout                     -->
+  <!-- XAML x:Uid: SettingsPage                                      -->
   <!-- ============================================================ -->
-  <data name="MenuManagePlugins.Text"><value>Plugins verwalten</value></data>
-  <data name="MenuCheckUpdates.Text"><value>Nach Updates suchen</value></data>
+  <data name="Settings_Title.Text"><value>Einstellungen</value></data>
+  <data name="Settings_Language.Text"><value>Sprache</value></data>
+  <data name="Settings_Appearance.Text"><value>Darstellung</value></data>
+  <data name="Settings_ThemeSystem"><value>Systemeinstellung verwenden</value></data>
+  <data name="Settings_ThemeLight"><value>Hell</value></data>
+  <data name="Settings_ThemeDark"><value>Dunkel</value></data>
+  <data name="Settings_RestartTitle"><value>Neustart erforderlich</value></data>
+  <data name="Settings_RestartMessage"><value>Bitte starte die App neu, damit die &#196;nderung wirksam wird.</value></data>
+  <data name="Settings_Extensions.Text"><value>Erweiterungen</value></data>
+    <data name="Settings_ExtensionsSubtext.Text"><value>Verwalte native Plugins und eigenst&#228;ndige Tools.</value></data>
+  <data name="Settings_ToolScripts.Text"><value>Erweiterungen</value></data>
+  <data name="Settings_ToolScriptsDescription.Text"><value>Eigenst&#228;ndige Skripte, die &#252;ber die Tools-Seite ge&#246;ffnet und ausgef&#252;hrt werden.</value></data>
+  <data name="Settings_OpenToolsPage.Text"><value>Tools-Seite &#246;ffnen</value></data>
+  <data name="Settings_Plugins.Text"><value>Plugins</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>Native Plugins, die sich in die Features der Start-Seite integrieren.</value></data>
+  <data name="Settings_ManagePlugins.Text"><value>Plugins verwalten</value></data>
+  <data name="Settings_About.Text"><value>Info zu dieser App</value></data>
+  <data name="Settings_CheckUpdates.Text"><value>Nach Updates suchen</value></data>
+  <data name="Settings_Feedback.Text"><value>Feedback senden</value></data>
   <data name="MenuHelp.Text"><value>Hilfe</value></data>
-  <data name="MenuLanguage.Text"><value>Sprache</value></data>
+
 
   <!-- ============================================================ -->
   <!-- XAML x:Uid: MainWindow — Search & More options menu           -->
@@ -280,6 +297,20 @@
   <data name="Log_SkippedRestore"><value>Wiederherstellung übersprungen</value></data>
   <data name="Log_ProperlyConfigured"><value>Feature: {0} ist korrekt konfiguriert.</value></data>
   <data name="Log_RequiresAttention"><value>Feature: {0} erfordert Aufmerksamkeit.</value></data>
+  <data name="Summary_Fix"><value>{0} behoben, {1} übersprungen, {2} fehlgeschlagen</value></data>
+  <data name="Summary_FixTitleDone"><value>Änderungen angewendet</value></data>
+  <data name="Summary_FixTitleWarning"><value>Änderungen mit Fehlern angewendet</value></data>
+  <data name="Summary_Fixed"><value>Behoben</value></data>
+  <data name="Summary_Skipped"><value>Übersprungen</value></data>
+  <data name="Summary_Failed"><value>Fehlgeschlagen</value></data>
+  <data name="Summary_FixAllGood"><value>Alle ausgewählten Änderungen wurden erfolgreich angewendet.</value></data>
+  <data name="Summary_FixHasErrors"><value>Einige Änderungen konnten nicht angewendet werden. Siehe Log für Details.</value></data>
+  <data name="Summary_Restore"><value>{0} wiederhergestellt, {1} übersprungen, {2} fehlgeschlagen</value></data>
+  <data name="Summary_RestoreTitleDone"><value>Wiederherstellung abgeschlossen</value></data>
+  <data name="Summary_RestoreTitleWarning"><value>Wiederherstellung mit Fehlern abgeschlossen</value></data>
+  <data name="Summary_Restored"><value>Wiederhergestellt</value></data>
+  <data name="Summary_RestoreAllGood"><value>Alle ausgewählten Features wurden erfolgreich wiederhergestellt.</value></data>
+  <data name="Summary_RestoreHasErrors"><value>Einige Features konnten nicht wiederhergestellt werden. Siehe Log für Details.</value></data>
 
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Analysis summary (FeaturesPage.xaml.cs)    -->
@@ -290,7 +321,7 @@
   <data name="Analysis_Plugins"><value>Plugins</value></data>
   <data name="Analysis_Total"><value>Gesamt</value></data>
   <data name="Analysis_Issues"><value>Problem(e)</value></data>
-  <data name="Analysis_IssuesFound"><value>{0} Problem(e) gefunden – prüfen Sie das Log vor dem Anwenden.</value></data>
+  <data name="Analysis_IssuesFound"><value>{0} Problem(e) gefunden – schau ins Log, bevor du Änderungen anwendest.</value></data>
   <data name="Analysis_AllGood"><value>Alles sieht gut aus!</value></data>
   <data name="Analysis_OpenLogInspector"><value>Online-Log-Inspektor öffnen</value></data>
 
@@ -308,12 +339,12 @@
   <data name="Restore_Title"><value>Auswahl wiederherstellen</value></data>
   <data name="Restore_NoItems"><value>Keine Elemente ausgewählt.
 
-Bitte wählen Sie zuerst ein oder mehrere Features/Plugins im Baum aus.</value></data>
+Bitte wähl zuerst ein oder mehrere Features/Plugins im Baum aus.</value></data>
   <data name="Restore_ConfirmTitle"><value>Ausgewählte Elemente wiederherstellen</value></data>
   <data name="Restore_ConfirmBody"><value>Dies stellt NUR die {0} ausgewählten Elemente in den Originalzustand wieder her.
 Bisherige Anpassungen werden möglicherweise rückgängig gemacht.
 
-Möchten Sie fortfahren?</value></data>
+Möchtest du fortfahren?</value></data>
   <data name="Restore_Done"><value>{0} ausgewählte(s) Element(e) wiederhergestellt.</value></data>
 
   <!-- ============================================================ -->
@@ -339,7 +370,7 @@ Möchten Sie fortfahren?</value></data>
   <!-- ============================================================ -->
   <data name="Apps_Scanning"><value>Installierte Apps werden gescannt, bitte warten...</value></data>
   <data name="Apps_DisplayAll"><value>Alle installierten Anwendungen werden angezeigt.</value></data>
-  <data name="Apps_NoPlugin"><value>Keine Plugin-Liste gefunden. Installieren Sie CFEnhancer für Plugin-Empfehlungen.</value></data>
+  <data name="Apps_NoPlugin"><value>Keine Plugin-Liste gefunden. Installier CFEnhancer für Plugin-Empfehlungen.</value></data>
   <data name="Apps_DisplayPlugin"><value>Plugin-Empfehlungen werden angezeigt (CFEnhancer).</value></data>
   <data name="Apps_DisplayBuiltIn"><value>Integrierte Empfehlungen werden angezeigt.</value></data>
   <data name="Apps_DisplayRecommendedPlugin"><value>Empfohlene Anwendungen werden angezeigt (Plugin).</value></data>
@@ -362,7 +393,7 @@ Möchten Sie fortfahren?</value></data>
   <data name="Tools_Loading"><value>Erweiterungen werden geladen...</value></data>
   <data name="Tools_FolderCreated"><value>Skript-Ordner fehlte, wurde erstellt.</value></data>
   <data name="Tools_Loaded"><value>{0} Erweiterungen geladen.</value></data>
-  <data name="Tools_SelectExtension"><value>Wählen Sie eine Erweiterung auf der linken Seite.</value></data>
+  <data name="Tools_SelectExtension"><value>Wähl eine Erweiterung auf der linken Seite.</value></data>
   <data name="Tools_Running"><value>Wird ausgeführt...</value></data>
   <data name="Tools_Done"><value>Fertig.</value></data>
   <data name="Tools_OpenedConsole"><value>In Konsole geöffnet.</value></data>
@@ -372,7 +403,7 @@ Möchten Sie fortfahren?</value></data>
   <!-- C# ResourceLoader: Donation dialog (DonationHelper.cs)        -->
   <!-- ============================================================ -->
   <data name="Donation_Title"><value>Winslop unterstützen &#x2764;</value></data>
-  <data name="Donation_Body"><value>Wenn Winslop Ihnen Zeit gespart hat, unterstützen Sie die Zukunft des Projekts. Es bleibt dank Unterstützern wie Ihnen kostenlos und werbefrei.</value></data>
+  <data name="Donation_Body"><value>Wenn Winslop dir Zeit gespart hat, unterstütze die Zukunft des Projekts. Es bleibt dank Leuten wie dir kostenlos und werbefrei.</value></data>
   <data name="Donation_AlreadyDonated"><value>Ich habe bereits gespendet, nicht mehr anzeigen</value></data>
   <data name="Donation_Donate"><value>Spenden</value></data>
   <data name="Donation_MaybeLater"><value>Vielleicht später</value></data>
@@ -381,12 +412,12 @@ Möchten Sie fortfahren?</value></data>
   <!-- C# ResourceLoader: Migration dialog (MigrationHelper.cs)      -->
   <!-- ============================================================ -->
   <data name="Migration_Title"><value>Winslop ist jetzt auf WinUI 3</value></data>
-  <data name="Migration_Intro"><value>Winslop wurde von WinForms / .NET Framework auf WinUI 3 migriert. Hat es Spaß gemacht? Etwa 90% davon waren eine leidvolle Erfahrung. Die restlichen 10% waren, nerviger Weise, irgendwie befriedigend. So oder so existiert die Portierung, und jetzt sind Sie dran.</value></data>
+  <data name="Migration_Intro"><value>Winslop wurde von WinForms / .NET Framework auf WinUI 3 migriert. Hat es Spaß gemacht? Etwa 90% davon waren eine leidvolle Erfahrung. Die restlichen 10% waren, nerviger Weise, irgendwie befriedigend. So oder so existiert die Portierung, und jetzt bist du dran.</value></data>
   <data name="Migration_ElephantHeading"><value>Der Elefant im Raum</value></data>
   <data name="Migration_ElephantBody"><value>WinForms, WPF, Silverlight &gt; WinRT XAML / Windows Store Apps &gt; UWP / WinUI 2 &gt; WinUI 3. Jeder Übergang versprach der letzte zu sein. Keiner war es. WinUI 3 ist Microsofts aktuelle Empfehlung, und ja, es bringt Mica-Blur und Fluent-Controls - aber auch Komplexität und XAML-Rituale nur um einen Button anzuzeigen.</value></data>
   <data name="Migration_ReadMore"><value>Den vollständigen Bericht lesen &#x2192;</value></data>
-  <data name="Migration_PollHeading"><value>Helfen Sie Winslops Weg zu entscheiden</value></data>
-  <data name="Migration_PollBody"><value>Soll Winslop den modernen WinUI 3 Weg gehen oder das bleiben was es immer war: eine klassische, schlanke, schnelle Desktop-App? Stimmen Sie ab und sagen Sie uns Ihre Meinung.</value></data>
+  <data name="Migration_PollHeading"><value>Hilf mit, Winslops Weg zu entscheiden</value></data>
+  <data name="Migration_PollBody"><value>Soll Winslop den modernen WinUI 3 Weg gehen oder das bleiben was es immer war: eine klassische, schlanke, schnelle Desktop-App? Stimm ab und sag uns deine Meinung.</value></data>
   <data name="Migration_AlreadyVoted"><value>Ich habe bereits abgestimmt, Umfrage-Button nicht mehr anzeigen</value></data>
   <data name="Migration_LegacyHeading"><value>Noch nicht bereit für WinUI 3?</value></data>
   <data name="Migration_LegacyBody"><value>Verständlich. Die klassische WinForms-Version ist immer noch da. Schlank, schnell, ohne Overhead, genau wie immer.</value></data>
@@ -413,7 +444,7 @@ Möchten Sie fortfahren?</value></data>
   <!-- C# ResourceLoader: Language switcher                          -->
   <!-- ============================================================ -->
   <data name="Language_RestartTitle"><value>Sprache geändert</value></data>
-  <data name="Language_RestartRequired"><value>Bitte starten Sie Winslop neu, damit die Sprachänderung wirksam wird.</value></data>
+  <data name="Language_RestartRequired"><value>Bitte starte Winslop neu, damit die Sprachänderung wirksam wird.</value></data>
 
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Common strings                             -->
