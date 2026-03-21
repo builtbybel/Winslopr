@@ -453,7 +453,7 @@ Cualquier ajuste previo para esos elementos puede ser revertido.
   <!-- C# ResourceLoader: Language switcher                          -->
   <!-- ============================================================ -->
   <data name="Language_RestartTitle"><value>Idioma cambiado</value></data>
-  <data name="Language_RestartRequired"><value>Por favor, reinicia Winslop para que el cambio de idioma tenga efecto".</value></data>
+  <data name="Language_RestartRequired"><value>Por favor, reinicia Winslop para que el cambio de idioma tenga efecto.</value></data>
 
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Common strings                             -->
