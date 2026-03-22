@@ -1,7 +1,6 @@
 [ChrisTitusApp]
 description=Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates
 url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/ChrisTitusApp.ps1
-community = true
 
 [Create Restore Point]
 description=Creates a system restore point to allow recovery before major changes are applied.
@@ -80,4 +79,3 @@ url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins
 [Win11Debloat]
 description=Launches Raphire's Win11Debloat using the official remote bootstrap to remove bloatware and optimize Windows.
 url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Win11Debloat.ps1
-community = true
