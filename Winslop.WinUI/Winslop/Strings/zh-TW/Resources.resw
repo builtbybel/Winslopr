@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- ============================================================ -->
+  <!-- 譯者資訊                                                      -->
+  <!-- 在此填寫您的姓名與網站，將會在應用程式中顯示。                -->
+  <!-- 若不想顯示請保持空白。                                        -->
+  <!-- ============================================================ -->
+  <data name="Language_TranslatorName"><value>abc0922001</value></data>
+  <data name="Language_TranslatorWebsite"><value>https://github.com/abc0922001</value></data>
+  <data name="Language_TranslatedBy"><value>翻譯：</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — 導覽                                -->
+  <!-- ============================================================ -->
+  <data name="NavHome.Text"><value>首頁</value></data>
+  <data name="NavApps.Text"><value>應用程式</value></data>
+  <data name="NavInstall.Text"><value>安裝</value></data>
+  <data name="NavTools.Text"><value>工具</value></data>
+  <data name="NavSupport.Text"><value>贊助</value></data>
+  <data name="NavSettings.Text"><value>設定</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — 贊助選單                             -->
+  <!-- ============================================================ -->
+  <data name="MenuKofi.Text"><value>在 Ko-fi 上請我喝杯咖啡</value></data>
+  <data name="MenuPaypal.Text"><value>透過 PayPal 捐款</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: SettingsPage                                      -->
+  <!-- ============================================================ -->
+  <data name="Settings_Title.Text"><value>設定</value></data>
+  <data name="Settings_Language.Text"><value>語言</value></data>
+  <data name="Settings_LanguageSubtext.Text"><value>應用程式顯示語言</value></data>
+  <data name="Settings_TranslatedBy.Text"><value>翻譯</value></data>
+  <data name="Settings_Appearance.Text"><value>外觀</value></data>
+  <data name="Settings_ThemeSystem"><value>使用系統設定</value></data>
+  <data name="Settings_ThemeLight"><value>淺色</value></data>
+  <data name="Settings_ThemeDark"><value>深色</value></data>
+  <data name="Settings_RestartTitle"><value>需要重新啟動</value></data>
+  <data name="Settings_RestartMessage"><value>請重新啟動應用程式以使變更生效。</value></data>
+  <data name="Settings_Extensions.Text"><value>擴充功能</value></data>
+  <data name="Settings_ExtensionsSubtext.Text"><value>管理原生外掛與獨立工具。</value></data>
+  <data name="Settings_ToolScripts.Text"><value>擴充功能</value></data>
+  <data name="Settings_ToolScriptsDescription.Text"><value>可從「工具」頁面開啟並執行的獨立指令碼。</value></data>
+  <data name="Settings_OpenToolsPage.Text"><value>開啟工具頁面</value></data>
+  <data name="Settings_Plugins.Text"><value>外掛</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>與首頁功能整合的原生外掛。</value></data>
+  <data name="Settings_ManagePlugins.Text"><value>管理外掛</value></data>
+  <data name="Settings_CompatOk"><value>完全相容</value></data>
+  <data name="Settings_CompatWarn"><value>相容性有限</value></data>
+  <data name="Settings_About.Text"><value>關於此應用程式</value></data>
+  <data name="Settings_CheckUpdates.Text"><value>檢查更新</value></data>
+  <data name="Settings_Feedback.Text"><value>傳送意見反應</value></data>
+  <data name="MenuHelp.Text"><value>說明</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — 搜尋與更多選項選單                   -->
+  <!-- ============================================================ -->
+  <data name="SearchBox.PlaceholderText"><value>搜尋</value></data>
+  <data name="MenuToggle.Text"><value>切換全部</value></data>
+  <data name="MenuUndo.Text"><value>復原上次變更</value></data>
+  <data name="MenuRefresh.Text"><value>重新整理</value></data>
+  <data name="MenuExport.Text"><value>匯出選取項...</value></data>
+  <data name="MenuImport.Text"><value>從檔案匯入...</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — 日誌操作子選單                       -->
+  <!-- ============================================================ -->
+  <data name="MenuLogActions.Text"><value>日誌操作</value></data>
+  <data name="MenuInspectLog.Text"><value>線上檢視日誌</value></data>
+  <data name="MenuCopyLog.Text"><value>複製日誌到剪貼簿</value></data>
+  <data name="MenuClearLog.Text"><value>清除日誌</value></data>
+  <data name="MenuLogChecked.Text"><value>記錄：已勾選的功能</value></data>
+  <data name="MenuLogUnchecked.Text"><value>記錄：未勾選的功能</value></data>
+  <data name="MenuLogSummary.Text"><value>記錄：摘要</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — 底部按鈕                             -->
+  <!-- ============================================================ -->
+  <data name="BtnAnalyzeText.Text"><value>分析系統</value></data>
+  <data name="BtnFixText.Text"><value>套用選取的變更</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: FeaturesPage                                      -->
+  <!-- ============================================================ -->
+  <data name="ComboProfiles.PlaceholderText"><value>&lt;選取設定檔...&gt;</value></data>
+  <data name="ChkIssuesOnly.Content"><value>僅顯示設定錯誤項</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: AppsPage                                          -->
+  <!-- ============================================================ -->
+  <data name="ComboDisplayMode.PlaceholderText"><value>選取掃描模式...</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: InstallPage                                       -->
+  <!-- ============================================================ -->
+  <data name="ComboCategory.PlaceholderText"><value>類別...</value></data>
+  <data name="ChkInstalledOnly.Content"><value>已安裝</value></data>
+  <data name="ChkUpgradesOnly.Content"><value>可升級</value></data>
+  <data name="BtnInstall.Content"><value>安裝</value></data>
+  <data name="BtnUpgradeSelected.Content"><value>升級</value></data>
+  <data name="BtnUpgradeAll.Content"><value>全部升級</value></data>
+  <data name="BtnUninstall.Content"><value>解除安裝</value></data>
+  <data name="ColAppName.Text"><value>應用程式名稱</value></data>
+  <data name="ColPackageId.Text"><value>套件 ID</value></data>
+  <data name="ColInstalled.Text"><value>已安裝</value></data>
+  <data name="ColUpdate.Text"><value>更新</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: ToolsPage                                         -->
+  <!-- ============================================================ -->
+  <data name="ComboFilter.PlaceholderText"><value>過濾...</value></data>
+  <data name="ComboOptions.PlaceholderText"><value>選項...</value></data>
+  <data name="TextInput.PlaceholderText"><value>輸入內容 (例如 ID 或原始參數)</value></data>
+  <data name="BtnRun.Content"><value>執行</value></data>
+  <data name="BtnToolUninstall.Content"><value>解除安裝</value></data>
+  <data name="BtnOpenFolder.ToolTipService.ToolTip"><value>開啟指令碼資料夾</value></data>
+  <data name="Tools_SelectHint.Text"><value>選取一個工具以開始使用</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: PluginsDialog                                     -->
+  <!-- ============================================================ -->
+  <data name="PluginsDialog.Title"><value>管理外掛</value></data>
+  <data name="PluginsDialog.CloseButtonText"><value>關閉</value></data>
+  <data name="TxtSearch.PlaceholderText"><value>搜尋外掛...</value></data>
+  <data name="ColPlugin.Text"><value>外掛</value></data>
+  <data name="ColStatus.Text"><value>狀態</value></data>
+  <data name="ColType.Text"><value>類型</value></data>
+  <data name="BtnPluginInstall.Content"><value>安裝</value></data>
+  <data name="BtnPluginUpdateAll.Content"><value>全部更新</value></data>
+  <data name="BtnPluginRemove.Content"><value>刪除</value></data>
+  <data name="BtnPluginEdit.Content"><value>編輯</value></data>
+  <data name="BtnPluginOpenFolder.Content"><value>開啟資料夾</value></data>
+  <data name="BtnPluginSubmit.Content"><value>提交</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能類別 (FeatureLoader.cs)                -->
+  <!-- ============================================================ -->
+  <data name="Category_Issues"><value>維護</value></data>
+  <data name="Category_System"><value>系統</value></data>
+  <data name="Category_MSEdge"><value>MS Edge</value></data>
+  <data name="Category_UI"><value>使用者介面</value></data>
+  <data name="Category_Taskbar"><value>工作列</value></data>
+  <data name="Category_Gaming"><value>遊戲</value></data>
+  <data name="Category_Privacy"><value>隱私</value></data>
+  <data name="Category_Ads"><value>廣告</value></data>
+  <data name="Category_AI"><value>人工智慧 (AI)</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能名稱 — AI                             -->
+  <!-- ============================================================ -->
+  <data name="Feature_ClickToDo"><value>停用 Click to Do (僅限 Copilot+ PC)</value></data>
+  <data name="Feature_CopilotTaskbar"><value>不顯示工作列中的 Copilot</value></data>
+  <data name="Feature_Recall"><value>關閉 Windows 11 中的 Recall (回顧)</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能名稱 — 廣告                           -->
+  <!-- ============================================================ -->
+  <data name="Feature_DisableSearchBoxSuggestions"><value>停用 Bing 搜尋結果</value></data>
+  <data name="Feature_FileExplorerAds"><value>停用檔案總管廣告</value></data>
+  <data name="Feature_FinishSetupAds"><value>停用完成設定廣告</value></data>
+  <data name="Feature_LockScreenAds"><value>停用鎖定螢幕提示與廣告</value></data>
+  <data name="Feature_PersonalizedAds"><value>停用個人化廣告</value></data>
+  <data name="Feature_SettingsAds"><value>停用設定頁面廣告</value></data>
+  <data name="Feature_StartmenuAds"><value>停用開始功能表廣告</value></data>
+  <data name="Feature_TailoredExperiences"><value>停用專屬體驗</value></data>
+  <data name="Feature_TipsAndSuggestions"><value>停用一般提示與廣告</value></data>
+  <data name="Feature_WelcomeExperienceAds"><value>停用歡迎體驗廣告</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能名稱 — MS Edge                        -->
+  <!-- ============================================================ -->
+  <data name="Feature_BrowserSignin"><value>停用瀏覽器登入與同步服務</value></data>
+  <data name="Feature_DefaultTopSites"><value>不在新索引標籤頁面顯示贊助連結</value></data>
+  <data name="Feature_DefautBrowserSetting"><value>停用將 Microsoft Edge 設為預設瀏覽器</value></data>
+  <data name="Feature_EdgeCollections"><value>停用集合功能</value></data>
+  <data name="Feature_EdgeShoppingAssistant"><value>停用購物助理</value></data>
+  <data name="Feature_FirstRunExperience"><value>不顯示首次執行體驗</value></data>
+  <data name="Feature_GamerMode"><value>停用遊戲模式</value></data>
+  <data name="Feature_HubsSidebar"><value>停用 Edge 中的 Copilot 圖示</value></data>
+  <data name="Feature_ImportOnEachLaunch"><value>啟動時不從其他瀏覽器匯入資料</value></data>
+  <data name="Feature_StartupBoost"><value>停用啟動加速</value></data>
+  <data name="Feature_TabPageQuickLinks"><value>不在新索引標籤頁面顯示快速連結</value></data>
+  <data name="Feature_UserFeedback"><value>不顯示使用者意見反應選項</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能名稱 — 遊戲                           -->
+  <!-- ============================================================ -->
+  <data name="Feature_GameDVR"><value>停用遊戲錄影 (Game DVR)</value></data>
+  <data name="Feature_PowerThrottling"><value>停用電力節流</value></data>
+  <data name="Feature_VisualFX"><value>停用視覺效果</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能名稱 — 系統                           -->
+  <!-- ============================================================ -->
+  <data name="Feature_BSODDetails"><value>顯示藍白當機 (BSOD) 詳細資訊而非哭臉</value></data>
+  <data name="Feature_DisableHibernation"><value>停用休眠</value></data>
+  <data name="Feature_MenuShowDelay"><value>縮短選單顯示延遲</value></data>
+  <data name="Feature_NetworkThrottling"><value>停用網路節流</value></data>
+  <data name="Feature_SpeedUpShutdown"><value>加速關機時間</value></data>
+  <data name="Feature_SystemResponsiveness"><value>最佳化系統回應速度</value></data>
+  <data name="Feature_VerboseStatus"><value>啟用詳細的登入狀態訊息</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能名稱 — 隱私                           -->
+  <!-- ============================================================ -->
+  <data name="Feature_ActivityHistory"><value>停用活動歷程記錄</value></data>
+  <data name="Feature_AppLaunchTracking"><value>停用應用程式啟動追蹤</value></data>
+  <data name="Feature_DiagnosticData"><value>減少診斷資料 (基本)</value></data>
+  <data name="Feature_LocationTracking"><value>停用位置追蹤</value></data>
+  <data name="Feature_LockScreenSlideshow"><value>停用鎖定螢幕投影片</value></data>
+  <data name="Feature_NarratorOnlineServices"><value>停用講述人線上服務</value></data>
+  <data name="Feature_OnlineSpeechRecognition"><value>停用線上語音辨識</value></data>
+  <data name="Feature_PrivacyExperience"><value>登入時停用隱私設定體驗</value></data>
+  <data name="Feature_SilentAppInstallation"><value>防止背景靜默安裝應用程式</value></data>
+  <data name="Feature_WindowsSpotlightLockScreen"><value>停用鎖定螢幕上的 Windows 焦點</value></data>
+  <data name="Feature_DisableBingSearch"><value>停用 Bing 搜尋</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能名稱 — 使用者介面                      -->
+  <!-- ============================================================ -->
+  <data name="Feature_AppDarkMode"><value>為應用程式啟用深色模式</value></data>
+  <data name="Feature_SystemDarkMode"><value>為系統啟用深色模式</value></data>
+  <data name="Feature_FullContextMenus"><value>在 Windows 11 中顯示完整右鍵選單</value></data>
+  <data name="Feature_LockScreen"><value>不使用個人化鎖定螢幕</value></data>
+  <data name="Feature_ShowOrHideMostUsedApps"><value>隱藏開始功能表中最常用的應用程式</value></data>
+  <data name="Feature_DisableSnapAssistFlyout"><value>停用視窗調校輔助彈窗</value></data>
+  <data name="Feature_StartLayout"><value>在開始功能表釘選更多應用程式</value></data>
+  <data name="Feature_Transparency"><value>停用透明效果</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能名稱 — 工作列                         -->
+  <!-- ============================================================ -->
+  <data name="Feature_AlwaysShowTrayIcons"><value>一律顯示所有系統匣圖示</value></data>
+  <data name="Feature_CleanTaskbar"><value>清理工作列</value></data>
+  <data name="Feature_DisableNewsAndInterests"><value>停用新聞與興趣</value></data>
+  <data name="Feature_DisableWidgets"><value>停用小工具</value></data>
+  <data name="Feature_RemoveMeetNowButton"><value>從系統匣刪除「立即開會」按鈕</value></data>
+  <data name="Feature_SearchboxTaskbarMode"><value>隱藏工作列上的搜尋框</value></data>
+  <data name="Feature_ShowTaskViewButton"><value>隱藏工作列上的工作檢視按鈕</value></data>
+  <data name="Feature_TaskbarAlignment"><value>將開始按鈕靠左對齊</value></data>
+  <data name="Feature_TaskbarEndTask"><value>啟用「結束工作」功能</value></data>
+  <data name="Feature_TaskbarSmallIcons"><value>將工作列縮小</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 功能名稱 — 維護                           -->
+  <!-- ============================================================ -->
+  <data name="Feature_BasicCleanup"><value>基本磁碟清理</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 不適用原因 (FeatureTreeItem.cs)            -->
+  <!-- ============================================================ -->
+  <data name="InapplicableReason_Win10Only"><value>僅限 Windows 10</value></data>
+  <data name="InapplicableReason_Win11Only"><value>僅限 Windows 11</value></data>
+  <data name="InapplicableReason_NotApplicable"><value>不適用</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 日誌訊息 (FeatureManager.cs)               -->
+  <!-- ============================================================ -->
+  <data name="Log_General"><value>一般</value></data>
+  <data name="Log_Skipped"><value>已略過</value></data>
+  <data name="Log_NotApplicableOS"><value>不適用於此作業系統。</value></data>
+  <data name="Log_NotConfigured"><value>未依建議方式設定。</value></data>
+  <data name="Log_Fixed"><value>已修復</value></data>
+  <data name="Log_FixFailed"><value>修復失敗 (此功能可能需要管理員權限)</value></data>
+  <data name="Log_Restored"><value>已還原</value></data>
+  <data name="Log_RestoreFailed"><value>還原失敗</value></data>
+  <data name="Log_SkippedRestore"><value>已略過還原</value></data>
+  <data name="Log_ProperlyConfigured"><value>功能：{0} 設定正確。</value></data>
+  <data name="Log_RequiresAttention"><value>功能：{0} 需要注意。</value></data>
+  <data name="Summary_Fix"><value>{0} 已修復，{1} 已略過，{2} 失敗</value></data>
+  <data name="Summary_FixTitleDone"><value>變更已套用</value></data>
+  <data name="Summary_FixTitleWarning"><value>變更已套用，但有錯誤</value></data>
+  <data name="Summary_Fixed"><value>已修復</value></data>
+  <data name="Summary_Skipped"><value>已略過</value></data>
+  <data name="Summary_Failed"><value>失敗</value></data>
+  <data name="Summary_FixAllGood"><value>所有選取的變更皆已成功套用。</value></data>
+  <data name="Summary_FixHasErrors"><value>部分變更無法套用。請查看日誌了解詳情。</value></data>
+  <data name="Summary_Restore"><value>{0} 已還原，{1} 已略過，{2} 失敗</value></data>
+  <data name="Summary_RestoreTitleDone"><value>還原完成</value></data>
+  <data name="Summary_RestoreTitleWarning"><value>還原完成，但有錯誤</value></data>
+  <data name="Summary_Restored"><value>已還原</value></data>
+  <data name="Summary_RestoreAllGood"><value>所有選取的功能皆已成功還原。</value></data>
+  <data name="Summary_RestoreHasErrors"><value>部分功能無法還原。請查看日誌了解詳情。</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 分析摘要 (FeaturesPage.xaml.cs)            -->
+  <!-- ============================================================ -->
+  <data name="Analysis_Complete"><value>分析完成</value></data>
+  <data name="Analysis_TitleAttention"><value>分析完成 - 需要注意</value></data>
+  <data name="Analysis_WindowsFeatures"><value>Windows 功能</value></data>
+  <data name="Analysis_Plugins"><value>外掛</value></data>
+  <data name="Analysis_Total"><value>總計</value></data>
+  <data name="Analysis_Issues"><value>個問題</value></data>
+  <data name="Analysis_IssuesFound"><value>找到 {0} 個問題 - 請在套用修復前查看日誌。</value></data>
+  <data name="Analysis_AllGood"><value>一切看起來都很棒！</value></data>
+  <data name="Analysis_OpenLogInspector"><value>開啟線上日誌檢查器</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 右鍵選單 (FeaturesPage.xaml.cs)            -->
+  <!-- ============================================================ -->
+  <data name="Context_Analyze"><value>分析</value></data>
+  <data name="Context_Fix"><value>修復</value></data>
+  <data name="Context_Restore"><value>還原</value></data>
+  <data name="Context_Help"><value>說明</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 還原對話方塊 (FeaturesPage.xaml.cs)        -->
+  <!-- ============================================================ -->
+  <data name="Restore_Title"><value>還原選取項</value></data>
+  <data name="Restore_NoItems"><value>未選取任何項目。
+
+請先在樹狀目錄中勾選一或多個功能/外掛。</value></data>
+  <data name="Restore_ConfirmTitle"><value>還原選取的項目</value></data>
+  <data name="Restore_ConfirmBody"><value>這將「僅」還原選取的 {0} 個項目至原始狀態。
+這些項目之前的任何調整都將被復原。
+
+您確定要繼續嗎？</value></data>
+  <data name="Restore_Done"><value>已還原 {0} 個選取的項目。</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 設定檔操作 (FeaturesPage.xaml.cs)          -->
+  <!-- ============================================================ -->
+  <data name="Profile_Export"><value>匯出選取項...</value></data>
+  <data name="Profile_Import"><value>從檔案匯入...</value></data>
+  <data name="Profile_OpenFolder"><value>開啟設定檔資料夾...</value></data>
+  <data name="Profile_ExportedTo"><value>選取項已匯出至：{0}</value></data>
+  <data name="Profile_ImportedFrom"><value>已從 {1} 匯入 {0} 個項目</value></data>
+  <data name="Profile_Loaded"><value>設定檔 '{0}' 已載入 (已選取 {1} 個項目)。</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 掃描模式 (AppsPage.xaml.cs)                -->
+  <!-- ============================================================ -->
+  <data name="ScanMode_Standard"><value>標準掃描 (推薦)</value></data>
+  <data name="ScanMode_Full"><value>完整掃描 (所有已安裝的應用程式)</value></data>
+  <data name="ScanMode_Community"><value>使用社群清單掃描 (CFEnhancer)</value></data>
+  <data name="ScanMode_BuiltIn"><value>使用內建清單掃描</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 應用程式日誌訊息 (AppsPage.xaml.cs)        -->
+  <!-- ============================================================ -->
+  <data name="Apps_DisplayAll"><value>正在顯示所有已安裝的應用程式。</value></data>
+  <data name="Apps_NoPlugin"><value>找不到外掛清單。請安裝 CFEnhancer 以使用外掛推薦。</value></data>
+  <data name="Apps_DisplayPlugin"><value>正在顯示外掛推薦 (CFEnhancer)。</value></data>
+  <data name="Apps_DisplayBuiltIn"><value>正在顯示內建推薦。</value></data>
+  <data name="Apps_DisplayRecommendedPlugin"><value>正在顯示推薦的應用程式 (外掛)。</value></data>
+  <data name="Apps_DisplayRecommendedBuiltIn"><value>正在顯示推薦的應用程式 (內建)。</value></data>
+  <data name="Apps_AnalysisTitle"><value>應用程式分析</value></data>
+  <data name="Apps_ShowingAll"><value>顯示所有應用程式 (排除白名單)：{0}</value></data>
+  <data name="Apps_BloatwareDetected"><value>偵測到垃圾軟體 (Bloatware)：</value></data>
+  <data name="Apps_NoBloatware"><value>未發現 Microsoft Store 垃圾軟體。</value></data>
+  <data name="Apps_CleanupComplete"><value>應用程式清理完成。</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 安裝頁面訊息                               -->
+  <!-- ============================================================ -->
+  <data name="Install_Installed"><value>已安裝</value></data>
+  <data name="Install_Upgradeable"><value>可升級</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 工具頁面訊息                               -->
+  <!-- ============================================================ -->
+  <data name="Tools_Loading"><value>正在載入擴充功能...</value></data>
+  <data name="Tools_FolderCreated"><value>指令碼資料夾不存在，已自動建立。</value></data>
+  <data name="Tools_Loaded"><value>已載入 {0} 個擴充功能。</value></data>
+  <data name="Tools_SelectExtension"><value>請在左側選取一個擴充功能。</value></data>
+  <data name="Tools_Running"><value>執行中...</value></data>
+  <data name="Tools_Done"><value>完成。</value></data>
+  <data name="Tools_OpenedConsole"><value>已在終端機中開啟。</value></data>
+  <data name="Tools_CompletedLog"><value>完成並附帶日誌。</value></data>
+  <data name="Tools_UninstallTitle"><value>刪除擴充功能</value></data>
+  <data name="Tools_UninstallConfirm"><value>確定要刪除 "{0}" 嗎？此操作無法復原。</value></data>
+  <data name="Tools_UninstallYes"><value>刪除</value></data>
+  <data name="Common_Cancel"><value>取消</value></data>
+  <data name="Tools_HelpAvailable"><value>此工具提供說明指南</value></data>
+  <data name="Tools_ShowHelp"><value>顯示說明</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 捐款對話方塊 (DonationHelper.cs)          -->
+  <!-- ============================================================ -->
+  <data name="Donation_Title"><value>支持 Winslop &#x2764;</value></data>
+  <data name="Donation_Body"><value>如果 Winslop 節省了您的時間，請考慮支持它的未來。正因為有像您這樣的支持者，它才能保持免費且無廣告垃圾。</value></data>
+  <data name="Donation_AlreadyDonated"><value>我已經捐款過了，請不再顯示</value></data>
+  <data name="Donation_Donate"><value>贊助</value></data>
+  <data name="Donation_MaybeLater"><value>稍後再說</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 遷移對話方塊 (MigrationHelper.cs)          -->
+  <!-- ============================================================ -->
+  <data name="Migration_Title"><value>Winslop 現在採用 WinUI 3</value></data>
+  <data name="Migration_Intro"><value>Winslop 已從 WinForms / .NET Framework 遷移至 WinUI 3。過程有趣嗎？大概 90% 的體驗都很痛苦，剩下的 10% 倒是讓人莫名地感到滿足。無論如何，這個版本誕生了，現在輪到您來評價它。</value></data>
+  <data name="Migration_ElephantHeading"><value>不可忽視的問題</value></data>
+  <data name="Migration_ElephantBody"><value>WinForms, WPF, Silverlight &gt; WinRT XAML / Windows Store Apps &gt; UWP / WinUI 2 &gt; WinUI 3。每一次轉型都承諾是最後一次，但每一次都不是。WinUI 3 是 Microsoft 目前推薦的方案，它確實帶來了 Mica 模糊效果和 Fluent 控制項，但也帶來了繁瑣的架構、複雜性，以及連顯示一個按鈕都需要經過 XAML 的儀式感。</value></data>
+  <data name="Migration_ReadMore"><value>閱讀完整心得 &#x2192;</value></data>
+  <data name="Migration_PollHeading"><value>協助決定 Winslop 的發展路徑</value></data>
+  <data name="Migration_PollBody"><value>Winslop 應該繼續朝向現代化的 WinUI 3 發展，還是保持初心：作為一個經典、精簡、快速的桌面應用程式？請投下您的一票並告訴我們您的想法。</value></data>
+  <data name="Migration_AlreadyVoted"><value>我已經投票過了，不再顯示調查按鈕</value></data>
+  <data name="Migration_LegacyHeading"><value>還沒準備好使用 WinUI 3？</value></data>
+  <data name="Migration_LegacyBody"><value>沒關係，經典的 WinForms 版本依然在這裡。精簡、快速、不繁瑣，一如既往。</value></data>
+  <data name="Migration_LaunchLegacy"><value>啟動 Winslop Legacy</value></data>
+  <data name="Migration_DontShowAgain"><value>明白了，請不再顯示</value></data>
+  <data name="Migration_Vote"><value>為 Winslop 的未來投票</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 外掛狀態 (PluginsDialog.xaml.cs)           -->
+  <!-- ============================================================ -->
+  <data name="Plugins_Installed"><value>已安裝</value></data>
+  <data name="Plugins_Updated"><value>已更新</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 日誌操作 (LoggerActions.cs)                -->
+  <!-- ============================================================ -->
+  <data name="LogActions_NotAvailable"><value>[功能] 無法使用。</value></data>
+  <data name="LogActions_Summary"><value>[功能] 總節點數：{0}，已勾選：{1}</value></data>
+  <data name="LogActions_NoChecked"><value>[功能] 無勾選項。</value></data>
+  <data name="LogActions_CheckedItems"><value>[功能] 已勾選項 ({0})：</value></data>
+  <data name="LogActions_UncheckedItems"><value>[功能] 未勾選的末端項目 ({0})：</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 語言切換器                                 -->
+  <!-- ============================================================ -->
+  <data name="Language_RestartTitle"><value>語言已變更</value></data>
+  <data name="Language_RestartRequired"><value>請重新啟動 Winslop 以使語言變更生效。</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: 通用字串                                   -->
+  <!-- ============================================================ -->
+  <data name="Common_Yes"><value>是</value></data>
+  <data name="Common_No"><value>否</value></data>
+  <data name="Common_OK"><value>確定</value></data>
+  <data name="Common_Close"><value>關閉</value></data>
+
+</root>
