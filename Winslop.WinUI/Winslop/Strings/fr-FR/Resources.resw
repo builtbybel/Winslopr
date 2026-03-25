@@ -38,7 +38,7 @@
   <!-- Fill in your name and website to be credited in the app.      -->
   <!-- Leave empty if you don't want to be credited.                 -->
   <!-- ============================================================ -->
-  <data name="Language_TranslatorName"><value></value></data>
+  <data name="Language_TranslatorName"><value>Sebastien W.</value></data>
   <data name="Language_TranslatorWebsite"><value></value></data>
   <data name="Language_TranslatedBy"><value>Traduit par</value></data>
 
