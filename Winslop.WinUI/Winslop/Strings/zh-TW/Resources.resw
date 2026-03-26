@@ -55,6 +55,7 @@
   <!-- ============================================================ -->
   <!-- XAML x:Uid: MainWindow — 贊助選單                             -->
   <!-- ============================================================ -->
+  <data name="MenuShare.Text"><value>分享 Winslop</value></data>
   <data name="MenuKofi.Text"><value>在 Ko-fi 上請我喝杯咖啡</value></data>
   <data name="MenuPaypal.Text"><value>透過 PayPal 捐款</value></data>
 
@@ -66,6 +67,8 @@
   <data name="Settings_LanguageSubtext.Text"><value>應用程式顯示語言</value></data>
   <data name="Settings_TranslatedBy.Text"><value>翻譯</value></data>
   <data name="Settings_Appearance.Text"><value>外觀</value></data>
+  <data name="Settings_Theme.Text"><value>佈景主題</value></data>
+  <data name="Settings_Backdrop.Text"><value>背景幕</value></data>
   <data name="Settings_ThemeSystem"><value>使用系統設定</value></data>
   <data name="Settings_ThemeLight"><value>淺色</value></data>
   <data name="Settings_ThemeDark"><value>深色</value></data>
@@ -79,6 +82,9 @@
   <data name="Settings_Plugins.Text"><value>外掛</value></data>
   <data name="Settings_PluginsDescription.Text"><value>與首頁功能整合的原生外掛。</value></data>
   <data name="Settings_ManagePlugins.Text"><value>管理外掛</value></data>
+  <data name="Settings_Legacy.Text"><value>Winslop 舊版 (Legacy)</value></data>
+  <data name="Settings_LegacyDescription.Text"><value>傳統 WinForms 版本的 Winslop。</value></data>
+  <data name="Settings_LaunchLegacy.Text"><value>啟動舊版</value></data>
   <data name="Settings_CompatOk"><value>完全相容</value></data>
   <data name="Settings_CompatWarn"><value>相容性有限</value></data>
   <data name="Settings_About.Text"><value>關於此應用程式</value></data>
@@ -417,22 +423,11 @@
   <data name="Donation_Donate"><value>贊助</value></data>
   <data name="Donation_MaybeLater"><value>稍後再說</value></data>
 
+  <!-- XAML: Migration InfoBar (MainWindow.xaml)                      -->
   <!-- ============================================================ -->
-  <!-- C# ResourceLoader: 遷移對話方塊 (MigrationHelper.cs)          -->
-  <!-- ============================================================ -->
-  <data name="Migration_Title"><value>Winslop 現在採用 WinUI 3</value></data>
-  <data name="Migration_Intro"><value>Winslop 已從 WinForms / .NET Framework 遷移至 WinUI 3。過程有趣嗎？大概 90% 的體驗都很痛苦，剩下的 10% 倒是讓人莫名地感到滿足。無論如何，這個版本誕生了，現在輪到您來評價它。</value></data>
-  <data name="Migration_ElephantHeading"><value>不可忽視的問題</value></data>
-  <data name="Migration_ElephantBody"><value>WinForms, WPF, Silverlight &gt; WinRT XAML / Windows Store Apps &gt; UWP / WinUI 2 &gt; WinUI 3。每一次轉型都承諾是最後一次，但每一次都不是。WinUI 3 是 Microsoft 目前推薦的方案，它確實帶來了 Mica 模糊效果和 Fluent 控制項，但也帶來了繁瑣的架構、複雜性，以及連顯示一個按鈕都需要經過 XAML 的儀式感。</value></data>
-  <data name="Migration_ReadMore"><value>閱讀完整心得 &#x2192;</value></data>
-  <data name="Migration_PollHeading"><value>協助決定 Winslop 的發展路徑</value></data>
-  <data name="Migration_PollBody"><value>Winslop 應該繼續朝向現代化的 WinUI 3 發展，還是保持初心：作為一個經典、精簡、快速的桌面應用程式？請投下您的一票並告訴我們您的想法。</value></data>
-  <data name="Migration_AlreadyVoted"><value>我已經投票過了，不再顯示調查按鈕</value></data>
-  <data name="Migration_LegacyHeading"><value>還沒準備好使用 WinUI 3？</value></data>
-  <data name="Migration_LegacyBody"><value>沒關係，經典的 WinForms 版本依然在這裡。精簡、快速、不繁瑣，一如既往。</value></data>
-  <data name="Migration_LaunchLegacy"><value>啟動 Winslop Legacy</value></data>
-  <data name="Migration_DontShowAgain"><value>明白了，請不再顯示</value></data>
-  <data name="Migration_Vote"><value>為 Winslop 的未來投票</value></data>
+  <data name="InfoMigration.Title"><value>新面貌，新篇章 —— Winslop 需要新名稱嗎？</value></data>
+  <data name="InfoMigration.Message"><value>Winslop 有了新面貌 —— 它也應該有新名稱嗎？隨著遷移到 WinUI 3，此應用程式已有所改變。告訴我們您的想法。</value></data>
+  <data name="InfoMigration_Vote.Content"><value>投下一票 →</value></data>
 
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: 外掛狀態 (PluginsDialog.xaml.cs)           -->
