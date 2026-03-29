@@ -19,7 +19,7 @@ Then Microsoft said "slop vs sophistication" out loud and it stopped being one.
 ### 📋 [What annoys you most about Windows 11?](https://builtbybel.github.io/Winslop/annoyances/)
 
 59 community-sourced annoyances. Filterable. With fixes.  
-See what Winslop handles and what needs extra tools.
+See what Winslopr handles and what needs extra tools.
 
 ---
 
