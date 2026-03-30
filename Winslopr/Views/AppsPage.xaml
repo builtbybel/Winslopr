@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Page
-    x:Class="Winslop.Views.AppsPage"
+    x:Class="Winslopr.Views.AppsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Winslop.Views"
+    xmlns:local="using:Winslopr.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -18,12 +18,13 @@
 
         <!-- Display mode selector (replaces comboDisplayMode) -->
         <ComboBox x:Name="comboDisplayMode" Grid.Row="0"
-                  x:Uid="ComboDisplayMode" FontSize="11" FontWeight="SemiBold" Height="28"
+                  FontSize="11" FontWeight="SemiBold" Height="28"
                   CornerRadius="6" Padding="8,0" Margin="0,0,0,8" />
 
         <Grid Grid.Row="1">
             <!-- App list -->
-            <Border BorderThickness="0" CornerRadius="4" Padding="4">
+            <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                    BorderThickness="0" CornerRadius="8" Padding="4">
                 <ListView x:Name="listApps" SelectionMode="None" IsItemClickEnabled="True">
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="local:AppItem">

@@ -2,14 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using Winslop.Helpers;
+using Winslopr.Helpers;
 
 /// <summary>
 /// Provides actions for interacting with and managing the log.
 /// Also provides small helper log outputs for the Features tree (optional).
 /// </summary>
 
-namespace Winslop.Services
+namespace Winslopr.Services
 {
     public sealed class LoggerActions
     {
@@ -40,7 +40,7 @@ namespace Winslop.Services
         public void Clear()
             => Logger.Clear();
 
-        /// <summary>Opens Winslop online inspector tool.</summary>
+        /// <summary>Opens Winslopr online inspector tool.</summary>
         public void AnalyzeOnline(string baseUrl)
         {
             if (string.IsNullOrWhiteSpace(baseUrl))

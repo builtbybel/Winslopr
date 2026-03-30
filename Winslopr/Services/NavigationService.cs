@@ -1,11 +1,11 @@
-﻿using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Animation;
 using System;
 using System.Collections.Generic;
 
-namespace Winslop.Services
+namespace Winslopr.Services
 {
     /// <summary>
     /// Manages page navigation and nav-button highlight state.

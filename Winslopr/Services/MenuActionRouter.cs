@@ -1,7 +1,7 @@
-﻿using Microsoft.UI.Xaml.Controls;
-using Winslop.Views;
+using Microsoft.UI.Xaml.Controls;
+using Winslopr.Views;
 
-namespace Winslop.Services
+namespace Winslopr.Services
 {
     /// <summary>
     /// Routes the "Actions dropdown" menu commands to whichever page is

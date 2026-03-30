@@ -1,23 +1,23 @@
-﻿using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using Winslop.Helpers;
-using Winslop.Services;
-using Winslop.Views;
+using Winslopr.Helpers;
+using Winslopr.Services;
+using Winslopr.Views;
+using Winsloprr.Services;
 
-namespace Winslop
+namespace Winslopr
 {
     public sealed partial class MainWindow : Window
     {
         private readonly Dictionary<string, Type> _pages = new()
         {
-            { "Home",     typeof(FeaturesPage) },
-            { "Apps",     typeof(AppsPage) },
-            { "Install",  typeof(InstallPage) },
-            { "Tools",    typeof(ToolsPage) },
-            { "Settings", typeof(SettingsPage) }
+            { "Home",    typeof(FeaturesPage) },
+            { "Apps",    typeof(AppsPage) },
+            { "Install", typeof(InstallPage) },
+            { "Tools",   typeof(ToolsPage) }
+            // Settings is an overlay panel, not a Frame page
         };
 
         // Services initialized in constructor
@@ -29,7 +29,6 @@ namespace Winslop
 
         private bool _closeHandled;
 
-
         public MainWindow()
         {
             InitializeComponent();
@@ -38,11 +37,8 @@ namespace Winslop
             SetTitleBar(AppTitleBar);
 
             // Mark gear button as passthrough so it receives clicks (not treated as drag region)
-            AppTitleBar.Loaded      += (_, _) => UpdatePassthrough();
+            AppTitleBar.Loaded += (_, _) => UpdatePassthrough();
             AppTitleBar.SizeChanged += (_, _) => UpdatePassthrough();
-
-            // Hide migration InfoBar if already dismissed
-            infoMigration.IsOpen = !SettingsHelper.HasFlag("migration_acknowledged");
 
             // -- Services -----------------------------------------
             var navButtons = new[] { navBtnFeatures, navBtnApps, navBtnInstall, navBtnTools };
@@ -80,9 +76,6 @@ namespace Winslop
                     (int)(btnTitleSettings.ActualHeight * scale))]);
         }
 
-        private void infoMigration_Closed(InfoBar sender, InfoBarClosedEventArgs args)
-            => SettingsHelper.SetFlag("migration_acknowledged", true);
-
         // -- Navigation -------------------------------------------
 
         // Handle nav button clicks and navigate and update visual state
@@ -93,40 +86,47 @@ namespace Winslop
         }
 
         private void NavSettings_Click(object sender, RoutedEventArgs e)
-            => _nav.NavigateTo("Settings");
+        {
+            bool isOpening = settingsOverlayBackdrop.Visibility != Visibility.Visible;
 
-        // Used by SettingsPage to switch to Tools page
+            // Load SettingsPage into the overlay only once (so lazy again)
+            if (isOpening)
+                settingsFrame.Navigate(typeof(SettingsPage), null,
+                    new Microsoft.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo());
+
+            // Toggle: opens on first click, closes on second click
+            settingsOverlayBackdrop.Visibility = isOpening ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        // Used by SettingsPage to navigate to another page and close the overlay
         public void NavigateToPage(string tag)
-            => _nav.NavigateTo(tag);
+        {
+            settingsOverlayBackdrop.Visibility = Visibility.Collapsed;
+            _nav.NavigateTo(tag);
+        }
 
-        // Called after every page navigation: It wires LogActions and updates UI visibility per page.
+        /// <summary>
+        /// Called after every page navigation.
+        /// Wires up LogActions and adjusts menu/button state per page.
+        /// Settings is a separate overlay panel and never navigates through ContentFrame.
+        /// </summary>
         private void OnContentFrameNavigated(object sender, Microsoft.UI.Xaml.Navigation.NavigationEventArgs e)
         {
             var page = ContentFrame.Content;
 
+            // Give LogActions access to the feature tree when FeaturesPage is active
             if (page is FeaturesPage fp)
                 _logActions?.SetFeaturesItemsProvider(() => fp.RootItems);
 
-            bool isFeatures  = page is FeaturesPage;
-            bool isTools     = page is ToolsPage;
-            bool isSettings  = page is SettingsPage;
-            bool showLog     = !isSettings;
-            bool showButtons = !isSettings && !isTools;
+            bool isFeatures = page is FeaturesPage;
+            bool showButtons = page is not ToolsPage; // Tools has its own action UI
 
-            // Actions menu: Undo only on FeaturesPage, Toggle on all except Settings/Tools
-            MenuUndo.IsEnabled   = isFeatures;
+            // Menu items: Undo only on FeaturesPage, Toggle on all except Tools
+            MenuUndo.IsEnabled = isFeatures;
             MenuToggle.IsEnabled = showButtons;
 
-            // Show/hide logger + search bar + action buttons depending on active page
-            searchBar.Visibility    = showLog     ? Visibility.Visible : Visibility.Collapsed;
-            logSeparator.Visibility = showLog     ? Visibility.Visible : Visibility.Collapsed;
-            scrollLogger.Visibility = showLog     ? Visibility.Visible : Visibility.Collapsed;
-            bottomButtons.Visibility= showButtons ? Visibility.Visible : Visibility.Collapsed;
-
-            // Collapse logger row on Settings so it takes no space
-            innerContentGrid.RowDefinitions[3].Height = showLog
-                ? new GridLength(1, GridUnitType.Star)
-                : new GridLength(0);
+            // Inspect/Apply buttons hidden on Tools (handled by ToolsPage itself)
+            bottomButtons.Visibility = showButtons ? Visibility.Visible : Visibility.Collapsed;
         }
 
         // -- Button handlers --------------------------------------

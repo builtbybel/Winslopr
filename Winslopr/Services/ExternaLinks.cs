@@ -1,6 +1,6 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 
-namespace Winslop.Services
+namespace Winsloprr.Services
 {
     /// <summary>
     /// Central registry of every external URL the app can open.
@@ -16,19 +16,19 @@ namespace Winslop.Services
 
         // -- Project ----------------------------------------------
         public static void OpenGitHub()
-            => Open("https://github.com/builtbybel/Winslop");
+            => Open("https://github.com/builtbybel/Winslopr");
 
         public static void OpenHelp()
-            => Open("https://github.com/builtbybel/Winslop/blob/main/docs/Help.md");
+            => Open("https://github.com/builtbybel/Winslopr/blob/main/docs/Help.md");
 
         public static void OpenFeedback()
-            => Open("https://github.com/builtbybel/Winslop/issues");
+            => Open("https://github.com/builtbybel/Winslopr/issues");
 
         public static void OpenUpdateCheck(string rawVersion)
-            => Open($"https://builtbybel.github.io/Winslop/update.html?version={rawVersion}");
+            => Open($"https://builtbybel.github.io/Winslopr/update.html?version={rawVersion}");
 
         // -- Log inspector ----------------------------------------
-        public const string LogInspectorUrl = "https://builtbybel.github.io/Winslop/log-inspector/index.html";
+        public const string LogInspectorUrl = "https://builtbybel.github.io/Winslopr/log-inspector/index.html";
 
         public static void OpenLogInspector()
             => Open(LogInspectorUrl);

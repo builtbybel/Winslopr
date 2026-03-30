@@ -1,10 +1,10 @@
-﻿using Microsoft.UI.Dispatching;
+using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Documents;
 using Microsoft.UI.Xaml.Media;
 
-namespace Winslop.Services
+namespace Winslopr.Services
 {
     /// <summary>
     /// Renders <see cref="LogEntry"/> items into a <see cref="RichTextBlock"/>

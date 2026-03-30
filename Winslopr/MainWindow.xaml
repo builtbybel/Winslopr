@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Winslopr.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Winslopr"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Winslopr">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="BaseAlt" />
+    </Window.SystemBackdrop>
+
+    <Grid>
+        <!--
+            Main content - 4 rows:
+              0: custom title bar      (48 px)
+              1: search bar            (Auto)
+              2: page content + logger (fills remaining space)
+              3: bottom nav            (72 px)
+        -->
+        <Grid RowDefinitions="48,Auto,*,72">
+
+            <!--
+                Row 0: custom title bar.
+                Column 3 is the drag region; the gear button is marked as passthrough
+                in code-behind so it still receives clicks.
+            -->
+            <Grid Grid.Row="0" x:Name="AppTitleBar"
+                  ColumnDefinitions="Auto,Auto,Auto,*"
+                  Padding="12,0,0,0"
+                  VerticalAlignment="Stretch">
+
+                <Image Grid.Column="0" Source="ms-appx:///Assets/SplashScreen.png"
+                       Width="16" Height="16" Margin="0,0,8,0"
+                       VerticalAlignment="Center" />
+
+                <TextBlock Grid.Column="1" Text="Winslopr"
+                           VerticalAlignment="Center" FontSize="14" FontWeight="ExtraBold" />
+
+                <TextBlock Grid.Column="2" Text="by Belim"
+                           VerticalAlignment="Center" FontSize="11"
+                           FontWeight="Normal" Opacity="0.45" Margin="6,0,0,0" />
+
+                <!-- Gear button (title bar): flyout with Settings pane toggle + support/donation links -->
+                <Button x:Name="btnTitleSettings" Grid.Column="3" HorizontalAlignment="Left"
+                        Margin="12,0,0,0" VerticalAlignment="Center"
+                        Background="Transparent" BorderThickness="0"
+                        Padding="4" CornerRadius="4"
+                        ToolTipService.ToolTip="Settings &amp; more">
+                    <FontIcon Glyph="&#xE713;" FontFamily="Segoe Fluent Icons" FontSize="13" Opacity="0.6"/>
+                    <Button.Flyout>
+                        <MenuFlyout Placement="Bottom">
+                            <MenuFlyout.MenuFlyoutPresenterStyle>
+                                <Style TargetType="MenuFlyoutPresenter">
+                                    <Setter Property="Padding" Value="4,6" />
+                                </Style>
+                            </MenuFlyout.MenuFlyoutPresenterStyle>
+                            <MenuFlyoutItem x:Uid="NavSettings" Click="NavSettings_Click" Padding="12,10">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE713;" FontFamily="Segoe Fluent Icons" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutSeparator Margin="0,4" />
+                            <MenuFlyoutItem x:Uid="MenuShare" Click="MenuShare_Click" Padding="12,10">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE72D;" FontFamily="Segoe Fluent Icons" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutSeparator Margin="0,4" />
+                            <MenuFlyoutItem x:Uid="MenuKofi" Click="MenuKofi_Click" Padding="12,10">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE7F5;" FontFamily="Segoe Fluent Icons" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem x:Uid="MenuPaypal" Click="MenuPaypal_Click" Padding="12,10">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE719;" FontFamily="Segoe Fluent Icons" />
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+            </Grid>
+
+            <!-- Row 1: search bar -->
+            <Grid Grid.Row="1" x:Name="searchBar" Padding="12,10,12,10"> 
+                <TextBox x:Name="textSearch"
+                         x:Uid="SearchBox" MinHeight="0" Padding="10,3,10,9"
+                         FontSize="13" CornerRadius="16"
+                         Background="{ThemeResource ControlFillColorSecondaryBrush}"
+                         BorderThickness="0"
+                         TextChanged="textSearch_TextChanged"
+                         GotFocus="textSearch_GotFocus" />
+            </Grid>
+
+            <!--
+                Row 2: active page content, followed by a separator,
+                the action bar, and the logger area.
+            -->
+            <Grid x:Name="innerContentGrid" Grid.Row="2" Padding="8,0,8,0"
+                  RowDefinitions="3*,Auto,Auto,1*">
+
+                <Frame x:Name="ContentFrame" Grid.Row="0" Margin="8,4,8,0" />
+
+                <Rectangle x:Name="logSeparator" Grid.Row="1" Height="1" Opacity="0.4"
+                           Fill="{ThemeResource ControlStrokeColorDefaultBrush}" />
+
+                <!-- Action bar: Inspect and Apply on the left, Actions menu on the right -->
+                <Grid x:Name="bottomButtons" Grid.Row="2" Padding="0,4"
+                      ColumnDefinitions="*,Auto">
+                    <StackPanel Grid.Column="0" Orientation="Horizontal"
+                                VerticalAlignment="Center" Spacing="6">
+                        <Button x:Name="btnAnalyze" Padding="8,5" CornerRadius="12"
+                                Style="{ThemeResource AccentButtonStyle}"
+                                Click="btnAnalyze_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                <FontIcon Glyph="&#xE773;" FontFamily="Segoe Fluent Icons" FontSize="12" />
+                                <TextBlock x:Uid="BtnAnalyzeText" FontSize="12" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </Button>
+                        <Button x:Name="btnFix" Padding="8,5" CornerRadius="12"
+                                Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                                Click="btnFix_Click">
+                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                <FontIcon Glyph="&#xE8FB;" FontFamily="Segoe Fluent Icons" FontSize="12" />
+                                <TextBlock x:Uid="BtnFixText" FontSize="12" VerticalAlignment="Center" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+
+                    <DropDownButton Grid.Column="1" VerticalAlignment="Center"
+                                    Padding="12,6" CornerRadius="16" FontSize="12"
+                                    Background="{ThemeResource SubtleFillColorSecondaryBrush}"
+                                    x:Uid="BtnActions">
+                        <DropDownButton.Flyout>
+                            <MenuFlyout Placement="Bottom">
+                                <MenuFlyoutItem x:Name="MenuToggle" x:Uid="MenuToggle" Click="MenuToggleAll_Click">
+                                    <MenuFlyoutItem.Icon><FontIcon Glyph="&#xE73A;" FontFamily="Segoe Fluent Icons" /></MenuFlyoutItem.Icon>
+                                    <MenuFlyoutItem.KeyboardAccelerators>
+                                        <KeyboardAccelerator Modifiers="Control" Key="T" />
+                                    </MenuFlyoutItem.KeyboardAccelerators>
+                                </MenuFlyoutItem>
+                                <MenuFlyoutItem x:Name="MenuUndo" x:Uid="MenuUndo" Click="MenuUndo_Click">
+                                    <MenuFlyoutItem.Icon><FontIcon Glyph="&#xE7A7;" FontFamily="Segoe Fluent Icons" /></MenuFlyoutItem.Icon>
+                                    <MenuFlyoutItem.KeyboardAccelerators>
+                                        <KeyboardAccelerator Modifiers="Control" Key="Z" />
+                                    </MenuFlyoutItem.KeyboardAccelerators>
+                                </MenuFlyoutItem>
+                                <MenuFlyoutItem x:Uid="MenuRefresh" Click="btnRefresh_Click">
+                                    <MenuFlyoutItem.Icon><FontIcon Glyph="&#xE72C;" FontFamily="Segoe Fluent Icons" /></MenuFlyoutItem.Icon>
+                                    <MenuFlyoutItem.KeyboardAccelerators>
+                                        <KeyboardAccelerator Key="F5" />
+                                    </MenuFlyoutItem.KeyboardAccelerators>
+                                </MenuFlyoutItem>
+                                <MenuFlyoutSeparator />
+                                <MenuFlyoutSubItem x:Uid="MenuLogActions">
+                                    <MenuFlyoutSubItem.Icon><FontIcon Glyph="&#xE9D5;" FontFamily="Segoe Fluent Icons" /></MenuFlyoutSubItem.Icon>
+                                    <MenuFlyoutItem x:Uid="MenuInspectLog" Click="MenuInspectLog_Click">
+                                        <MenuFlyoutItem.Icon><FontIcon Glyph="&#xE774;" FontFamily="Segoe Fluent Icons" /></MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+                                    <MenuFlyoutItem x:Uid="MenuCopyLog" Click="MenuCopyLog_Click">
+                                        <MenuFlyoutItem.Icon><FontIcon Glyph="&#xE8C8;" FontFamily="Segoe Fluent Icons" /></MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+                                    <MenuFlyoutItem x:Uid="MenuClearLog" Click="MenuClearLog_Click">
+                                        <MenuFlyoutItem.Icon><FontIcon Glyph="&#xE74D;" FontFamily="Segoe Fluent Icons" /></MenuFlyoutItem.Icon>
+                                        <MenuFlyoutItem.KeyboardAccelerators>
+                                            <KeyboardAccelerator Key="Delete" />
+                                        </MenuFlyoutItem.KeyboardAccelerators>
+                                    </MenuFlyoutItem>
+                                    <MenuFlyoutSeparator />
+                                    <MenuFlyoutItem x:Uid="MenuLogChecked"   Click="MenuLogChecked_Click" />
+                                    <MenuFlyoutItem x:Uid="MenuLogUnchecked" Click="MenuLogUnchecked_Click" />
+                                    <MenuFlyoutItem x:Uid="MenuLogSummary"   Click="MenuLogSummary_Click" />
+                                </MenuFlyoutSubItem>
+                            </MenuFlyout>
+                        </DropDownButton.Flyout>
+                    </DropDownButton>
+                </Grid>
+
+                <!-- Logger area -->
+                <Border Grid.Row="3" CornerRadius="8"
+                        Background="{ThemeResource SystemFillColorNeutralBackgroundBrush}">
+                    <ScrollViewer x:Name="scrollLogger" BorderThickness="0" Padding="8,6">
+                        <RichTextBlock x:Name="txtLogger" IsTextSelectionEnabled="True"
+                                       FontSize="12.5" FontWeight="Medium" />
+                    </ScrollViewer>
+                </Border>
+
+            </Grid>
+
+            <!-- Row 3: bottom navigation -->
+            <Grid Grid.Row="3">
+                <Grid.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="80" />
+                        <Setter Property="VerticalAlignment" Value="Stretch" />
+                        <Setter Property="Background" Value="Transparent" />
+                        <Setter Property="BorderThickness" Value="0" />
+                        <Setter Property="Padding" Value="0" />
+                        <Setter Property="CornerRadius" Value="8" />
+                    </Style>
+                    <Style TargetType="FontIcon">
+                        <Setter Property="FontFamily" Value="Segoe Fluent Icons" />
+                        <Setter Property="FontSize" Value="24" />
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="FontSize" Value="12" />
+                        <Setter Property="FontWeight" Value="Medium" />
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}" />
+                    </Style>
+                </Grid.Resources>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                            VerticalAlignment="Stretch" Spacing="8">
+                    <Button x:Name="navBtnFeatures" Tag="Home" Click="NavButton_Click">
+                        <StackPanel Spacing="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <FontIcon Glyph="&#xE80F;" />
+                            <TextBlock x:Uid="NavHome" />
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="navBtnApps" Tag="Apps" Click="NavButton_Click">
+                        <StackPanel Spacing="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <FontIcon Glyph="&#xECAA;" />
+                            <TextBlock x:Uid="NavApps" />
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="navBtnInstall" Tag="Install" Click="NavButton_Click">
+                        <StackPanel Spacing="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <FontIcon Glyph="&#xE896;" />
+                            <TextBlock x:Uid="NavInstall" />
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="navBtnTools" Tag="Tools" Click="NavButton_Click">
+                        <StackPanel Spacing="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <FontIcon Glyph="&#xE90F;" />
+                            <TextBlock x:Uid="NavTools" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+
+        <!-- Settings overlay -->
+        <Border x:Name="settingsOverlayBackdrop"
+                Background="#66000000"
+                Visibility="Collapsed">
+            <Grid HorizontalAlignment="Right"
+                  Width="500"
+                  MaxWidth="500"
+                  Margin="0,52,8,8">
+                <Border x:Name="settingsOverlayCard"
+                        CornerRadius="12"
+                        BorderThickness="1"
+                        BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}">
+
+                    <!--!DEFAULT!  Background="{ThemeResource SolidBackgroundFillColorBaseBrush}"
+         BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}">  -->
+                    
+                    <!-- Some Acrylic frosted-glass shit; But just let FallbackColor kicks in when OS transparency is disabled -->
+                    <Border.Background>
+                        <AcrylicBrush TintColor="{ThemeResource SolidBackgroundFillColorBase}"
+                                      TintOpacity="0.3" TintLuminosityOpacity="0.7"
+                                      FallbackColor="{ThemeResource SolidBackgroundFillColorBase}"/>
+                    </Border.Background>
+    
+                    <Grid>
+                        <Frame x:Name="settingsFrame" />
+                        <!-- Close button: wired to NavSettings_Click, which toggles the overlay -->
+                        <Button Click="NavSettings_Click"
+                                Width="28" Height="28" Padding="0"
+                                CornerRadius="14"
+                                HorizontalAlignment="Right" VerticalAlignment="Top"
+                                Margin="0,12,12,0"
+                                ToolTipService.ToolTip="Close">
+                            <FontIcon Glyph="&#xE711;" FontSize="11" />
+                        </Button>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
