@@ -82,5 +82,5 @@ url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins
 
 [Win11Debloat (Tool)]
 description=Launches Raphire's Win11Debloat using the official remote bootstrap to remove bloatware and optimize Windows.
-url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Win11Debloat.ps1
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Win11Debloat (Tool).ps1
 type=tool
