@@ -68,6 +68,8 @@
   <data name="Settings_Appearance.Text"><value>Apariencia</value></data>
   <data name="Settings_Theme.Text"><value>Apariencia</value></data>
   <data name="Settings_Backdrop.Text"><value>Color de fondo</value></data>
+  <data name="Settings_CompactSpacing.Text"><value>Espaciado compacto</value></data>
+  <data name="Settings_CompactSpacingSubtext.Text"><value>Reduce el espacio entre los elementos de la interfaz de usuario</value></data>  
   <data name="Settings_ThemeSystem"><value>Predeterminado del sistema</value></data>
   <data name="Settings_ThemeLight"><value>Claro</value></data>
   <data name="Settings_ThemeDark"><value>Oscuro</value></data>
