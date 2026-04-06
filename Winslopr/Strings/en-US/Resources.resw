@@ -52,9 +52,13 @@
   <data name="NavSettings.Text"><value>Settings</value></data>
 
   <!-- ============================================================ -->
-  <!-- XAML x:Uid: MainWindow — Support flyout                      -->
+  <!-- XAML x:Uid: MainWindow — Support flyout + Plugins tip        -->
   <!-- ============================================================ -->
-  <data name="MenuShare.Text"><value>Share Winslopr</value></data>
+  <data name="MenuPlugins.Text"><value>Plugins</value></data>
+  <data name="PluginsTip.Title"><value>Plugins discovered!</value></data>
+  <data name="PluginsTip.Subtitle"><value>Extend Winslopr with native plugins and tool scripts.</value></data>
+  <data name="PluginsTip.ActionButtonContent"><value>View Plugins</value></data>
+  <data name="PluginsTip.CloseButtonContent"><value>Later</value></data>
   <data name="MenuKofi.Text"><value>Buy me a coffee on Ko-fi</value></data>
   <data name="MenuPaypal.Text"><value>Donate via PayPal</value></data>
 
@@ -68,16 +72,15 @@
   <data name="Settings_Appearance.Text"><value>Appearance</value></data>
   <data name="Settings_Theme.Text"><value>Theme</value></data>
   <data name="Settings_Backdrop.Text"><value>Backdrop</value></data>
+  <data name="Settings_CompactSpacing.Text"><value>Compact spacing</value></data>
+  <data name="Settings_CompactSpacingSubtext.Text"><value>Reduce space between UI elements</value></data>
   <data name="Settings_ThemeSystem"><value>Use system setting</value></data>
   <data name="Settings_ThemeLight"><value>Light</value></data>
   <data name="Settings_ThemeDark"><value>Dark</value></data>
 
   <data name="Settings_Extensions.Text"><value>Extensions</value></data>
-  <data name="Settings_ToolScripts.Text"><value>Extensions</value></data>
-  <data name="Settings_ToolScriptsDescription.Text"><value>Standalone scripts that open and run from the Tools page.</value></data>
-  <data name="Settings_OpenToolsPage.Text"><value>Open Tools Page</value></data>
-  <data name="Settings_Plugins.Text"><value>Plugins</value></data>
-  <data name="Settings_PluginsDescription.Text"><value>Native plugins that integrate with the Features on the Home page.</value></data>
+  <data name="Settings_Plugins.Text"><value>Plugins &amp; Scripts</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>Install native plugins for the feature tree and tool scripts for the Tools tab.</value></data>
   <data name="Settings_ManagePlugins.Text"><value>Manage Plugins</value></data>
   <data name="Settings_Legacy.Text"><value>Winslopr Legacy</value></data>
   <data name="Settings_LegacyDescription.Text"><value>The classic WinForms version of Winslopr.</value></data>

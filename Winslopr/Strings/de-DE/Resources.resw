@@ -52,9 +52,13 @@
   <data name="NavSettings.Text"><value>Einstellungen</value></data>
 
   <!-- ============================================================ -->
-  <!-- XAML x:Uid: MainWindow — Support flyout                      -->
+  <!-- XAML x:Uid: MainWindow — Support flyout + Plugins tip        -->
   <!-- ============================================================ -->
-  <data name="MenuShare.Text"><value>Winslopr teilen</value></data>
+  <data name="MenuPlugins.Text"><value>Plugins</value></data>
+  <data name="PluginsTip.Title"><value>Plugins entdeckt!</value></data>
+  <data name="PluginsTip.Subtitle"><value>Erweitere Winslopr mit nativen Plugins und Tool-Skripten.</value></data>
+  <data name="PluginsTip.ActionButtonContent"><value>Plugins ansehen</value></data>
+  <data name="PluginsTip.CloseButtonContent"><value>Später</value></data>
   <data name="MenuKofi.Text"><value>Kaffee spendieren auf Ko-fi</value></data>
   <data name="MenuPaypal.Text"><value>Spenden via PayPal</value></data>
 
@@ -68,16 +72,15 @@
   <data name="Settings_Appearance.Text"><value>Darstellung</value></data>
   <data name="Settings_Theme.Text"><value>Design</value></data>
   <data name="Settings_Backdrop.Text"><value>Hintergrundeffekt</value></data>
+  <data name="Settings_CompactSpacing.Text"><value>Kompakter Modus</value></data>
+  <data name="Settings_CompactSpacingSubtext.Text"><value>Weniger Abstand zwischen UI-Elementen</value></data>
   <data name="Settings_ThemeSystem"><value>Systemeinstellung verwenden</value></data>
   <data name="Settings_ThemeLight"><value>Hell</value></data>
   <data name="Settings_ThemeDark"><value>Dunkel</value></data>
 
   <data name="Settings_Extensions.Text"><value>Erweiterungen</value></data>
-  <data name="Settings_ToolScripts.Text"><value>Erweiterungen</value></data>
-  <data name="Settings_ToolScriptsDescription.Text"><value>Eigenst&#228;ndige Skripte, die &#252;ber die Tools-Seite ge&#246;ffnet und ausgef&#252;hrt werden.</value></data>
-  <data name="Settings_OpenToolsPage.Text"><value>Tools-Seite &#246;ffnen</value></data>
-  <data name="Settings_Plugins.Text"><value>Plugins</value></data>
-  <data name="Settings_PluginsDescription.Text"><value>Native Plugins, die sich in die Features der Start-Seite integrieren.</value></data>
+  <data name="Settings_Plugins.Text"><value>Plugins &amp; Skripte</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>Native Plugins f&#252;r den Feature-Tree und Tool-Skripte f&#252;r den Tools-Tab installieren.</value></data>
   <data name="Settings_ManagePlugins.Text"><value>Plugins verwalten</value></data>
   <data name="Settings_Legacy.Text"><value>Winslopr Legacy</value></data>
   <data name="Settings_LegacyDescription.Text"><value>Die klassische WinForms-Version von Winslopr.</value></data>
