@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Winslop (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Winslop (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentDialog  CornerRadius="8"
+    x:Class="Winslop.PluginsDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Winslop"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Uid="PluginsDialog"
+    DefaultButton="Close"
+    MinWidth="520">
+
+    <Grid Width="500" RowDefinitions="Auto,*,120,Auto,Auto,Auto" MinHeight="480">
+
+        <!-- Search -->
+        <TextBox x:Name="txtSearch" Grid.Row="0" x:Uid="TxtSearch"
+                 Margin="0,0,0,8" TextChanged="txtSearch_TextChanged" />
+
+        <!-- Plugin list with headers -->
+        <Grid Grid.Row="1" RowDefinitions="Auto,*" Margin="0,0,0,8">
+            <Grid Grid.Row="0" ColumnDefinitions="32,*,80,50" Padding="6,4,6,6"
+                  BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}" BorderThickness="0,0,0,1">
+                <TextBlock Grid.Column="1" x:Uid="ColPlugin" FontSize="12"
+                           Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                <TextBlock Grid.Column="2" x:Uid="ColStatus" FontSize="12"
+                           Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                <TextBlock Grid.Column="3" x:Uid="ColType" FontSize="12"
+                           Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+            </Grid>
+            <ListView Grid.Row="1" x:Name="listPlugins" Height="220"
+                      SelectionMode="Single" SelectionChanged="listPlugins_SelectionChanged">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:PluginEntry">
+                        <Grid ColumnDefinitions="32,*,80,50" Padding="2">
+                            <CheckBox IsChecked="{Binding IsChecked, Mode=TwoWay}" MinWidth="0" VerticalAlignment="Center" />
+                            <TextBlock Grid.Column="1" Text="{Binding Name}" VerticalAlignment="Center" Margin="4,0" />
+                            <TextBlock Grid.Column="2" Text="{Binding InstalledText}" VerticalAlignment="Center"
+                                       Margin="4,0" Foreground="{Binding InstalledColor}" FontSize="11" />
+                            <TextBlock Grid.Column="3" Text="{Binding Type}" VerticalAlignment="Center"
+                                       Margin="4,0" Foreground="Gray" FontSize="11" />
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+        <!-- Description -->
+        <ScrollViewer Grid.Row="2" Margin="0,0,0,8"
+                      BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}"
+                      BorderThickness="1" Padding="8">
+            <TextBlock x:Name="txtDescription" TextWrapping="Wrap" FontSize="12" />
+        </ScrollViewer>
+
+        <!-- Progress -->
+        <ProgressBar x:Name="progressBar" Grid.Row="3" Visibility="Collapsed" Margin="0,0,0,8" />
+
+        <!-- Buttons row 1 -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8" Margin="0,0,0,6">
+            <Button x:Uid="BtnPluginInstall"    Click="btnInstall_Click" />
+            <Button x:Uid="BtnPluginUpdateAll"  Click="btnUpdateAll_Click" />
+            <Button x:Uid="BtnPluginRemove"     Click="btnRemove_Click" />
+        </StackPanel>
+
+        <!-- Buttons row 2 -->
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8">
+            <Button x:Uid="BtnPluginEdit"       Click="btnEdit_Click" />
+            <Button x:Uid="BtnPluginOpenFolder" Click="btnOpenFolder_Click" />
+            <Button x:Uid="BtnPluginSubmit"     Click="btnSubmit_Click" />
+        </StackPanel>
+
+    </Grid>
+</ContentDialog>

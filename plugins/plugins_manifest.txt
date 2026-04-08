@@ -1,0 +1,86 @@
+[ChrisTitusApp]
+description=Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/ChrisTitusApp.ps1
+
+[Create Restore Point]
+description=Creates a system restore point to allow recovery before major changes are applied.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Create Restore Point.ps1
+
+[Remove default apps]
+description=Removes preinstalled Windows default apps to declutter the system.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Remove default apps.ps1
+
+[Restart Explorer]
+description=Restarts the Windows Explorer process to apply changes or recover from crashes.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Restart Explorer.ps1
+
+[Restore all built-in apps]
+description=Restores all removed default Windows apps to their original state.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Restore all built-in apps.ps1
+
+[Uninstall OneDrive]
+description=Completely uninstalls Microsoft OneDrive from the system.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Uninstall OneDrive.ps1
+
+[CFEnhancer]
+description=Enhanced bloatware detection list used instead of the internal signature. If present in the plugins folder, it overrides the built-in detection mechanism.
+Use * or *.* to show all apps on your system.
+Use "!"AppName to whitelist apps (exclude from detection).
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/CFEnhancer.txt
+
+[Disable Snap Assist Flyout (NX)]
+description=Disables the Snap Assist feature when hovering over window maximize buttons. Can be re-enabled anytime.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Disable Snap Assist Flyout (NX).ps1
+
+[Disable Visual Studio Telemetry]
+description=Disables telemetry, feedback prompts, and remote IntelliCode analysis for Visual Studio.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Disable Visual Studio Telemetry.ps1
+
+[Disable NVIDIA Telemetry]
+description=Disables NVIDIA telemetry-related registry values and scheduled telemetry tasks.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Disable NVIDIA Telemetry.ps1
+
+[Disable CCleaner Telemetry]
+description=Disables CCleaner telemetry, monitoring, update checks, and promotional options.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Disable CCleaner Telemetry.ps1
+
+[File Extensions Visibility (NX)]
+description=Hides or shows known file extensions and super hidden files in File Explorer. Changes can be reversed.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/File Extensions Visibility (NX).ps1
+
+[Shutdown Time (NX)]
+description=Adjusts shutdown wait times for apps and background processes to speed up shutdown. Fully reversible.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Shutdown Time (NX).ps1
+
+[User Account Control (NX)]
+description=Enables or disables User Account Control (UAC). Recommended for advanced users only. Can be reverted anytime.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/User Account Control (NX).ps1
+
+[Remove Edit with Clipchamp (NX)]
+description=Removes the 'Edit with Clipchamp' option from the context menu for media files.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Remove Edit with Clipchamp (NX).ps1
+
+[Remove Edit with Notepad (NX)]
+description=Removes the 'Edit in Notepad' option from the context menu for supported file types.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Remove Edit with Notepad (NX).ps1
+
+[Remove Edit with Photos (NX)]
+description=Removes the 'Edit with Photos' option from the context menu for image files.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Remove Edit with Photos (NX).ps1
+
+[Remove Ask Copilot (NX)]
+description=Removes the 'Ask Copilot' option from the context menu for files and folders.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Remove Ask Copilot (NX).ps1
+
+[WingetPackageManager]
+description=Winget Package Manager allows you to easily install, update, and manage application packages from the Install tab. Compatible with Winslop version 26.3.21 and higher.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/winget-apps.ini
+
+[Win11Debloat]
+description=Launches Raphire's Win11Debloat using the official remote bootstrap to remove bloatware and optimize Windows.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Win11Debloat.ps1
+
+[Win11Debloat (Tool)]
+description=Launches Raphire's Win11Debloat using the official remote bootstrap to remove bloatware and optimize Windows.
+url=https://raw.githubusercontent.com/builtbybel/Winslop/refs/heads/main/plugins/Win11Debloat (Tool).ps1
+type=tool

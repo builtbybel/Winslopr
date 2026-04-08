@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- ============================================================ -->
+  <!-- Translator credits                                            -->
+  <!-- Fill in your name and website to be credited in the app.      -->
+  <!-- Leave empty if you don't want to be credited.                 -->
+  <!-- ============================================================ -->
+  <data name="Language_TranslatorName"><value>Raikoz</value></data>
+  <data name="Language_TranslatorWebsite"><value>https://github.com/TheRaikoz</value></data>
+  <data name="Language_TranslatedBy"><value>Переведено</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Navigation                          -->
+  <!-- ============================================================ -->
+  <data name="NavHome.Text"><value>Главная</value></data>
+  <data name="NavApps.Text"><value>Приложения</value></data>
+  <data name="NavInstall.Text"><value>Установка</value></data>
+  <data name="NavTools.Text"><value>Инструменты</value></data>
+  <data name="NavSupport.Text"><value>Поддержка</value></data>
+  <data name="NavSettings.Text"><value>Настройки</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Support flyout                      -->
+  <!-- ============================================================ -->
+  <data name="MenuKofi.Text"><value>Купить мне кофе на Ko-fi</value></data>
+  <data name="MenuPaypal.Text"><value>Пожертвовать через PayPal</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: SettingsPage                                      -->
+  <!-- ============================================================ -->
+  <data name="Settings_Title.Text"><value>Настройки</value></data>
+  <data name="Settings_Language.Text"><value>Язык</value></data>
+  <data name="Settings_LanguageSubtext.Text"><value>Язык интерфейса приложения</value></data>
+  <data name="Settings_TranslatedBy.Text"><value>Перевод</value></data>
+  <data name="Settings_Appearance.Text"><value>Оформление</value></data>
+  <data name="Settings_ThemeSystem"><value>Использовать системные настройки</value></data>
+  <data name="Settings_ThemeLight"><value>Светлая</value></data>
+  <data name="Settings_ThemeDark"><value>Тёмная</value></data>
+  <data name="Settings_RestartTitle"><value>Требуется перезапуск</value></data>
+  <data name="Settings_RestartMessage"><value>Пожалуйста, перезапустите приложение, чтобы изменения вступили в силу.</value></data>
+  <data name="Settings_Extensions.Text"><value>Расширения</value></data>
+  <data name="Settings_ExtensionsSubtext.Text"><value>Управление нативными плагинами и автономными инструментами.</value></data>
+  <data name="Settings_ToolScripts.Text"><value>Расширения</value></data>
+  <data name="Settings_ToolScriptsDescription.Text"><value>Автономные скрипты, которые открываются и запускаются на странице «Инструменты».</value></data>
+  <data name="Settings_OpenToolsPage.Text"><value>Открыть страницу инструментов</value></data>
+  <data name="Settings_Plugins.Text"><value>Плагины</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>Нативные плагины, которые интегрируются с функциями на главной странице.</value></data>
+  <data name="Settings_ManagePlugins.Text"><value>Управление плагинами</value></data>
+  <data name="Settings_CompatOk"><value>Полностью совместим</value></data>
+  <data name="Settings_CompatWarn"><value>Ограниченная совместимость</value></data>
+  <data name="Settings_About.Text"><value>О приложении</value></data>
+  <data name="Settings_CheckUpdates.Text"><value>Проверить обновления</value></data>
+  <data name="Settings_Feedback.Text"><value>Отправить отзыв</value></data>
+  <data name="MenuHelp.Text"><value>Справка</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Search & More options menu           -->
+  <!-- ============================================================ -->
+  <data name="SearchBox.PlaceholderText"><value>Поиск</value></data>
+  <data name="MenuToggle.Text"><value>Выбрать всё</value></data>
+  <data name="MenuUndo.Text"><value>Отменить последние изменения</value></data>
+  <data name="MenuRefresh.Text"><value>Обновить</value></data>
+  <data name="MenuExport.Text"><value>Экспортировать выбор...</value></data>
+  <data name="MenuImport.Text"><value>Импортировать из файла...</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Log actions submenu                  -->
+  <!-- ============================================================ -->
+  <data name="MenuLogActions.Text"><value>Действия с логом</value></data>
+  <data name="MenuInspectLog.Text"><value>Просмотреть лог онлайн</value></data>
+  <data name="MenuCopyLog.Text"><value>Скопировать лог в буфер</value></data>
+  <data name="MenuClearLog.Text"><value>Очистить лог</value></data>
+  <data name="MenuLogChecked.Text"><value>Лог: выбранные функции</value></data>
+  <data name="MenuLogUnchecked.Text"><value>Лог: невыбранные функции</value></data>
+  <data name="MenuLogSummary.Text"><value>Лог: сводка</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Bottom buttons                       -->
+  <!-- ============================================================ -->
+  <data name="BtnAnalyzeText.Text"><value>Проверить систему</value></data>
+  <data name="BtnFixText.Text"><value>Применить выбранные изменения</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: FeaturesPage                                      -->
+  <!-- ============================================================ -->
+  <data name="ComboProfiles.PlaceholderText"><value>&lt;Выберите профиль...&gt;</value></data>
+  <data name="ChkIssuesOnly.Content"><value>Только проблемы</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: AppsPage                                          -->
+  <!-- ============================================================ -->
+  <data name="ComboDisplayMode.PlaceholderText"><value>Выберите режим сканирования...</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: InstallPage                                       -->
+  <!-- ============================================================ -->
+  <data name="ComboCategory.PlaceholderText"><value>Категория...</value></data>
+  <data name="ChkInstalledOnly.Content"><value>Установленные</value></data>
+  <data name="ChkUpgradesOnly.Content"><value>Доступны обновления</value></data>
+  <data name="BtnInstall.Content"><value>Установить</value></data>
+  <data name="BtnUpgradeSelected.Content"><value>Обновить</value></data>
+  <data name="BtnUpgradeAll.Content"><value>Обновить всё</value></data>
+  <data name="BtnUninstall.Content"><value>Удалить</value></data>
+  <data name="ColAppName.Text"><value>Название приложения</value></data>
+  <data name="ColPackageId.Text"><value>ID пакета</value></data>
+  <data name="ColInstalled.Text"><value>Установлено</value></data>
+  <data name="ColUpdate.Text"><value>Обновление</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: ToolsPage                                         -->
+  <!-- ============================================================ -->
+  <data name="ComboFilter.PlaceholderText"><value>Фильтр...</value></data>
+  <data name="ComboOptions.PlaceholderText"><value>Опции...</value></data>
+  <data name="TextInput.PlaceholderText"><value>Введите данные (Например, ID или аргументы)</value></data>
+  <data name="BtnRun.Content"><value>Выполнить</value></data>
+  <data name="BtnToolUninstall.Content"><value>Удалить</value></data>
+  <data name="BtnOpenFolder.ToolTipService.ToolTip"><value>Открыть папку со скриптами</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: PluginsDialog                                     -->
+  <!-- ============================================================ -->
+  <data name="PluginsDialog.Title"><value>Управление плагинами</value></data>
+  <data name="PluginsDialog.CloseButtonText"><value>Закрыть</value></data>
+  <data name="TxtSearch.PlaceholderText"><value>Поиск плагинов...</value></data>
+  <data name="ColPlugin.Text"><value>Плагин</value></data>
+  <data name="ColStatus.Text"><value>Статус</value></data>
+  <data name="ColType.Text"><value>Тип</value></data>
+  <data name="BtnPluginInstall.Content"><value>Установить</value></data>
+  <data name="BtnPluginUpdateAll.Content"><value>Обновить всё</value></data>
+  <data name="BtnPluginRemove.Content"><value>Удалить</value></data>
+  <data name="BtnPluginEdit.Content"><value>Редактировать</value></data>
+  <data name="BtnPluginOpenFolder.Content"><value>Открыть папку</value></data>
+  <data name="BtnPluginSubmit.Content"><value>Отправить</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature categories (FeatureLoader.cs)      -->
+  <!-- ============================================================ -->
+  <data name="Category_Issues"><value>Проблемы</value></data>
+  <data name="Category_System"><value>Система</value></data>
+  <data name="Category_MSEdge"><value>MS Edge</value></data>
+  <data name="Category_UI"><value>Интерфейс</value></data>
+  <data name="Category_Taskbar"><value>Панель задач</value></data>
+  <data name="Category_Gaming"><value>Игры</value></data>
+  <data name="Category_Privacy"><value>Конфиденциальность</value></data>
+  <data name="Category_Ads"><value>Реклама</value></data>
+  <data name="Category_AI"><value>ИИ</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — AI                        -->
+  <!-- ============================================================ -->
+  <data name="Feature_ClickToDo"><value>Отключить Click to Do (только для Copilot+ ПК)</value></data>
+  <data name="Feature_CopilotTaskbar"><value>Не показывать Copilot на панели задач</value></data>
+  <data name="Feature_Recall"><value>Отключить функцию Recall в Windows 11</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Ads                       -->
+  <!-- ============================================================ -->
+  <data name="Feature_DisableSearchBoxSuggestions"><value>Отключить результаты поиска Bing</value></data>
+  <data name="Feature_FileExplorerAds"><value>Отключить рекламу в Проводнике</value></data>
+  <data name="Feature_FinishSetupAds"><value>Отключить рекламу после настройки системы</value></data>
+  <data name="Feature_LockScreenAds"><value>Отключить советы и рекламу на экране блокировки</value></data>
+  <data name="Feature_PersonalizedAds"><value>Отключить персонализированную рекламу</value></data>
+  <data name="Feature_SettingsAds"><value>Отключить рекламу в Параметрах</value></data>
+  <data name="Feature_StartmenuAds"><value>Отключить рекламу в меню Пуск</value></data>
+  <data name="Feature_TailoredExperiences"><value>Отключить персонализированные предложения</value></data>
+  <data name="Feature_TipsAndSuggestions"><value>Отключить общие советы и рекламу</value></data>
+  <data name="Feature_WelcomeExperienceAds"><value>Отключить рекламу в приветствии после обновлений</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — MS Edge                   -->
+  <!-- ============================================================ -->
+  <data name="Feature_BrowserSignin"><value>Отключить вход в браузер и синхронизацию</value></data>
+  <data name="Feature_DefaultTopSites"><value>Не показывать спонсорские ссылки на новой вкладке</value></data>
+  <data name="Feature_DefautBrowserSetting"><value>Отключить принуждение Edge к роли браузера по умолчанию</value></data>
+  <data name="Feature_EdgeCollections"><value>Отключить доступ к коллекциям</value></data>
+  <data name="Feature_EdgeShoppingAssistant"><value>Отключить помощник для покупок</value></data>
+  <data name="Feature_FirstRunExperience"><value>Не показывать приветствие при первом запуске</value></data>
+  <data name="Feature_GamerMode"><value>Отключить игровой режим</value></data>
+  <data name="Feature_HubsSidebar"><value>Отключить символ Copilot в Edge</value></data>
+  <data name="Feature_ImportOnEachLaunch"><value>Не импортировать данные из других браузеров при запуске</value></data>
+  <data name="Feature_StartupBoost"><value>Отключить ускорение запуска</value></data>
+  <data name="Feature_TabPageQuickLinks"><value>Не показывать быстрые ссылки на новой вкладке</value></data>
+  <data name="Feature_UserFeedback"><value>Отключить запрос обратной связи</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Gaming                    -->
+  <!-- ============================================================ -->
+  <data name="Feature_GameDVR"><value>Отключить Game DVR</value></data>
+  <data name="Feature_PowerThrottling"><value>Отключить регулировку мощности</value></data>
+  <data name="Feature_VisualFX"><value>Отключить визуальные эффекты</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — System                    -->
+  <!-- ============================================================ -->
+  <data name="Feature_BSODDetails"><value>Показывать детали BSOD вместо грустного смайлика</value></data>
+  <data name="Feature_DisableHibernation"><value>Отключить гибернацию</value></data>
+  <data name="Feature_MenuShowDelay"><value>Ускорить появление меню</value></data>
+  <data name="Feature_NetworkThrottling"><value>Отключить сетевые ограничения</value></data>
+  <data name="Feature_SpeedUpShutdown"><value>Ускорить выключение</value></data>
+  <data name="Feature_SystemResponsiveness"><value>Оптимизировать отзывчивость системы</value></data>
+  <data name="Feature_VerboseStatus"><value>Включить подробные сообщения при входе в систему</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Privacy                   -->
+  <!-- ============================================================ -->
+  <data name="Feature_ActivityHistory"><value>Отключить историю активности</value></data>
+  <data name="Feature_AppLaunchTracking"><value>Отключить отслеживание запуска приложений</value></data>
+  <data name="Feature_DiagnosticData"><value>Уменьшить объем диагностических данных (базовый)</value></data>
+  <data name="Feature_LocationTracking"><value>Отключить отслеживание местоположения</value></data>
+  <data name="Feature_LockScreenSlideshow"><value>Отключить слайд-шоу на экране блокировки</value></data>
+  <data name="Feature_NarratorOnlineServices"><value>Отключить онлайн-сервисы экранного диктора</value></data>
+  <data name="Feature_OnlineSpeechRecognition"><value>Отключить онлайн-распознавание речи</value></data>
+  <data name="Feature_PrivacyExperience"><value>Отключить предложения по настройке конфиденциальности при входе</value></data>
+  <data name="Feature_SilentAppInstallation"><value>Предотвратить автоматическую установку приложений</value></data>
+  <data name="Feature_WindowsSpotlightLockScreen"><value>Отключить Windows Spotlight на экране блокировки</value></data>
+  <data name="Feature_DisableBingSearch"><value>Отключить поиск Bing</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — UI                        -->
+  <!-- ============================================================ -->
+  <data name="Feature_AppDarkMode"><value>Включить темную тему для приложений</value></data>
+  <data name="Feature_SystemDarkMode"><value>Включить темную тему для системы</value></data>
+  <data name="Feature_FullContextMenus"><value>Показывать полные контекстные меню в Windows 11</value></data>
+  <data name="Feature_LockScreen"><value>Не использовать персонализированный экран блокировки</value></data>
+  <data name="Feature_ShowOrHideMostUsedApps"><value>Скрыть часто используемые приложения в меню Пуск</value></data>
+  <data name="Feature_DisableSnapAssistFlyout"><value>Отключить всплывающее окно помощника привязки</value></data>
+  <data name="Feature_StartLayout"><value>Закрепить больше приложений в меню Пуск</value></data>
+  <data name="Feature_Transparency"><value>Отключить эффекты прозрачности</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Taskbar                   -->
+  <!-- ============================================================ -->
+  <data name="Feature_AlwaysShowTrayIcons"><value>Всегда показывать все значки в системном трее</value></data>
+  <data name="Feature_CleanTaskbar"><value>Очистить панель задач</value></data>
+  <data name="Feature_DisableNewsAndInterests"><value>Отключить Новости и интересы</value></data>
+  <data name="Feature_DisableWidgets"><value>Отключить Виджеты</value></data>
+  <data name="Feature_RemoveMeetNowButton"><value>Убрать кнопку 'Meet Now' из системного трея</value></data>
+  <data name="Feature_SearchboxTaskbarMode"><value>Скрыть поле поиска на панели задач</value></data>
+  <data name="Feature_ShowTaskViewButton"><value>Скрыть кнопку представления задач на панели задач</value></data>
+  <data name="Feature_TaskbarAlignment"><value>Выровнять кнопку Пуск по левому краю</value></data>
+  <data name="Feature_TaskbarEndTask"><value>Включить завершение задачи с панели задач</value></data>
+  <data name="Feature_TaskbarSmallIcons"><value>Сделать панель задач маленькой</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Issues                    -->
+  <!-- ============================================================ -->
+  <data name="Feature_BasicCleanup"><value>Базовая очистка диска</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Inapplicable reasons (FeatureTreeItem.cs)  -->
+  <!-- ============================================================ -->
+  <data name="InapplicableReason_Win10Only"><value>Только для Windows 10</value></data>
+  <data name="InapplicableReason_Win11Only"><value>Только для Windows 11</value></data>
+  <data name="InapplicableReason_NotApplicable"><value>не применимо</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Log messages (FeatureManager.cs)           -->
+  <!-- ============================================================ -->
+  <data name="Log_General"><value>Общее</value></data>
+  <data name="Log_Skipped"><value>Пропущено</value></data>
+  <data name="Log_NotApplicableOS"><value>Не применимо к этой ОС.</value></data>
+  <data name="Log_NotConfigured"><value>Не настроено как рекомендуется.</value></data>
+  <data name="Log_Fixed"><value>Исправлено</value></data>
+  <data name="Log_FixFailed"><value>Исправление не удалось (для использования этой функции могут потребоваться права администратора)</value></data>
+  <data name="Log_Restored"><value>Восстановлено</value></data>
+  <data name="Log_RestoreFailed"><value>Не удалось восстановить</value></data>
+  <data name="Log_SkippedRestore"><value>Пропущено восстановление</value></data>
+  <data name="Log_ProperlyConfigured"><value>Функция: {0} настроена правильно.</value></data>
+  <data name="Log_RequiresAttention"><value>Функция: {0} требует внимания.</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Analysis summary (FeaturesPage.xaml.cs)    -->
+  <!-- ============================================================ -->
+  <data name="Analysis_Complete"><value>АНАЛИЗ ЗАВЕРШЕН</value></data>
+  <data name="Analysis_TitleAttention"><value>Анализ завершен - требуется внимание</value></data>
+  <data name="Analysis_WindowsFeatures"><value>Функции Windows</value></data>
+  <data name="Analysis_Plugins"><value>Плагины</value></data>
+  <data name="Analysis_Total"><value>Всего</value></data>
+  <data name="Analysis_Issues"><value>проблем(ы)</value></data>
+  <data name="Analysis_IssuesFound"><value>Найдено {0} проблем(ы) - просмотрите лог перед применением исправлений.</value></data>
+  <data name="Analysis_AllGood"><value>Всё в порядке!</value></data>
+  <data name="Analysis_OpenLogInspector"><value>Открыть онлайн-инспектор лога</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Context menu (FeaturesPage.xaml.cs)        -->
+  <!-- ============================================================ -->
+  <data name="Context_Analyze"><value>Анализировать</value></data>
+  <data name="Context_Fix"><value>Исправить</value></data>
+  <data name="Context_Restore"><value>Восстановить</value></data>
+  <data name="Context_Help"><value>Справка</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Restore dialogs (FeaturesPage.xaml.cs)     -->
+  <!-- ============================================================ -->
+   <data name="Restore_Title"><value>Восстановить выбранное</value></data>
+  <data name="Restore_NoItems"><value>Ничего не выбрано.
+
+Пожалуйста, отметьте одну или несколько функций/плагинов в дереве.</value></data>
+  <data name="Restore_ConfirmTitle"><value>Подтверждение восстановления</value></data>
+  <data name="Restore_ConfirmBody"><value>Это действие восстановит ТОЛЬКО {0} (выбранные) элемент(ы) в исходное состояние.
+Все предыдущие настройки для этих элементов могут быть отменены.
+
+Продолжить?</value></data>
+  <data name="Restore_Done"><value>Восстановлено {0} выбранных(й) элементов(а).</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Profile actions (FeaturesPage.xaml.cs)     -->
+  <!-- ============================================================ -->
+  <data name="Profile_Export"><value>Экспортировать выбор...</value></data>
+  <data name="Profile_Import"><value>Импортировать из файла...</value></data>
+  <data name="Profile_OpenFolder"><value>Открыть папку с профилями...</value></data>
+  <data name="Profile_ExportedTo"><value>Выбор экспортирован в: {0}</value></data>
+  <data name="Profile_ImportedFrom"><value>Импортировано {0} элемент(ов) из: {1}</value></data>
+  <data name="Profile_Loaded"><value>Профиль '{0}' загружен (выбрано {1} элемент(ов)).</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Scan modes (AppsPage.xaml.cs)              -->
+  <!-- ============================================================ -->
+  <data name="ScanMode_Standard"><value>Стандартное сканирование (рекомендуется)</value></data>
+  <data name="ScanMode_Full"><value>Полное сканирование (все установленные приложения)</value></data>
+  <data name="ScanMode_Community"><value>Сканирование по списку сообщества (CFEnhancer)</value></data>
+  <data name="ScanMode_BuiltIn"><value>Сканирование по встроенному списку</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Apps log messages (AppsPage.xaml.cs)       -->
+  <!-- ============================================================ -->
+  <data name="Apps_DisplayAll"><value>Показаны все установленные приложения.</value></data>
+  <data name="Apps_NoPlugin"><value>Список плагинов не найден. Установите CFEnhancer для использования рекомендаций плагинов.</value></data>
+  <data name="Apps_DisplayPlugin"><value>Показаны рекомендации плагинов (CFEnhancer).</value></data>
+  <data name="Apps_DisplayBuiltIn"><value>Показаны встроенные рекомендации.</value></data>
+  <data name="Apps_DisplayRecommendedPlugin"><value>Показаны рекомендуемые приложения (плагин).</value></data>
+  <data name="Apps_DisplayRecommendedBuiltIn"><value>Показаны рекомендуемые приложения (встроенные).</value></data>
+  <data name="Apps_AnalysisTitle"><value>АНАЛИЗ ПРИЛОЖЕНИЙ</value></data>
+  <data name="Apps_ShowingAll"><value>Показаны все приложения (кроме белого списка): {0}</value></data>
+  <data name="Apps_BloatwareDetected"><value>Обнаружены bloatware-приложения:</value></data>
+  <data name="Apps_NoBloatware"><value>Bloatware-приложения из Microsoft Store не найдены.</value></data>
+  <data name="Apps_CleanupComplete"><value>Очистка приложений завершена.</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: InstallPage messages                       -->
+  <!-- ============================================================ -->
+  <data name="Install_Installed"><value>Установлено</value></data>
+  <data name="Install_Upgradeable"><value>Доступно обновление</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: ToolsPage messages                         -->
+  <!-- ============================================================ -->
+  <data name="Tools_Loading"><value>Загрузка расширений...</value></data>
+  <data name="Tools_FolderCreated"><value>Папка скриптов отсутствовала, она была создана.</value></data>
+  <data name="Tools_Loaded"><value>Загружено расширений: {0}.</value></data>
+  <data name="Tools_SelectExtension"><value>Выберите расширение слева.</value></data>
+  <data name="Tools_Running"><value>Выполнение...</value></data>
+  <data name="Tools_Done"><value>Готово.</value></data>
+  <data name="Tools_OpenedConsole"><value>Открыто в консоли.</value></data>
+  <data name="Tools_CompletedLog"><value>Завершено, лог сформирован.</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Donation dialog (DonationHelper.cs)        -->
+  <!-- ============================================================ -->
+  <data name="Donation_Title"><value>Поддержите Winslop &#x2764;</value></data>
+  <data name="Donation_Body"><value>Если Winslop сэкономил ваше время, подумайте о поддержке его будущего. Он остается бесплатным и свободным от «слопа» благодаря таким сторонникам, как вы.</value></data>
+  <data name="Donation_AlreadyDonated"><value>Я уже поддержал(а), больше не показывать</value></data>
+  <data name="Donation_Donate"><value>Поддержать</value></data>
+  <data name="Donation_MaybeLater"><value>Может, позже</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Migration dialog (MigrationHelper.cs)      -->
+  <!-- ============================================================ -->
+  <data name="Migration_Title"><value>Winslop теперь на WinUI 3</value></data>
+  <data name="Migration_Intro"><value>Winslop переехал с WinForms / .NET Framework на WinUI 3. Было ли это весело? Примерно 90% из этого было невыносимо. Оставшиеся 10%, как ни странно, были даже приятными. Так или иначе, он существует, и теперь ваша очередь его оценить.</value></data>
+  <data name="Migration_ElephantHeading"><value>Слон в комнате</value></data>
+  <data name="Migration_ElephantBody"><value>WinForms, WPF, Silverlight &gt; WinRT XAML / Windows Store Apps &gt; UWP / WinUI 2 &gt; WinUI 3. Каждый переход обещал быть последним. Каждый не был. WinUI 3 — текущая рекомендация Microsoft, и да, она приносит размытие Mica и современные элементы управления, но также добавляет церемоний, сложности и ритуалов XAML только для показа кнопки.</value></data>
+  <data name="Migration_ReadMore"><value>Читать полный отчет &#x2192;</value></data>
+  <data name="Migration_PollHeading"><value>Помогите определить путь Winslop</value></data>
+  <data name="Migration_PollBody"><value>Должен ли Winslop пойти по пути современного WinUI 3 или остаться тем, чем всегда был: классическим, легким и быстрым десктопным приложением? Проголосуйте и скажите нам, что вы думаете.</value></data>
+  <data name="Migration_AlreadyVoted"><value>Я уже голосовал(а), не показывать кнопку опроса снова</value></data>
+  <data name="Migration_LegacyHeading"><value>Не готовы к WinUI 3?</value></data>
+  <data name="Migration_LegacyBody"><value>Справедливо. Классическая WinForms-версия все еще здесь. Легкая, быстрая, без церемоний, точно такая же, какой была всегда.</value></data>
+  <data name="Migration_LaunchLegacy"><value>Запустить Winslop Legacy</value></data>
+  <data name="Migration_DontShowAgain"><value>Понятно, больше не показывать</value></data>
+  <data name="Migration_Vote"><value>Проголосовать за будущее Winslop</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Plugins status (PluginsDialog.xaml.cs)     -->
+  <!-- ============================================================ -->
+  <data name="Plugins_Installed"><value>Установлен</value></data>
+  <data name="Plugins_Updated"><value>Обновлен</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Log actions (LoggerActions.cs)             -->
+  <!-- ============================================================ -->
+  <data name="LogActions_NotAvailable"><value>[Функции] Недоступно.</value></data>
+  <data name="LogActions_Summary"><value>[Функции] Всего узлов: {0}, Выбрано: {1}</value></data>
+  <data name="LogActions_NoChecked"><value>[Функции] Нет отмеченных элементов.</value></data>
+  <data name="LogActions_CheckedItems"><value>[Функции] Отмеченные элементы ({0}):</value></data>
+  <data name="LogActions_UncheckedItems"><value>[Функции] Неотмеченные конечные элементы ({0}):</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Language switcher                          -->
+  <!-- ============================================================ -->
+  <data name="Language_RestartTitle"><value>Язык изменен</value></data>
+  <data name="Language_RestartRequired"><value>Пожалуйста, перезапустите Winslop для применения нового языка.</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Common strings                             -->
+  <!-- ============================================================ -->
+  <data name="Common_Yes"><value>Да</value></data>
+  <data name="Common_No"><value>Нет</value></data>
+  <data name="Common_OK"><value>ОК</value></data>
+  <data name="Common_Close"><value>Закрыть</value></data>
+
+</root>

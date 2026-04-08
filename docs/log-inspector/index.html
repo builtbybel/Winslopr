@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Winslop Log Inspector</title>
+  <style>
+    :root {
+      --bg: #1e1e1e;
+      --surface: #2d2d2d;
+      --surface2: #383838;
+      --border: #444;
+      --text: #e0e0e0;
+      --text2: #999;
+      --accent: #0078d4;
+      --accent-hover: #1a8ae8;
+      --red: #e74c3c;
+      --yellow: #f0c040;
+      --green: #2ecc71;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --ui: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--ui);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* Header */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge {
+      font-weight: 400;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: rgba(0,120,212,.15);
+      color: var(--accent);
+    }
+
+    .links { display: flex; gap: 6px; }
+
+    .links a {
+      color: var(--text2);
+      text-decoration: none;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      transition: background .15s;
+    }
+
+    .links a:hover { background: var(--surface2); color: var(--text); }
+
+    /* Main */
+    main { max-width: 900px; margin: 0 auto; padding: 16px; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .hint {
+      color: var(--text2);
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      resize: vertical;
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 10px;
+      background: #1a1a1a;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      outline: none;
+    }
+
+    textarea:focus { border-color: var(--accent); }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    button {
+      font-family: var(--ui);
+      font-size: 12px;
+      padding: 6px 14px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      background: var(--surface2);
+      color: var(--text);
+      cursor: pointer;
+      transition: background .15s;
+    }
+
+    button:hover { background: #444; }
+
+    button.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    button.primary:hover { background: var(--accent-hover); }
+
+    /* Output */
+    .output {
+      margin-top: 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 100px;
+    }
+
+    .output h3 {
+      font-size: 13px;
+      font-weight: 600;
+      margin: 14px 0 6px 0;
+    }
+
+    .output h3:first-child { margin-top: 0; }
+
+    .output hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 12px 0;
+    }
+
+    /* Annoyance bar */
+    .annoyance {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 6px;
+      background: var(--surface2);
+      margin-bottom: 12px;
+    }
+
+    .annoyance-label { font-weight: 600; white-space: nowrap; }
+
+    .annoyance-bar {
+      flex: 1;
+      height: 8px;
+      background: #444;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .annoyance-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width .3s;
+    }
+
+    .annoyance-pct { font-weight: 600; min-width: 36px; text-align: right; }
+
+    /* Result items */
+    .item {
+      padding: 6px 10px;
+      margin: 4px 0;
+      border-left: 3px solid var(--border);
+      background: rgba(255,255,255,.03);
+      border-radius: 0 4px 4px 0;
+      font-family: var(--mono);
+      font-size: 12px;
+      word-break: break-word;
+    }
+
+    .item.issue { border-left-color: var(--red); background: rgba(231,76,60,.08); }
+    .item.key   { border-left-color: var(--text2); }
+    .item.plugin { border-left-color: var(--accent); background: rgba(0,120,212,.06); }
+
+    .idle { color: var(--text2); }
+
+    @media (max-width: 520px) {
+      .links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>
+    Winslop Log Inspector
+    <span class="badge">local &bull; no uploads</span>
+  </h1>
+  <div class="links">
+    <a href="https://github.com/builtbybel/Winslop" target="_blank">GitHub</a>
+    <a href="https://www.paypal.me/Hasanovic7" target="_blank">Donate</a>
+    <a href="https://ko-fi.com/builtbybel" target="_blank">Ko-fi</a>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <p class="hint">Paste a full Winslop log and click <strong>Inspect</strong>. Everything runs locally in your browser.</p>
+
+    <textarea id="logInput" placeholder="Paste your Winslop log here..."></textarea>
+
+    <div class="btn-row">
+      <button class="primary" onclick="pasteResult()">Paste &amp; Inspect</button>
+      <button onclick="analyzeLog()">Inspect log</button>
+      <button onclick="translateViaGoogle()">Translate</button>
+      <button onclick="captureResult()">Screenshot</button>
+      <button onclick="shareResult()">Share</button>
+      <button onclick="shareOnX()">Share on X</button>
+    </div>
+  </div>
+
+  <div class="output" id="output">
+    <p class="idle">Paste a log and click <strong>Inspect</strong> to begin.</p>
+  </div>
+</main>
+
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winslop Update Check</title>
+  <style>
+    :root {
+      --bg: #f3f3f3;
+      --surface: #ffffff;
+      --border: #e5e5e5;
+      --text: #1a1a1a;
+      --text2: #666;
+      --accent: #0067c0;
+      --accent-hover: #005a9e;
+      --green: #0f7b0f;
+      --yellow: #c28800;
+      --red: #c42b1c;
+      --radius: 8px;
+      --ui: "Segoe UI Variable", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--ui);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+    }
+
+    /* App icon + title */
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .header h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      font-size: 13px;
+      color: var(--text2);
+    }
+
+    /* Cards */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      width: 100%;
+      max-width: 480px;
+      margin-bottom: 12px;
+    }
+
+    /* Status card */
+    #status {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .status-icon {
+      font-size: 28px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .status-label {
+      font-weight: 600;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .status-detail {
+      color: var(--text2);
+      font-size: 13px;
+    }
+
+    .status-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 20px;
+      border-radius: var(--radius);
+      font-family: var(--ui);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background .1s, opacity .1s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover { background: var(--accent-hover); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+
+    .btn-outline:hover { background: #f9f9f9; }
+
+    /* Donate card */
+    .donate-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .donate-text {
+      font-size: 13px;
+      color: var(--text2);
+      margin-bottom: 12px;
+    }
+
+    .donate-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-paypal {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-paypal:hover { background: var(--accent-hover); }
+
+    .btn-kofi {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-kofi:hover { background: #f9f9f9; }
+
+    /* Footer link */
+    .footer {
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: var(--text2);
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 520px) {
+      body { padding: 1.5rem 1rem; }
+      .status-actions { flex-direction: column; }
+      .donate-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Winslop</h1>
+    <p>Update Check</p>
+  </div>
+
+  <div class="card" id="status">
+    <span class="status-icon">⏳</span>
+    <span class="status-label">Checking for updates...</span>
+  </div>
+
+  <div class="card">
+    <div class="donate-title">☕ Support Winslop</div>
+    <div class="donate-text">Every donation helps me ship more updates. — Thanks, Belim</div>
+    <div class="donate-row">
+      <a class="btn btn-paypal" href="https://www.paypal.com/paypalme/Hasanovic7" target="_blank">PayPal</a>
+      <a class="btn btn-kofi" href="https://ko-fi.com/builtbybel" target="_blank">Ko-fi</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://github.com/builtbybel/Winslop" target="_blank">View on GitHub</a>
+  </div>
+
+  <script>
+    const latestVersion = "26.04.04";
+
+    function compareVersions(v1, v2) {
+      const a = v1.split(".").map(Number);
+      const b = v2.split(".").map(Number);
+      for (let i = 0; i < Math.max(a.length, b.length); i++) {
+        if ((a[i] || 0) < (b[i] || 0)) return -1;
+        if ((a[i] || 0) > (b[i] || 0)) return 1;
+      }
+      return 0;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const userVersion = params.get("version");
+    const el = document.getElementById("status");
+
+    if (!userVersion) {
+      el.innerHTML =
+        `<span class="status-icon">⚠️</span>` +
+        `<span class="status-label">No version detected</span>` +
+        `<span class="status-detail">Open this page from the Winslop app to check for updates.</span>`;
+    } else {
+      const result = compareVersions(userVersion, latestVersion);
+
+      if (result < 0) {
+        el.innerHTML =
+          `<span class="status-icon">🔄</span>` +
+          `<span class="status-label">Update available</span>` +
+          `<span class="status-detail">Installed: ${userVersion} → Latest: ${latestVersion}</span>` +
+          `<div class="status-actions">` +
+            `<a class="btn btn-primary" href="https://github.com/builtbybel/Winslop/releases" target="_blank">Download</a>` +
+            `<a class="btn btn-outline" href="https://github.com/builtbybel/Winslop/releases/tag/${latestVersion}" target="_blank">Changelog</a>` +
+          `</div>`;
+      } else if (result === 0) {
+        el.innerHTML =
+          `<span class="status-icon">✅</span>` +
+          `<span class="status-label">You're up to date</span>` +
+          `<span class="status-detail">Version ${userVersion} is the latest release.</span>`;
+      } else {
+        el.innerHTML =
+          `<span class="status-icon">🧪</span>` +
+          `<span class="status-label">Development build</span>` +
+          `<span class="status-detail">Your version (${userVersion}) is newer than the latest release (${latestVersion}).</span>`;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+
+  <data name="Language_TranslatorName"><value>John Wiliam</value></data>
+  <data name="Language_TranslatorWebsite"><value>Instagram @johnn_Wiliam</value></data>
+  <data name="Language_TranslatedBy"><value>Traduzido por John Wiliam</value></data>
+
+  <data name="NavHome.Text"><value>Início</value></data>
+  <data name="NavApps.Text"><value>Apps</value></data>
+  <data name="NavInstall.Text"><value>Instalar</value></data>
+  <data name="NavTools.Text"><value>Ferramentas</value></data>
+  <data name="NavSupport.Text"><value>Suporte</value></data>
+  <data name="NavSettings.Text"><value>Configurações</value></data>
+
+  <data name="MenuKofi.Text"><value>Pague-me um café no Ko-fi</value></data>
+  <data name="MenuPaypal.Text"><value>Faça uma doação via PayPal</value></data>
+
+  <data name="Settings_Title.Text"><value>Configurações</value></data>
+  <data name="Settings_Language.Text"><value>Idioma</value></data>
+  <data name="Settings_LanguageSubtext.Text"><value>Idioma de exibição do aplicativo</value></data>
+  <data name="Settings_TranslatedBy.Text"><value>Tradução</value></data>
+  <data name="Settings_Appearance.Text"><value>Aparência</value></data>
+  <data name="Settings_ThemeSystem"><value>Padrão do sistema</value></data>
+  <data name="Settings_ThemeLight"><value>Claro</value></data>
+  <data name="Settings_ThemeDark"><value>Escuro</value></data>
+  <data name="Settings_RestartTitle"><value>Reinício necessário</value></data>
+  <data name="Settings_RestartMessage"><value>Por favor, reinicie o aplicativo para que as alterações tenham efeito.</value></data>
+  <data name="Settings_Extensions.Text"><value>Extensões</value></data>
+  <data name="Settings_ExtensionsSubtext.Text"><value>Gerencie plugins nativos e ferramentas independentes.</value></data>
+  <data name="Settings_ToolScripts.Text"><value>Extensões</value></data>
+  <data name="Settings_ToolScriptsDescription.Text"><value>Scripts independentes que são abertos e executados a partir da página Ferramentas.</value></data>
+  <data name="Settings_OpenToolsPage.Text"><value>Abrir página de Ferramentas</value></data>
+  <data name="Settings_Plugins.Text"><value>Plugins</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>Plugins nativos que se integram aos Recursos da página Início.</value></data>
+  <data name="Settings_ManagePlugins.Text"><value>Gerenciar plugins</value></data>
+  <data name="Settings_CompatOk"><value>Totalmente compatível</value></data>
+  <data name="Settings_CompatWarn"><value>Compatibilidade limitada</value></data>
+  <data name="Settings_About.Text"><value>Sobre este aplicativo</value></data>
+  <data name="Settings_CheckUpdates.Text"><value>Verificar se há atualizações</value></data>
+  <data name="Settings_Feedback.Text"><value>Enviar feedback</value></data>
+  <data name="MenuHelp.Text"><value>Ajuda</value></data>
+
+  <data name="SearchBox.PlaceholderText"><value>Pesquisar</value></data>
+  <data name="MenuToggle.Text"><value>Alternar Todos</value></data>
+  <data name="MenuUndo.Text"><value>Desfazer últimas alterações</value></data>
+  <data name="MenuRefresh.Text"><value>Atualizar página</value></data>
+  <data name="MenuExport.Text"><value>Exportar seleção...</value></data>
+  <data name="MenuImport.Text"><value>Importar de arquivo...</value></data>
+
+  <data name="MenuLogActions.Text"><value>Registro de ações</value></data>
+  <data name="MenuInspectLog.Text"><value>Inspecionar log online</value></data>
+  <data name="MenuCopyLog.Text"><value>Copiar log para a área de transferência</value></data>
+  <data name="MenuClearLog.Text"><value>Limpar log</value></data>
+  <data name="MenuLogChecked.Text"><value>Log: itens marcados</value></data>
+  <data name="MenuLogUnchecked.Text"><value>Log: itens desmarcados</value></data>
+  <data name="MenuLogSummary.Text"><value>Log: resumo</value></data>
+
+  <data name="BtnAnalyzeText.Text"><value>Inspecionar sistema</value></data>
+  <data name="BtnFixText.Text"><value>Aplicar alterações selecionadas</value></data>
+
+  <data name="ComboProfiles.PlaceholderText"><value>&lt;Selecionar perfil...&gt;</value></data>
+  <data name="ChkIssuesOnly.Content"><value>Apenas problemas</value></data>
+
+  <data name="ComboDisplayMode.PlaceholderText"><value>Selecionar modo de verificação...</value></data>
+
+  <data name="ComboCategory.PlaceholderText"><value>Categoria...</value></data>
+  <data name="ChkInstalledOnly.Content"><value>Instalados</value></data>
+  <data name="ChkUpgradesOnly.Content"><value>Atualizáveis</value></data>
+  <data name="BtnInstall.Content"><value>Instalar</value></data>
+  <data name="BtnUpgradeSelected.Content"><value>Atualizar</value></data>
+  <data name="BtnUpgradeAll.Content"><value>Atualizar Todos</value></data>
+  <data name="BtnUninstall.Content"><value>Desinstalar</value></data>
+  <data name="ColAppName.Text"><value>Nome do Aplicativo</value></data>
+  <data name="ColPackageId.Text"><value>ID do Pacote</value></data>
+  <data name="ColInstalled.Text"><value>Instalado</value></data>
+  <data name="ColUpdate.Text"><value>Atualizar</value></data>
+
+  <data name="ComboFilter.PlaceholderText"><value>Filtrar...</value></data>
+  <data name="ComboOptions.PlaceholderText"><value>Opções...</value></data>
+  <data name="TextInput.PlaceholderText"><value>Inserir entrada (ex: IDs ou argumentos brutos)</value></data>
+  <data name="BtnRun.Content"><value>Executar</value></data>
+  <data name="BtnToolUninstall.Content"><value>Desinstalar</value></data>
+  <data name="BtnOpenFolder.ToolTipService.ToolTip"><value>Abrir pasta de scripts</value></data>
+  <data name="Tools_SelectHint.Text"><value>Selecione uma ferramenta para começar</value></data>
+
+  <data name="PluginsDialog.Title"><value>Gerenciar Plugins</value></data>
+  <data name="PluginsDialog.CloseButtonText"><value>Fechar</value></data>
+  <data name="TxtSearch.PlaceholderText"><value>Pesquisar plugins...</value></data>
+  <data name="ColPlugin.Text"><value>Plugin</value></data>
+  <data name="ColStatus.Text"><value>Status</value></data>
+  <data name="ColType.Text"><value>Tipo</value></data>
+  <data name="BtnPluginInstall.Content"><value>Instalar</value></data>
+  <data name="BtnPluginUpdateAll.Content"><value>Atualizar Todos</value></data>
+  <data name="BtnPluginRemove.Content"><value>Remover</value></data>
+  <data name="BtnPluginEdit.Content"><value>Editar</value></data>
+  <data name="BtnPluginOpenFolder.Content"><value>Abrir Pasta</value></data>
+  <data name="BtnPluginSubmit.Content"><value>Enviar</value></data>
+
+  <data name="Category_Issues"><value>Problemas</value></data>
+  <data name="Category_System"><value>Sistema</value></data>
+  <data name="Category_MSEdge"><value>MS Edge</value></data>
+  <data name="Category_UI"><value>Interface</value></data>
+  <data name="Category_Taskbar"><value>Barra de tarefas</value></data>
+  <data name="Category_Gaming"><value>Jogos</value></data>
+  <data name="Category_Privacy"><value>Privacidade</value></data>
+  <data name="Category_Ads"><value>Anúncios</value></data>
+  <data name="Category_AI"><value>IA</value></data>
+
+  <data name="Feature_ClickToDo"><value>Desativar Click to Do (Apenas PCs Copilot+)</value></data>
+  <data name="Feature_CopilotTaskbar"><value>Não mostrar o Copilot na Barra de tarefas</value></data>
+  <data name="Feature_Recall"><value>Desativar o Recall no Windows 11</value></data>
+
+  <data name="Feature_DisableSearchBoxSuggestions"><value>Desativar resultados de pesquisa do Bing</value></data>
+  <data name="Feature_FileExplorerAds"><value>Desativar anúncios do Explorador de Arquivos</value></data>
+  <data name="Feature_FinishSetupAds"><value>Desativar anúncios de Conclusão de Configuração</value></data>
+  <data name="Feature_LockScreenAds"><value>Desativar dicas e anúncios da Tela de Bloqueio</value></data>
+  <data name="Feature_PersonalizedAds"><value>Desativar Anúncios Personalizados</value></data>
+  <data name="Feature_SettingsAds"><value>Desativar anúncios das Configurações</value></data>
+  <data name="Feature_StartmenuAds"><value>Desativar anúncios do menu Iniciar</value></data>
+  <data name="Feature_TailoredExperiences"><value>Desativar Experiências Personalizadas</value></data>
+  <data name="Feature_TipsAndSuggestions"><value>Desativar dicas e anúncios gerais</value></data>
+  <data name="Feature_WelcomeExperienceAds"><value>Desativar anúncios da Experiência de Boas-vindas</value></data>
+
+  <data name="Feature_BrowserSignin"><value>Desativar login e serviços de sincronização do navegador</value></data>
+  <data name="Feature_DefaultTopSites"><value>Não mostrar links patrocinados na página de nova guia</value></data>
+  <data name="Feature_DefautBrowserSetting"><value>Desativar Microsoft Edge como navegador padrão</value></data>
+  <data name="Feature_EdgeCollections"><value>Desativar acesso ao recurso Coleções</value></data>
+  <data name="Feature_EdgeShoppingAssistant"><value>Desativar assistente de compras</value></data>
+  <data name="Feature_FirstRunExperience"><value>Não mostrar a Experiência de Primeira Execução</value></data>
+  <data name="Feature_GamerMode"><value>Desativar Modo Gamer</value></data>
+  <data name="Feature_HubsSidebar"><value>Desativar símbolo do Copilot no Edge</value></data>
+  <data name="Feature_ImportOnEachLaunch"><value>Não importar dados de outros navegadores na inicialização</value></data>
+  <data name="Feature_StartupBoost"><value>Desativar Impulso de Inicialização (Startup Boost)</value></data>
+  <data name="Feature_TabPageQuickLinks"><value>Não mostrar links rápidos na página de nova guia</value></data>
+  <data name="Feature_UserFeedback"><value>Não mostrar a opção de enviar feedback de usuário</value></data>
+
+  <data name="Feature_GameDVR"><value>Desativar Game DVR</value></data>
+  <data name="Feature_PowerThrottling"><value>Desativar Limitação de Energia (Power Throttling)</value></data>
+  <data name="Feature_VisualFX"><value>Desativar Efeitos Visuais</value></data>
+
+  <data name="Feature_BSODDetails"><value>Mostrar detalhes da Tela Azul (BSOD) em vez do rosto triste</value></data>
+  <data name="Feature_DisableHibernation"><value>Desativar Hibernação</value></data>
+  <data name="Feature_MenuShowDelay"><value>Acelerar tempo de exibição do menu</value></data>
+  <data name="Feature_NetworkThrottling"><value>Desativar Limitação de Rede</value></data>
+  <data name="Feature_SpeedUpShutdown"><value>Acelerar tempo de desligamento</value></data>
+  <data name="Feature_SystemResponsiveness"><value>Otimizar a capacidade de resposta do sistema</value></data>
+  <data name="Feature_VerboseStatus"><value>Ativar mensagens detalhadas de status de logon</value></data>
+
+  <data name="Feature_ActivityHistory"><value>Desativar histórico de atividades</value></data>
+  <data name="Feature_AppLaunchTracking"><value>Desativar rastreamento de inicialização de aplicativos</value></data>
+  <data name="Feature_DiagnosticData"><value>Reduzir dados de diagnóstico (Básico)</value></data>
+  <data name="Feature_LocationTracking"><value>Desativar rastreamento de localização</value></data>
+  <data name="Feature_LockScreenSlideshow"><value>Desativar apresentação de slides na tela de bloqueio</value></data>
+  <data name="Feature_NarratorOnlineServices"><value>Desativar serviços online do Narrador</value></data>
+  <data name="Feature_OnlineSpeechRecognition"><value>Desativar reconhecimento de fala online</value></data>
+  <data name="Feature_PrivacyExperience"><value>Desativar experiência de configurações de privacidade no logon</value></data>
+  <data name="Feature_SilentAppInstallation"><value>Impedir instalação silenciosa de aplicativos</value></data>
+  <data name="Feature_WindowsSpotlightLockScreen"><value>Desativar o Spotlight na tela de bloqueio</value></data>
+  <data name="Feature_DisableBingSearch"><value>Desativar pesquisa do Bing</value></data>
+
+  <data name="Feature_AppDarkMode"><value>Ativar Modo Escuro para Aplicativos</value></data>
+  <data name="Feature_SystemDarkMode"><value>Ativar Modo Escuro para o Sistema</value></data>
+  <data name="Feature_FullContextMenus"><value>Mostrar menus de contexto completos no Windows 11</value></data>
+  <data name="Feature_LockScreen"><value>Não usar tela de bloqueio personalizada</value></data>
+  <data name="Feature_ShowOrHideMostUsedApps"><value>Ocultar aplicativos mais usados no menu Iniciar</value></data>
+  <data name="Feature_DisableSnapAssistFlyout"><value>Desativar o menu suspenso do Snap Assist</value></data>
+  <data name="Feature_StartLayout"><value>Fixar mais aplicativos no menu Iniciar</value></data>
+  <data name="Feature_Transparency"><value>Desativar Efeitos de Transparência</value></data>
+
+  <data name="Feature_AlwaysShowTrayIcons"><value>Sempre mostrar todos os ícones da bandeja do sistema</value></data>
+  <data name="Feature_CleanTaskbar"><value>Limpar barra de tarefas</value></data>
+  <data name="Feature_DisableNewsAndInterests"><value>Desativar Notícias e Interesses</value></data>
+  <data name="Feature_DisableWidgets"><value>Desativar Widgets</value></data>
+  <data name="Feature_RemoveMeetNowButton"><value>Remover o botão 'Reunir Agora' da bandeja do sistema</value></data>
+  <data name="Feature_SearchboxTaskbarMode"><value>Ocultar caixa de pesquisa na barra de tarefas</value></data>
+  <data name="Feature_ShowTaskViewButton"><value>Ocultar botão de Visão de Tarefas na barra de tarefas</value></data>
+  <data name="Feature_TaskbarAlignment"><value>Alinhar botão Iniciar à esquerda</value></data>
+  <data name="Feature_TaskbarEndTask"><value>Ativar recurso Finalizar Tarefa</value></data>
+  <data name="Feature_TaskbarSmallIcons"><value>Usar ícones pequenos na barra de tarefas</value></data>
+
+  <data name="Feature_BasicCleanup"><value>Limpeza de Disco Básica</value></data>
+
+  <data name="InapplicableReason_Win10Only"><value>Apenas Windows 10</value></data>
+  <data name="InapplicableReason_Win11Only"><value>Apenas Windows 11</value></data>
+  <data name="InapplicableReason_NotApplicable"><value>não aplicável</value></data>
+
+  <data name="Log_General"><value>Geral</value></data>
+  <data name="Log_Skipped"><value>Ignorado</value></data>
+  <data name="Log_NotApplicableOS"><value>Não aplicável neste sistema operacional.</value></data>
+  <data name="Log_NotConfigured"><value>Não configurado conforme o recomendado.</value></data>
+  <data name="Log_Fixed"><value>Corrigido</value></data>
+  <data name="Log_FixFailed"><value>Falha na correção (este recurso pode exigir privilégios de administrador)</value></data>
+  <data name="Log_Restored"><value>Restaurado</value></data>
+  <data name="Log_RestoreFailed"><value>Falha na restauração</value></data>
+  <data name="Log_SkippedRestore"><value>Restauração ignorada</value></data>
+  <data name="Log_ProperlyConfigured"><value>Recurso: {0} está configurado corretamente.</value></data>
+  <data name="Log_RequiresAttention"><value>Recurso: {0} requer atenção.</value></data>
+  <data name="Summary_Fix"><value>{0} corrigido(s), {1} ignorado(s), {2} falharam</value></data>
+  <data name="Summary_FixTitleDone"><value>Alterações aplicadas</value></data>
+  <data name="Summary_FixTitleWarning"><value>Alterações aplicadas com erros</value></data>
+  <data name="Summary_Fixed"><value>Corrigido</value></data>
+  <data name="Summary_Skipped"><value>Ignorado</value></data>
+  <data name="Summary_Failed"><value>Falha</value></data>
+  <data name="Summary_FixAllGood"><value>Todas as alterações selecionadas foram aplicadas com sucesso.</value></data>
+  <data name="Summary_FixHasErrors"><value>Algumas alterações não puderam ser aplicadas. Verifique o log para obter detalhes.</value></data>
+  <data name="Summary_Restore"><value>{0} restaurado(s), {1} ignorado(s), {2} falharam</value></data>
+  <data name="Summary_RestoreTitleDone"><value>Restauração concluída</value></data>
+  <data name="Summary_RestoreTitleWarning"><value>Restauração concluída com erros</value></data>
+  <data name="Summary_Restored"><value>Restaurado</value></data>
+  <data name="Summary_RestoreAllGood"><value>Todos os recursos selecionados foram restaurados com sucesso.</value></data>
+  <data name="Summary_RestoreHasErrors"><value>Alguns recursos não puderam ser restaurados. Verifique o log para obter detalhes.</value></data>
+
+  <data name="Analysis_Complete"><value>ANÁLISE CONCLUÍDA</value></data>
+  <data name="Analysis_TitleAttention"><value>Análise Concluída - Requer Atenção</value></data>
+  <data name="Analysis_WindowsFeatures"><value>Recursos do Windows</value></data>
+  <data name="Analysis_Plugins"><value>Plugins</value></data>
+  <data name="Analysis_Total"><value>Total</value></data>
+  <data name="Analysis_Issues"><value>problema(s)</value></data>
+  <data name="Analysis_IssuesFound"><value>{0} problema(s) encontrado(s) - revise o log antes de aplicar as correções.</value></data>
+  <data name="Analysis_AllGood"><value>Tudo parece bem!</value></data>
+  <data name="Analysis_OpenLogInspector"><value>Abrir Inspetor de Log Online</value></data>
+
+  <data name="Context_Analyze"><value>Analisar</value></data>
+  <data name="Context_Fix"><value>Corrigir</value></data>
+  <data name="Context_Restore"><value>Restaurar</value></data>
+  <data name="Context_Help"><value>Ajuda</value></data>
+
+  <data name="Restore_Title"><value>Restaurar seleção</value></data>
+  <data name="Restore_NoItems"><value>Nenhum item selecionado. Por favor, marque um ou mais recursos/plugins na árvore primeiro.</value></data>
+  <data name="Restore_ConfirmTitle"><value>Restaurar itens selecionados</value></data>
+  <data name="Restore_ConfirmBody"><value>Isso irá restaurar APENAS o(s) {0} item(ns) selecionado(s) (marcado(s)) para o seu estado original. Quaisquer ajustes anteriores para esses itens poderão ser revertidos.
+
+Deseja continuar?</value></data>
+  <data name="Restore_Done"><value>{0} item(ns) selecionado(s) restaurado(s).</value></data>
+
+  <data name="Profile_Export"><value>Exportar seleção...</value></data>
+  <data name="Profile_Import"><value>Importar de arquivo...</value></data>
+  <data name="Profile_OpenFolder"><value>Abrir pasta de perfis...</value></data>
+  <data name="Profile_ExportedTo"><value>Seleção exportada para: {0}</value></data>
+  <data name="Profile_ImportedFrom"><value>{0} item(ns) importado(s) de: {1}</value></data>
+  <data name="Profile_Loaded"><value>Perfil '{0}' carregado ({1} item(ns) selecionado(s)).</value></data>
+
+  <data name="ScanMode_Standard"><value>Verificação padrão (recomendado)</value></data>
+  <data name="ScanMode_Full"><value>Verificação completa (todos os aplicativos instalados)</value></data>
+  <data name="ScanMode_Community"><value>Verificação usando lista da comunidade (CFEnhancer)</value></data>
+  <data name="ScanMode_BuiltIn"><value>Verificação usando lista embutida</value></data>
+
+  <data name="Apps_DisplayAll"><value>Exibindo todos os aplicativos instalados.</value></data>
+  <data name="Apps_NoPlugin"><value>Nenhuma lista de plugins encontrada. Instale o CFEnhancer para usar recomendações de plugins.</value></data>
+  <data name="Apps_DisplayPlugin"><value>Exibindo recomendações de plugins (CFEnhancer).</value></data>
+  <data name="Apps_DisplayBuiltIn"><value>Exibindo recomendações embutidas.</value></data>
+  <data name="Apps_DisplayRecommendedPlugin"><value>Exibindo aplicativos recomendados (plugin).</value></data>
+  <data name="Apps_DisplayRecommendedBuiltIn"><value>Exibindo aplicativos recomendados (embutidos).</value></data>
+  <data name="Apps_AnalysisTitle"><value>ANÁLISE DE APLICATIVOS</value></data>
+  <data name="Apps_ShowingAll"><value>Mostrando todos os aplicativos (exceto lista branca): {0}</value></data>
+  <data name="Apps_BloatwareDetected"><value>Aplicativos bloatware detectados:</value></data>
+  <data name="Apps_NoBloatware"><value>Nenhum aplicativo bloatware da Microsoft Store encontrado.</value></data>
+  <data name="Apps_CleanupComplete"><value>Limpeza de aplicativos concluída.</value></data>
+
+  <data name="Install_Installed"><value>Instalado</value></data>
+  <data name="Install_Upgradeable"><value>Atualizável</value></data>
+
+  <data name="Tools_Loading"><value>Carregando extensões...</value></data>
+  <data name="Tools_FolderCreated"><value>A pasta de scripts estava ausente, foi criada.</value></data>
+  <data name="Tools_Loaded"><value>{0} extensões carregadas.</value></data>
+  <data name="Tools_SelectExtension"><value>Selecione uma extensão à esquerda.</value></data>
+  <data name="Tools_Running"><value>Executando...</value></data>
+  <data name="Tools_Done"><value>Concluído.</value></data>
+  <data name="Tools_OpenedConsole"><value>Aberto no console.</value></data>
+  <data name="Tools_CompletedLog"><value>Concluído com log.</value></data>
+  <data name="Tools_UninstallTitle"><value>Remover extensão</value></data>
+  <data name="Tools_UninstallConfirm"><value>Excluir "{0}"? Esta ação não pode ser desfeita.</value></data>
+  <data name="Tools_UninstallYes"><value>Excluir</value></data>
+  <data name="Common_Cancel"><value>Cancelar</value></data>
+  <data name="Tools_HelpAvailable"><value>Esta ferramenta oferece um guia de ajuda</value></data>
+  <data name="Tools_ShowHelp"><value>Mostrar ajuda</value></data>
+
+  <data name="Donation_Title"><value>Apoie o Winslop &#x2764;</value></data>
+  <data name="Donation_Body"><value>Se o Winslop economizou seu tempo, considere apoiar seu futuro. Ele permanece gratuito e anti-slop graças a apoiadores como você.</value></data>
+  <data name="Donation_AlreadyDonated"><value>Eu já doei, não mostrar novamente</value></data>
+  <data name="Donation_Donate"><value>Doar</value></data>
+  <data name="Donation_MaybeLater"><value>Talvez mais tarde</value></data>
+
+  <data name="Migration_Title"><value>O Winslop agora está no WinUI 3</value></data>
+  <data name="Migration_Intro"><value>O Winslop migrou do WinForms / .NET Framework para o WinUI 3. Foi divertido? Cerca de 90% foi uma experiência horrível. Os 10% restantes foram, curiosamente, bastante satisfatórios. De qualquer forma, a migração existe e agora é a sua vez de julgá-la.</value></data>
+  <data name="Migration_ElephantHeading"><value>O elefante na sala</value></data>
+  <data name="Migration_ElephantBody"><value>WinForms, WPF, Silverlight &gt; WinRT XAML / Windows Store Apps &gt; UWP / WinUI 2 &gt; WinUI 3. Cada transição prometia ser a última. Nenhuma foi. O WinUI 3 é a recomendação atual da Microsoft e sim, ele traz o efeito Mica e controles fluidos, mas também traz burocracia, complexidade e rituais XAML apenas para mostrar um botão.</value></data>
+  <data name="Migration_ReadMore"><value>Leia o artigo completo &#x2192;</value></data>
+  <data name="Migration_PollHeading"><value>Ajude a decidir o rumo do Winslop</value></data>
+  <data name="Migration_PollBody"><value>O Winslop deve seguir o caminho moderno do WinUI 3 ou permanecer fiel ao que sempre foi: um aplicativo de desktop clássico, leve e rápido? Vote e nos diga o que você pensa.</value></data>
+  <data name="Migration_AlreadyVoted"><value>Já votei, não mostrar o botão de enquete novamente</value></data>
+  <data name="Migration_LegacyHeading"><value>Não está pronto para o WinUI 3?</value></data>
+  <data name="Migration_LegacyBody"><value>Sem problemas. A versão clássica do WinForms continua aqui. Leve, rápida, sem complicações, exatamente como sempre foi.</value></data>
+  <data name="Migration_LaunchLegacy"><value>Iniciar Winslop Clássico</value></data>
+  <data name="Migration_DontShowAgain"><value>Entendido, não mostrar novamente</value></data>
+  <data name="Migration_Vote"><value>Vote no futuro do Winslop</value></data>
+
+  <data name="Plugins_Installed"><value>Instalado</value></data>
+  <data name="Plugins_Updated"><value>Atualizado</value></data>
+
+  <data name="LogActions_NotAvailable"><value>[Recursos] Não disponível.</value></data>
+  <data name="LogActions_Summary"><value>[Recursos] Nós totais: {0}, Marcados: {1}</value></data>
+  <data name="LogActions_NoChecked"><value>[Recursos] Nenhum item marcado.</value></data>
+  <data name="LogActions_CheckedItems"><value>[Recursos] Itens marcados ({0}):</value></data>
+  <data name="LogActions_UncheckedItems"><value>[Recursos] Itens não marcados ({0}):</value></data>
+
+  <data name="Language_RestartTitle"><value>Idioma alterado</value></data>
+  <data name="Language_RestartRequired"><value>Por favor, reinicie o Winslop para que a alteração de idioma tenha efeito.</value></data>
+
+  <data name="Common_Yes"><value>Sim</value></data>
+  <data name="Common_No"><value>Não</value></data>
+  <data name="Common_OK"><value>OK</value></data>
+  <data name="Common_Close"><value>Fechar</value></data>
+
+</root>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winslop Update Check</title>
+  <style>
+    :root {
+      --bg: #1e1e1e;
+      --surface: #2d2d2d;
+      --surface2: #383838;
+      --border: #444;
+      --text: #e0e0e0;
+      --text2: #999;
+      --accent: #0078d4;
+      --green: #2ecc71;
+      --yellow: #f0c040;
+      --ui: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--ui);
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    #status {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      width: 100%;
+      max-width: 520px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .donate {
+      margin-top: 1.5rem;
+      padding: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--green);
+      border-radius: 8px;
+      max-width: 520px;
+      width: 100%;
+    }
+
+    .donate strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .donate .btn-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .donate a.btn {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 12px;
+      text-decoration: none;
+      transition: opacity .15s;
+    }
+
+    .donate a.btn:hover { opacity: .85; }
+    .btn-paypal { background: var(--accent); }
+    .btn-kofi { background: #e74c3c; }
+
+    .project-follow {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .project-follow a {
+      display: inline-block;
+      padding: 8px 20px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 13px;
+      text-decoration: none;
+      transition: background .15s;
+    }
+
+    .project-follow a:hover { background: #444; }
+
+    @media (max-width: 600px) {
+      body { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Winslop Update Check</h1>
+
+  <p id="status">Checking version...</p>
+
+  <div class="donate">
+    <strong>Support Winslop</strong>
+    Every donation helps me provide more updates. &mdash; Thanks, Belim
+    <div class="btn-row">
+      <a class="btn btn-paypal" href="https://www.paypal.com/paypalme/Hasanovic7" target="_blank">PayPal</a>
+      <a class="btn btn-kofi" href="https://ko-fi.com/builtbybel" target="_blank">Ko-fi</a>
+    </div>
+  </div>
+
+  <div class="project-follow">
+    <a href="https://github.com/builtbybel/Winslop" target="_blank">View on GitHub</a>
+  </div>
+
+  <script>
+    const latestVersion = "26.03.120";
+
+    function compareVersions(v1, v2) {
+      const a = v1.split(".").map(Number);
+      const b = v2.split(".").map(Number);
+      for (let i = 0; i < Math.max(a.length, b.length); i++) {
+        if ((a[i] || 0) < (b[i] || 0)) return -1;
+        if ((a[i] || 0) > (b[i] || 0)) return 1;
+      }
+      return 0;
+    }
+
+    function openChangelog(version) {
+      window.open(
+        `https://github.com/builtbybel/Winslop/releases/tag/${version}`,
+        "changelogWindow",
+        "width=800,height=600,resizable=yes,scrollbars=yes"
+      );
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const userVersion = params.get("version");
+    const status = document.getElementById("status");
+
+    if (!userVersion) {
+      status.innerText = "No version found. Please open this page from the Winslop app.";
+    } else {
+      const result = compareVersions(userVersion, latestVersion);
+
+      if (result < 0) {
+        status.innerHTML =
+          `Your version (${userVersion}) is outdated.<br>` +
+          `<strong>Latest version:</strong> ${latestVersion}<br><br>` +
+          `<a href="https://github.com/builtbybel/Winslop/releases" target="_blank">Download latest</a>` +
+          ` &middot; ` +
+          `<a href="#" onclick="openChangelog('${latestVersion}'); return false;">View Changelog</a>`;
+      } else if (result === 0) {
+        status.innerHTML = `Your version (${userVersion}) is up to date.`;
+      } else {
+        status.innerHTML =
+          `Your version (${userVersion}) is newer than the official release (${latestVersion}).<br>` +
+          `<em style="color:var(--text2)">You may be using a development build.</em>`;
+      }
+    }
+  </script>
+</body>
+</html>
