@@ -1,0 +1,2 @@
+#migration_survey_done=true
+#migration_acknowledged=true
