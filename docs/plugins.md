@@ -1,7 +1,7 @@
 # Plugins
 
-Winslop plugins are **PowerShell scripts (`.ps1`) with an INI-style header**.
-Winslop reads the header to decide what to run (Check / Do / Undo) and may validate results via [Expect].
+Winslopr plugins are **PowerShell scripts (`.ps1`) with an INI-style header**.
+Winslopr reads the header to decide what to run (Check / Do / Undo) and may validate results via [Expect].
 
 Plugins can:
 - modify registry / services / files via commands
@@ -47,7 +47,7 @@ The demo pack uses a simple rule-driven model:
 
 ## Naming and Help anchors
 
-Winslop’s help system can link directly into GitHub docs by using the plugin title as an anchor.
+Winslopr’s help system can link directly into GitHub docs by using the plugin title as an anchor.
 That means:
 
 - The plugin **display title** should match the markdown heading in `features.md` (plugins section)
@@ -64,7 +64,7 @@ Example:
 
 ## [Commands]
 
-`[Commands]` defines the metadata and the actions Winslop can run.
+`[Commands]` defines the metadata and the actions Winslopr can run.
 
 Supported keys:
 - `Info` — shown in the UI as plugin description
@@ -113,5 +113,3 @@ Undo=reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v BingSear
 [Expect]
 BingSearchEnabled=0x0
 ```
-
-

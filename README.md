@@ -16,7 +16,7 @@ Then Microsoft said "slop vs sophistication" out loud and it stopped being one.
 
 ---
 
-### 📋 [What annoys you most about Windows 11?](https://builtbybel.github.io/Winslop/annoyances/)
+### 📋 [What annoys you most about Windows 11?](https://builtbybel.github.io/Winslopr/annoyances/)
 
 59 community-sourced annoyances. Filterable. With fixes.  
 See what Winslopr handles and what needs extra tools.
@@ -34,7 +34,7 @@ Windows
     ├── suggestions
     └── background junk
          ↓
-      removed by winslop
+      removed by winslopr
          ↓
        thanks
         Satya
@@ -48,13 +48,13 @@ Nothing fancy. Just tools.
 <sub>Click to expand. No assistant required.</sub>
 
 <details>
-<summary><strong>Is Winslop anti-Windows?</strong></summary>
+<summary><strong>Is Winslopr anti-Windows?</strong></summary>
 
 No.  
 Windows itself is fine.  
 The unnecessary stuff layered on top of it isn’t.
 
-Winslop targets **slop**, not Windows.
+Winslopr targets **slop**, not Windows.
 </details>
 
 <details>
@@ -71,7 +71,7 @@ There's a small, lightweight entry guide to get you going:
 
 Also no.
 
-Winslop doesn’t care whether something is AI, scripted, cloud-based or hand-written.  
+Winslopr doesn’t care whether something is AI, scripted, cloud-based or hand-written.  
 If it’s forced, opaque, or unnecessary, its slop.
 
 If it’s optional, transparent and useful, it’s fine.
@@ -79,7 +79,7 @@ If it’s optional, transparent and useful, it’s fine.
 
 
 <details>
-<summary><strong>Does Winslop use AI?</strong></summary>
+<summary><strong>Does Winslopr use AI?</strong></summary>
 
 No.
 
@@ -92,16 +92,16 @@ Everything is deterministic and based on explicit user choices.
 
 No.
 
-Winslop does not upload logs, telemetry, system data or usage statistics.  
+Winslopr does not upload logs, telemetry, system data or usage statistics.  
 All actions happen locally on your machine.
 </details>
 
 <details>
-<summary><strong>Can Winslop break my system?</strong></summary>
+<summary><strong>Can Winslopr break my system?</strong></summary>
 
 Any system tool can if misused.
 
-That’s why Winslop:
+That’s why Winslopr:
 - shows exactly what it will change  
 - never runs anything automatically  
 - allows changes to be reviewed and reverted  
@@ -115,7 +115,7 @@ You stay in control.
 
 You can.
 
-Winslop exists for people who prefer:
+Winslopr exists for people who prefer:
 - fewer layers  
 - less abstraction  
 - no opinions  
@@ -129,7 +129,7 @@ Just tools.
 
 Yes.
 
-Winslop is a very small, focused fork of CrapFixer.  
+Winslopr is a very small, focused fork of CrapFixer.  
 The goal was to remove complexity, reduce scope and make things easier to maintain.
 
 Smaller codebase.  
@@ -145,7 +145,7 @@ Because Microsoft said *“slop vs sophistication”* out loud.
 And because Windows isn't bad.  
 The slop is.
 
-Winslop is **anti-slop by design**.
+Winslopr is **anti-slop by design**.
 
 That’s why the UI is intentionally small, plain and functional.
 No glossy visuals.  
@@ -158,7 +158,7 @@ Slop comes in many forms:
 - **UX / Design slop** > bloated, unclear interfaces
 - **Corporate slop** > buzzwords, filler and dark patterns
 
-Winslop does the opposite:
+Winslopr does the opposite:
 It removes more than it adds.
 </details>
 
@@ -187,10 +187,8 @@ So no, the word didn’t exist. Now it does
 </details>
 
 <details>
-<summary><strong>What is Winslop written in?</strong></summary>
+<summary><strong>What is Winslopr written in?</strong></summary>
 
 C# with WinUI 3. Started as a fork of CrapFixer, rebuilt from scratch to be smaller and more focused.
 
 </details>
-
-

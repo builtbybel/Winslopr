@@ -1,6 +1,6 @@
 # Localization Guide
 
-Winslop uses the standard WinUI 3 resource system (`.resw` files) for translations.
+Winslopr uses the standard WinUI 3 resource system (`.resw` files) for translations.
 This guide explains how translations work and how you can contribute.
 
 ---
@@ -42,7 +42,7 @@ what part of the app you're translating:
 2. **Translate** every `<value>...</value>` — do NOT change the `name` attributes
 3. **Keep placeholders** like `{0}`, `{1}` — they get replaced with numbers/text at runtime
 4. **Keep special characters** like `&lt;` (this is `<` in XML) and `&#x2764;` (heart emoji)
-5. **Don't translate** brand names: Winslop, Copilot, Edge, Ko-fi, PayPal, CFEnhancer
+5. **Don't translate** brand names: Winslopr, Copilot, Edge, Ko-fi, PayPal, CFEnhancer
 
 **Example:**
 
@@ -66,7 +66,7 @@ That's it! The developer will handle the project configuration, menu entry,
 and compilation. You just provide the translated `.resw` file.
 
 **Tips for a good translation:**
-- Keep the same tone — Winslop is informal and direct
+- Keep the same tone — Winslopr is informal and direct
 - The section comments in the file tell you which page each group belongs to
 - If a value looks technical or unclear, check the English version in context
   by looking at the section header (e.g. "ToolsPage", "Donation dialog")

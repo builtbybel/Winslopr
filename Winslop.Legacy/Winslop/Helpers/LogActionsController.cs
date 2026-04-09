@@ -50,7 +50,7 @@ public class LogActionsController
         switch (selected)
         {
             case "Inspect log online (recommended)":
-                _logActions.AnalyzeOnline("https://builtbybel.github.io/Winslop/log-inspector/index.html");
+                _logActions.AnalyzeOnline("https://builtbybel.github.io/Winslopr/log-inspector/index.html");
                 break;
 
             case "Copy log to clipboard":

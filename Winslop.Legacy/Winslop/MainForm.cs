@@ -47,7 +47,7 @@ namespace Winslop
             EventHandler showAbout = (_, __) => new AboutForm().ShowDialog();
             lblRightHeader.Click += showAbout;
             toolStripMenuAbout.Click += showAbout;
-            toolStripMenuUpdate.Click += (s, _) => Process.Start($"https://builtbybel.github.io/Winslop/update.html?version={Program.GetAppVersion()}");
+            toolStripMenuUpdate.Click += (s, _) => Process.Start($"https://builtbybel.github.io/Winslopr/update.html?version={Program.GetAppVersion()}");
 
             // Initialize log actions controller
             _logActionsController = new LogActionsController(comboLogActions, _logActions);

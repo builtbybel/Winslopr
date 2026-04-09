@@ -6,13 +6,13 @@ Quick links:
 - [Feature Reference](features.md)
 - [Plugins Reference](plugins.md)
 - [Extensions Reference](extensions.md)
-- [Windows 11 Annoyances](https://builtbybel.github.io/Winslop/annoyances/) — 59 community-sourced annoyances with fixes
+- [Windows 11 Annoyances](https://builtbybel.github.io/Winslopr/annoyances/) — 59 community-sourced annoyances with fixes
 
 ---
 
 ## Getting started
 
-1. Run **Winslop.exe**
+1. Run **Winslopr.exe**
 2. Click **Inspect system** — scans your system and highlights issues
 3. Review the results in the feature tree (checkboxes)
 4. Click **Apply selected changes** to fix checked items
@@ -23,7 +23,7 @@ That's it. No account, no setup wizard, no cloud.
 
 ## Navigation
 
-Winslop uses a left sidebar with five sections:
+Winslopr uses a left sidebar with five sections:
 
 | Icon | Tab | What it does |
 |------|-----|-------------|
@@ -99,7 +99,7 @@ _App list adapted from [WinUtil by Chris Titus Tech](https://github.com/ChrisTit
 
 ## Tools tab
 
-PowerShell-based extensions that ship with Winslop. Select a tool on the left, configure options on the right, click **Run**.
+PowerShell-based extensions that ship with Winslopr. Select a tool on the left, configure options on the right, click **Run**.
 
 Included tools:
 - **Post-setup Cleanup** — disk cleanup, clear update cache, remove Windows.old
@@ -143,7 +143,7 @@ The bottom panel shows a live log of all actions. Use the **[···] menu → Lo
 
 ## Safety
 
-- Winslop shows exactly what it will change before applying
+- Winslopr shows exactly what it will change before applying
 - Nothing runs automatically — you choose what to fix
 - Changes can be reverted via right-click → Restore
 - No data is uploaded — everything stays local
