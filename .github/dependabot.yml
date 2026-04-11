@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "nuget"
+    directory: "/Winslop.Legacy/Winslop"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
+
+  - package-ecosystem: "nuget"
+    directory: "/Winslopr"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
