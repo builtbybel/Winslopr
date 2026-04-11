@@ -65,23 +65,25 @@
   <data name="Settings_Language.Text"><value>Язык</value></data>
   <data name="Settings_LanguageSubtext.Text"><value>Язык интерфейса приложения</value></data>
   <data name="Settings_TranslatedBy.Text"><value>Перевод</value></data>
-  <data name="Settings_Appearance.Text"><value>Оформление</value></data>
+  <data name="Settings_Appearance.Text"><value>Внешний вид</value></data>
+  <data name="Settings_Theme.Text"><value>Тема</value></data>
+  <data name="Settings_Backdrop.Text"><value>Фон</value></data>
   <data name="Settings_ThemeSystem"><value>Использовать системные настройки</value></data>
   <data name="Settings_ThemeLight"><value>Светлая</value></data>
   <data name="Settings_ThemeDark"><value>Тёмная</value></data>
-  <data name="Settings_RestartTitle"><value>Требуется перезапуск</value></data>
-  <data name="Settings_RestartMessage"><value>Пожалуйста, перезапустите приложение, чтобы изменения вступили в силу.</value></data>
+
   <data name="Settings_Extensions.Text"><value>Расширения</value></data>
-  <data name="Settings_ExtensionsSubtext.Text"><value>Управление нативными плагинами и автономными инструментами.</value></data>
   <data name="Settings_ToolScripts.Text"><value>Расширения</value></data>
-  <data name="Settings_ToolScriptsDescription.Text"><value>Автономные скрипты, которые открываются и запускаются на странице «Инструменты».</value></data>
-  <data name="Settings_OpenToolsPage.Text"><value>Открыть страницу инструментов</value></data>
+  <data name="Settings_ToolScriptsDescription.Text"><value>Отдельные сценарии, которые открываются и запускаются со страницы «Инструменты».</value></data>
+  <data name="Settings_OpenToolsPage.Text"><value>Открыть страницу «Инструменты»</value></data>
   <data name="Settings_Plugins.Text"><value>Плагины</value></data>
-  <data name="Settings_PluginsDescription.Text"><value>Нативные плагины, которые интегрируются с функциями на главной странице.</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>Встроенные плагины, которые интегрируются с функциями на главной странице.</value></data>
   <data name="Settings_ManagePlugins.Text"><value>Управление плагинами</value></data>
-  <data name="Settings_CompatOk"><value>Полностью совместим</value></data>
+  <data name="Settings_Legacy.Text"><value>Winslopr Legacy</value></data>
+  <data name="Settings_LegacyDescription.Text"><value>Классическая версия Winslopr на WinForms.</value></data>
+  <data name="Settings_LaunchLegacy.Text"><value>Запустить Legacy</value></data>
+  <data name="Settings_CompatOk"><value>Полная совместимость</value></data>
   <data name="Settings_CompatWarn"><value>Ограниченная совместимость</value></data>
-  <data name="Settings_About.Text"><value>О приложении</value></data>
   <data name="Settings_CheckUpdates.Text"><value>Проверить обновления</value></data>
   <data name="Settings_Feedback.Text"><value>Отправить отзыв</value></data>
   <data name="MenuHelp.Text"><value>Справка</value></data>
@@ -93,8 +95,6 @@
   <data name="MenuToggle.Text"><value>Выбрать всё</value></data>
   <data name="MenuUndo.Text"><value>Отменить последние изменения</value></data>
   <data name="MenuRefresh.Text"><value>Обновить</value></data>
-  <data name="MenuExport.Text"><value>Экспортировать выбор...</value></data>
-  <data name="MenuImport.Text"><value>Импортировать из файла...</value></data>
 
   <!-- ============================================================ -->
   <!-- XAML x:Uid: MainWindow — Log actions submenu                  -->
@@ -112,6 +112,7 @@
   <!-- ============================================================ -->
   <data name="BtnAnalyzeText.Text"><value>Проверить систему</value></data>
   <data name="BtnFixText.Text"><value>Применить выбранные изменения</value></data>
+  <data name="BtnActions.Content"><value>Действия</value></data>
 
   <!-- ============================================================ -->
   <!-- XAML x:Uid: FeaturesPage                                      -->
@@ -122,7 +123,6 @@
   <!-- ============================================================ -->
   <!-- XAML x:Uid: AppsPage                                          -->
   <!-- ============================================================ -->
-  <data name="ComboDisplayMode.PlaceholderText"><value>Выберите режим сканирования...</value></data>
 
   <!-- ============================================================ -->
   <!-- XAML x:Uid: InstallPage                                       -->
@@ -148,6 +148,7 @@
   <data name="BtnRun.Content"><value>Выполнить</value></data>
   <data name="BtnToolUninstall.Content"><value>Удалить</value></data>
   <data name="BtnOpenFolder.ToolTipService.ToolTip"><value>Открыть папку со скриптами</value></data>
+  <data name="Tools_SelectHint.Text"><value>Выберите инструмент для начала работы</value></data>
 
   <!-- ============================================================ -->
   <!-- XAML x:Uid: PluginsDialog                                     -->
@@ -300,6 +301,20 @@
   <data name="Log_SkippedRestore"><value>Пропущено восстановление</value></data>
   <data name="Log_ProperlyConfigured"><value>Функция: {0} настроена правильно.</value></data>
   <data name="Log_RequiresAttention"><value>Функция: {0} требует внимания.</value></data>
+  <data name="Summary_Fix"><value>{0} исправлено, {1} пропущено, {2} с ошибкой</value></data>
+  <data name="Summary_FixTitleDone"><value>Изменения применены</value></data>
+  <data name="Summary_FixTitleWarning"><value>Изменения применены с ошибками</value></data>
+  <data name="Summary_Fixed"><value>Исправлено</value></data>
+  <data name="Summary_Skipped"><value>Пропущено</value></data>
+  <data name="Summary_Failed"><value>Не удалось</value></data>
+  <data name="Summary_FixAllGood"><value>Все выбранные изменения успешно применены.</value></data>
+  <data name="Summary_FixHasErrors"><value>Некоторые изменения не удалось применить. Подробности см. в журнале.</value></data>
+  <data name="Summary_Restore"><value>{0} восстановлено, {1} пропущено, {2} с ошибкой</value></data>
+  <data name="Summary_RestoreTitleDone"><value>Восстановление завершено</value></data>
+  <data name="Summary_RestoreTitleWarning"><value>Восстановление завершено с ошибками</value></data>
+  <data name="Summary_Restored"><value>Восстановлено</value></data>
+  <data name="Summary_RestoreAllGood"><value>Все выбранные функции успешно восстановлены.</value></data>
+  <data name="Summary_RestoreHasErrors"><value>Некоторые функции не удалось восстановить. Подробности см. в журнале.</value></data>
 
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Analysis summary (FeaturesPage.xaml.cs)    -->
@@ -325,7 +340,7 @@
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Restore dialogs (FeaturesPage.xaml.cs)     -->
   <!-- ============================================================ -->
-   <data name="Restore_Title"><value>Восстановить выбранное</value></data>
+  <data name="Restore_Title"><value>Восстановить выбранное</value></data>
   <data name="Restore_NoItems"><value>Ничего не выбрано.
 
 Пожалуйста, отметьте одну или несколько функций/плагинов в дереве.</value></data>
@@ -334,7 +349,6 @@
 Все предыдущие настройки для этих элементов могут быть отменены.
 
 Продолжить?</value></data>
-  <data name="Restore_Done"><value>Восстановлено {0} выбранных(й) элементов(а).</value></data>
 
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Profile actions (FeaturesPage.xaml.cs)     -->
@@ -386,6 +400,12 @@
   <data name="Tools_Done"><value>Готово.</value></data>
   <data name="Tools_OpenedConsole"><value>Открыто в консоли.</value></data>
   <data name="Tools_CompletedLog"><value>Завершено, лог сформирован.</value></data>
+  <data name="Tools_UninstallTitle"><value>Удаление расширения</value></data>
+  <data name="Tools_UninstallConfirm"><value>Удалить "{0}"? Это действие невозможно отменить.</value></data>
+  <data name="Tools_UninstallYes"><value>Удалить</value></data>
+  <data name="Common_Cancel"><value>Отмена</value></data>
+  <data name="Tools_HelpAvailable"><value>Для этого инструмента доступно руководство</value></data>
+  <data name="Tools_ShowHelp"><value>Показать справку</value></data>
 
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Donation dialog (DonationHelper.cs)        -->
@@ -397,21 +417,11 @@
   <data name="Donation_MaybeLater"><value>Может, позже</value></data>
 
   <!-- ============================================================ -->
-  <!-- C# ResourceLoader: Migration dialog (MigrationHelper.cs)      -->
+  <!-- XAML: Migration InfoBar (MainWindow.xaml)                      -->
   <!-- ============================================================ -->
-  <data name="Migration_Title"><value>Winslop теперь на WinUI 3</value></data>
-  <data name="Migration_Intro"><value>Winslop переехал с WinForms / .NET Framework на WinUI 3. Было ли это весело? Примерно 90% из этого было невыносимо. Оставшиеся 10%, как ни странно, были даже приятными. Так или иначе, он существует, и теперь ваша очередь его оценить.</value></data>
-  <data name="Migration_ElephantHeading"><value>Слон в комнате</value></data>
-  <data name="Migration_ElephantBody"><value>WinForms, WPF, Silverlight &gt; WinRT XAML / Windows Store Apps &gt; UWP / WinUI 2 &gt; WinUI 3. Каждый переход обещал быть последним. Каждый не был. WinUI 3 — текущая рекомендация Microsoft, и да, она приносит размытие Mica и современные элементы управления, но также добавляет церемоний, сложности и ритуалов XAML только для показа кнопки.</value></data>
-  <data name="Migration_ReadMore"><value>Читать полный отчет &#x2192;</value></data>
-  <data name="Migration_PollHeading"><value>Помогите определить путь Winslop</value></data>
-  <data name="Migration_PollBody"><value>Должен ли Winslop пойти по пути современного WinUI 3 или остаться тем, чем всегда был: классическим, легким и быстрым десктопным приложением? Проголосуйте и скажите нам, что вы думаете.</value></data>
-  <data name="Migration_AlreadyVoted"><value>Я уже голосовал(а), не показывать кнопку опроса снова</value></data>
-  <data name="Migration_LegacyHeading"><value>Не готовы к WinUI 3?</value></data>
-  <data name="Migration_LegacyBody"><value>Справедливо. Классическая WinForms-версия все еще здесь. Легкая, быстрая, без церемоний, точно такая же, какой была всегда.</value></data>
-  <data name="Migration_LaunchLegacy"><value>Запустить Winslop Legacy</value></data>
-  <data name="Migration_DontShowAgain"><value>Понятно, больше не показывать</value></data>
-  <data name="Migration_Vote"><value>Проголосовать за будущее Winslop</value></data>
+  <data name="InfoMigration.Title"><value>Новый облик, новая глава — нужно ли Winslopr новое имя?</value></data>
+  <data name="InfoMigration.Message"><value>Winslopr обрёл новое лицо — стоит ли сменить и имя? С переходом на WinUI 3 приложение изменилось. Расскажите, что вы думаете.</value></data>
+  <data name="InfoMigration_Vote.Content"><value>Проголосовать →</value></data>
 
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Plugins status (PluginsDialog.xaml.cs)     -->
