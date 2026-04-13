@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Language_TranslatorName"><value>Excalibur-osu</value></data>
+  <data name="Language_TranslatorWebsite"><value>https://github.com/Excalibur-osu</value></data>
+  <data name="Language_TranslatedBy"><value>翻译</value></data>
+  <data name="NavHome.Text"><value>主页</value></data>
+  <data name="NavApps.Text"><value>应用</value></data>
+  <data name="NavInstall.Text"><value>安装</value></data>
+  <data name="NavTools.Text"><value>工具</value></data>
+  <data name="NavSupport.Text"><value>支持</value></data>
+  <data name="NavSettings.Text"><value>设置</value></data>
+  <data name="MenuKofi.Text"><value>在 Ko-fi 请我喝杯咖啡</value></data>
+  <data name="MenuPaypal.Text"><value>通过 PayPal 捐赠</value></data>
+  <data name="MenuManagePlugins.Text"><value>管理插件</value></data>
+  <data name="MenuCheckUpdates.Text"><value>检查更新</value></data>
+  <data name="MenuHelp.Text"><value>帮助</value></data>
+  <data name="MenuLanguage.Text"><value>语言</value></data>
+  <data name="SearchBox.PlaceholderText"><value>搜索</value></data>
+  <data name="MenuToggle.Text"><value>全选/全不选</value></data>
+  <data name="MenuUndo.Text"><value>撤销上次更改</value></data>
+  <data name="MenuRefresh.Text"><value>刷新</value></data>
+  <data name="MenuExport.Text"><value>导出选择...</value></data>
+  <data name="MenuImport.Text"><value>从文件导入...</value></data>
+  <data name="MenuLogActions.Text"><value>日志操作</value></data>
+  <data name="MenuInspectLog.Text"><value>在线分析日志</value></data>
+  <data name="MenuCopyLog.Text"><value>复制日志到剪贴板</value></data>
+  <data name="MenuClearLog.Text"><value>清空日志</value></data>
+  <data name="MenuLogChecked.Text"><value>日志：已勾选功能</value></data>
+  <data name="MenuLogUnchecked.Text"><value>日志：未勾选功能</value></data>
+  <data name="MenuLogSummary.Text"><value>日志：摘要</value></data>
+  <data name="BtnAnalyzeText.Text"><value>检查系统</value></data>
+  <data name="BtnFixText.Text"><value>应用所选更改</value></data>
+  <data name="ComboProfiles.PlaceholderText"><value>&lt;选择配置文件...&gt;</value></data>
+  <data name="ChkIssuesOnly.Content"><value>仅显示问题项</value></data>
+  <data name="ComboDisplayMode.PlaceholderText"><value>选择扫描模式...</value></data>
+  <data name="ComboCategory.PlaceholderText"><value>分类...</value></data>
+  <data name="ChkInstalledOnly.Content"><value>已安装</value></data>
+  <data name="ChkUpgradesOnly.Content"><value>可升级</value></data>
+  <data name="BtnInstall.Content"><value>安装</value></data>
+  <data name="BtnUpgradeSelected.Content"><value>升级所选</value></data>
+  <data name="BtnUpgradeAll.Content"><value>全部升级</value></data>
+  <data name="BtnUninstall.Content"><value>卸载</value></data>
+  <data name="ColAppName.Text"><value>应用名称</value></data>
+  <data name="ColPackageId.Text"><value>包 ID</value></data>
+  <data name="ColInstalled.Text"><value>已安装</value></data>
+  <data name="ColUpdate.Text"><value>更新</value></data>
+  <data name="ComboFilter.PlaceholderText"><value>筛选...</value></data>
+  <data name="ComboOptions.PlaceholderText"><value>选项...</value></data>
+  <data name="TextInput.PlaceholderText"><value>输入参数（例如：ID 或原始参数）</value></data>
+  <data name="BtnRun.Content"><value>运行</value></data>
+  <data name="BtnToolUninstall.Content"><value>卸载</value></data>
+  <data name="BtnOpenFolder.ToolTipService.ToolTip"><value>打开脚本文件夹</value></data>
+  <data name="PluginsDialog.Title"><value>管理插件</value></data>
+  <data name="PluginsDialog.CloseButtonText"><value>关闭</value></data>
+  <data name="TxtSearch.PlaceholderText"><value>搜索插件...</value></data>
+  <data name="ColPlugin.Text"><value>插件</value></data>
+  <data name="ColStatus.Text"><value>状态</value></data>
+  <data name="ColType.Text"><value>类型</value></data>
+  <data name="BtnPluginInstall.Content"><value>安装</value></data>
+  <data name="BtnPluginUpdateAll.Content"><value>全部更新</value></data>
+  <data name="BtnPluginRemove.Content"><value>移除</value></data>
+  <data name="BtnPluginEdit.Content"><value>编辑</value></data>
+  <data name="BtnPluginOpenFolder.Content"><value>打开文件夹</value></data>
+  <data name="BtnPluginSubmit.Content"><value>提交</value></data>
+  <data name="Category_Issues"><value>问题</value></data>
+  <data name="Category_System"><value>系统</value></data>
+  <data name="Category_MSEdge"><value>MS Edge</value></data>
+  <data name="Category_UI"><value>界面</value></data>
+  <data name="Category_Taskbar"><value>任务栏</value></data>
+  <data name="Category_Gaming"><value>游戏</value></data>
+  <data name="Category_Privacy"><value>隐私</value></data>
+  <data name="Category_Ads"><value>广告</value></data>
+  <data name="Category_AI"><value>AI</value></data>
+  <data name="Feature_ClickToDo"><value>禁用 Click to Do（仅 Copilot+ PC）</value></data>
+  <data name="Feature_CopilotTaskbar"><value>不要在任务栏显示 Copilot</value></data>
+  <data name="Feature_Recall"><value>在 Windows 11 中关闭 Recall</value></data>
+  <data name="Feature_DisableSearchBoxSuggestions"><value>禁用 Bing 搜索结果</value></data>
+  <data name="Feature_FileExplorerAds"><value>禁用文件资源管理器广告</value></data>
+  <data name="Feature_FinishSetupAds"><value>禁用完成设置广告</value></data>
+  <data name="Feature_LockScreenAds"><value>禁用锁屏提示和广告</value></data>
+  <data name="Feature_PersonalizedAds"><value>禁用个性化广告</value></data>
+  <data name="Feature_SettingsAds"><value>禁用设置中的广告</value></data>
+  <data name="Feature_StartmenuAds"><value>禁用开始菜单广告</value></data>
+  <data name="Feature_TailoredExperiences"><value>禁用定制化体验</value></data>
+  <data name="Feature_TipsAndSuggestions"><value>禁用通用提示和广告</value></data>
+  <data name="Feature_WelcomeExperienceAds"><value>禁用欢迎体验广告</value></data>
+  <data name="Feature_BrowserSignin"><value>禁用浏览器登录和同步服务</value></data>
+  <data name="Feature_DefaultTopSites"><value>不要在新标签页显示赞助链接</value></data>
+  <data name="Feature_DefautBrowserSetting"><value>禁用将 Microsoft Edge 设为默认浏览器</value></data>
+  <data name="Feature_EdgeCollections"><value>禁用 Collections 功能</value></data>
+  <data name="Feature_EdgeShoppingAssistant"><value>禁用购物助手</value></data>
+  <data name="Feature_FirstRunExperience"><value>不显示首次运行体验</value></data>
+  <data name="Feature_GamerMode"><value>禁用游戏模式</value></data>
+  <data name="Feature_HubsSidebar"><value>禁用 Edge 中的 Copilot 图标</value></data>
+  <data name="Feature_ImportOnEachLaunch"><value>启动时不从其他浏览器导入数据</value></data>
+  <data name="Feature_StartupBoost"><value>禁用启动加速</value></data>
+  <data name="Feature_TabPageQuickLinks"><value>不要在新标签页显示快速链接</value></data>
+  <data name="Feature_UserFeedback"><value>不显示提交用户反馈选项</value></data>
+  <data name="Feature_GameDVR"><value>禁用 Game DVR</value></data>
+  <data name="Feature_PowerThrottling"><value>禁用电源节流</value></data>
+  <data name="Feature_VisualFX"><value>禁用视觉特效</value></data>
+  <data name="Feature_BSODDetails"><value>蓝屏时显示详细信息而不是哭脸</value></data>
+  <data name="Feature_DisableHibernation"><value>禁用休眠</value></data>
+  <data name="Feature_MenuShowDelay"><value>加快菜单显示延迟</value></data>
+  <data name="Feature_NetworkThrottling"><value>禁用网络节流</value></data>
+  <data name="Feature_SpeedUpShutdown"><value>加快关机速度</value></data>
+  <data name="Feature_SystemResponsiveness"><value>优化系统响应性</value></data>
+  <data name="Feature_VerboseStatus"><value>启用详细登录状态消息</value></data>
+  <data name="Feature_ActivityHistory"><value>禁用活动历史记录</value></data>
+  <data name="Feature_AppLaunchTracking"><value>禁用应用启动跟踪</value></data>
+  <data name="Feature_DiagnosticData"><value>减少诊断数据（基础）</value></data>
+  <data name="Feature_LocationTracking"><value>禁用位置跟踪</value></data>
+  <data name="Feature_LockScreenSlideshow"><value>禁用锁屏幻灯片</value></data>
+  <data name="Feature_NarratorOnlineServices"><value>禁用讲述人联机服务</value></data>
+  <data name="Feature_OnlineSpeechRecognition"><value>禁用在线语音识别</value></data>
+  <data name="Feature_PrivacyExperience"><value>禁用登录时隐私设置体验</value></data>
+  <data name="Feature_SilentAppInstallation"><value>阻止静默安装应用</value></data>
+  <data name="Feature_WindowsSpotlightLockScreen"><value>禁用锁屏聚焦</value></data>
+  <data name="Feature_DisableBingSearch"><value>禁用 Bing 搜索</value></data>
+  <data name="Feature_AppDarkMode"><value>为应用启用深色模式</value></data>
+  <data name="Feature_SystemDarkMode"><value>为系统启用深色模式</value></data>
+  <data name="Feature_FullContextMenus"><value>在 Windows 11 显示完整右键菜单</value></data>
+  <data name="Feature_LockScreen"><value>不使用个性化锁屏</value></data>
+  <data name="Feature_ShowOrHideMostUsedApps"><value>隐藏开始菜单中常用应用</value></data>
+  <data name="Feature_DisableSnapAssistFlyout"><value>禁用 Snap Assist 弹出层</value></data>
+  <data name="Feature_StartLayout"><value>在开始菜单固定更多应用</value></data>
+  <data name="Feature_Transparency"><value>禁用透明效果</value></data>
+  <data name="Feature_AlwaysShowTrayIcons"><value>始终显示所有系统托盘图标</value></data>
+  <data name="Feature_CleanTaskbar"><value>清理任务栏</value></data>
+  <data name="Feature_DisableNewsAndInterests"><value>禁用新闻和兴趣</value></data>
+  <data name="Feature_DisableWidgets"><value>禁用小组件</value></data>
+  <data name="Feature_RemoveMeetNowButton"><value>从系统托盘移除“立即开会”按钮</value></data>
+  <data name="Feature_SearchboxTaskbarMode"><value>隐藏任务栏搜索框</value></data>
+  <data name="Feature_ShowTaskViewButton"><value>隐藏任务栏任务视图按钮</value></data>
+  <data name="Feature_TaskbarAlignment"><value>将开始按钮左对齐</value></data>
+  <data name="Feature_TaskbarEndTask"><value>启用结束任务</value></data>
+  <data name="Feature_TaskbarSmallIcons"><value>缩小任务栏</value></data>
+  <data name="Feature_BasicCleanup"><value>基础磁盘清理</value></data>
+  <data name="InapplicableReason_Win10Only"><value>仅限 Windows 10</value></data>
+  <data name="InapplicableReason_Win11Only"><value>仅限 Windows 11</value></data>
+  <data name="InapplicableReason_NotApplicable"><value>不适用</value></data>
+  <data name="Log_General"><value>通用</value></data>
+  <data name="Log_Skipped"><value>已跳过</value></data>
+  <data name="Log_NotApplicableOS"><value>当前系统不适用。</value></data>
+  <data name="Log_NotConfigured"><value>未按建议配置。</value></data>
+  <data name="Log_Fixed"><value>已修复</value></data>
+  <data name="Log_FixFailed"><value>修复失败（该功能可能需要管理员权限）</value></data>
+  <data name="Log_Restored"><value>已还原</value></data>
+  <data name="Log_RestoreFailed"><value>还原失败</value></data>
+  <data name="Log_SkippedRestore"><value>已跳过还原</value></data>
+  <data name="Log_ProperlyConfigured"><value>功能：{0} 已正确配置。</value></data>
+  <data name="Log_RequiresAttention"><value>功能：{0} 需要注意。</value></data>
+  <data name="Analysis_Complete"><value>分析完成</value></data>
+  <data name="Analysis_TitleAttention"><value>分析完成 - 需要关注</value></data>
+  <data name="Analysis_WindowsFeatures"><value>Windows 功能</value></data>
+  <data name="Analysis_Plugins"><value>插件</value></data>
+  <data name="Analysis_Total"><value>总计</value></data>
+  <data name="Analysis_Issues"><value>个问题</value></data>
+  <data name="Analysis_IssuesFound"><value>发现 {0} 个问题 - 应用修复前请先查看日志。</value></data>
+  <data name="Analysis_AllGood"><value>一切正常！</value></data>
+  <data name="Analysis_OpenLogInspector"><value>打开在线日志分析器</value></data>
+  <data name="Context_Analyze"><value>分析</value></data>
+  <data name="Context_Fix"><value>修复</value></data>
+  <data name="Context_Restore"><value>还原</value></data>
+  <data name="Context_Help"><value>帮助</value></data>
+  <data name="Restore_Title"><value>还原选择</value></data>
+  <data name="Restore_NoItems"><value>未选择任何项。
+
+请先在树中勾选一个或多个功能/插件。</value></data>
+  <data name="Restore_ConfirmTitle"><value>还原已选项</value></data>
+  <data name="Restore_ConfirmBody"><value>这将仅把所选（已勾选）的 {0} 项还原到原始状态。
+这些项目之前的调整可能会被撤销。
+
+是否继续？</value></data>
+  <data name="Restore_Done"><value>已还原 {0} 个已选项。</value></data>
+  <data name="Profile_Export"><value>导出选择...</value></data>
+  <data name="Profile_Import"><value>从文件导入...</value></data>
+  <data name="Profile_OpenFolder"><value>打开配置文件夹...</value></data>
+  <data name="Profile_ExportedTo"><value>选择已导出到：{0}</value></data>
+  <data name="Profile_ImportedFrom"><value>已从 {1} 导入 {0} 项。</value></data>
+  <data name="Profile_Loaded"><value>配置文件“{0}”已加载（已选择 {1} 项）。</value></data>
+  <data name="ScanMode_Standard"><value>标准扫描（推荐）</value></data>
+  <data name="ScanMode_Full"><value>完整扫描（所有已安装应用）</value></data>
+  <data name="ScanMode_Community"><value>使用社区列表扫描（CFEnhancer）</value></data>
+  <data name="ScanMode_BuiltIn"><value>使用内置列表扫描</value></data>
+  <data name="Apps_Scanning"><value>正在扫描已安装应用，请稍候...</value></data>
+  <data name="Apps_DisplayAll"><value>显示所有已安装应用。</value></data>
+  <data name="Apps_NoPlugin"><value>未找到插件列表。安装 CFEnhancer 后可使用插件推荐。</value></data>
+  <data name="Apps_DisplayPlugin"><value>显示插件推荐（CFEnhancer）。</value></data>
+  <data name="Apps_DisplayBuiltIn"><value>显示内置推荐。</value></data>
+  <data name="Apps_DisplayRecommendedPlugin"><value>显示推荐应用（插件）。</value></data>
+  <data name="Apps_DisplayRecommendedBuiltIn"><value>显示推荐应用（内置）。</value></data>
+  <data name="Apps_AnalysisTitle"><value>应用分析</value></data>
+  <data name="Apps_ShowingAll"><value>显示所有应用（白名单除外）：{0}</value></data>
+  <data name="Apps_BloatwareDetected"><value>检测到臃肿应用：</value></data>
+  <data name="Apps_NoBloatware"><value>未发现 Microsoft Store 臃肿应用。</value></data>
+  <data name="Apps_CleanupComplete"><value>应用清理完成。</value></data>
+  <data name="Install_Installed"><value>已安装</value></data>
+  <data name="Install_Upgradeable"><value>可升级</value></data>
+  <data name="Tools_Loading"><value>正在加载扩展...</value></data>
+  <data name="Tools_FolderCreated"><value>脚本文件夹不存在，已创建。</value></data>
+  <data name="Tools_Loaded"><value>已加载 {0} 个扩展。</value></data>
+  <data name="Tools_SelectExtension"><value>请在左侧选择一个扩展。</value></data>
+  <data name="Tools_Running"><value>正在运行...</value></data>
+  <data name="Tools_Done"><value>完成。</value></data>
+  <data name="Tools_OpenedConsole"><value>已在控制台中打开。</value></data>
+  <data name="Tools_CompletedLog"><value>已完成并生成日志。</value></data>
+  <data name="Donation_Title"><value>支持 Winslop &#x2764;</value></data>
+  <data name="Donation_Body"><value>如果 Winslop 为你节省了时间，欢迎支持它的持续发展。它能保持免费和 anti-slop，离不开像你这样的支持者。</value></data>
+  <data name="Donation_AlreadyDonated"><value>我已捐赠，不再显示</value></data>
+  <data name="Donation_Donate"><value>捐赠</value></data>
+  <data name="Donation_MaybeLater"><value>稍后再说</value></data>
+  <data name="Migration_Title"><value>Winslop 现已迁移到 WinUI 3</value></data>
+  <data name="Migration_Intro"><value>Winslop 已从 WinForms / .NET Framework 迁移到 WinUI 3。有趣吗？大约 90% 都很折磨。剩下 10% 居然还有点满足感。不管怎样，迁移已经完成，现在轮到你来评判了。</value></data>
+  <data name="Migration_ElephantHeading"><value>房间里的大象</value></data>
+  <data name="Migration_ElephantBody"><value>WinForms、WPF、Silverlight &gt; WinRT XAML / Windows Store Apps &gt; UWP / WinUI 2 &gt; WinUI 3。每次迁移都说是最后一次，但都不是。WinUI 3 是微软当前推荐方案，确实带来了 Mica 模糊和 Fluent 控件——同时也带来了流程、复杂度，以及只为了显示一个按钮就要进行一堆 XAML 仪式。</value></data>
+  <data name="Migration_ReadMore"><value>阅读完整说明 &#x2192;</value></data>
+  <data name="Migration_PollHeading"><value>帮助决定 Winslop 的方向</value></data>
+  <data name="Migration_PollBody"><value>Winslop 应该走现代 WinUI 3 路线，还是保持它一直以来的样子：经典、轻量、快速的桌面应用？欢迎投票并告诉我们你的想法。</value></data>
+  <data name="Migration_AlreadyVoted"><value>我已投票，不再显示调查按钮</value></data>
+  <data name="Migration_LegacyHeading"><value>还没准备好用 WinUI 3？</value></data>
+  <data name="Migration_LegacyBody"><value>完全可以理解。经典 WinForms 版本仍在这里：轻量、快速、无额外流程，一如既往。</value></data>
+  <data name="Migration_LaunchLegacy"><value>启动 Winslop Legacy</value></data>
+  <data name="Migration_DontShowAgain"><value>知道了，不再显示</value></data>
+  <data name="Migration_Vote"><value>为 Winslop 的未来投票</value></data>
+  <data name="Plugins_Installed"><value>已安装</value></data>
+  <data name="Plugins_Updated"><value>已更新</value></data>
+  <data name="LogActions_NotAvailable"><value>[功能] 不可用。</value></data>
+  <data name="LogActions_Summary"><value>[功能] 节点总数：{0}，已勾选：{1}</value></data>
+  <data name="LogActions_NoChecked"><value>[功能] 没有已勾选项。</value></data>
+  <data name="LogActions_CheckedItems"><value>[功能] 已勾选项（{0}）：</value></data>
+  <data name="LogActions_UncheckedItems"><value>[功能] 未勾选叶子项（{0}）：</value></data>
+  <data name="Language_RestartTitle"><value>语言已更改</value></data>
+  <data name="Language_RestartRequired"><value>请重启 Winslop 以使语言更改生效。</value></data>
+  <data name="Common_Yes"><value>是</value></data>
+  <data name="Common_No"><value>否</value></data>
+  <data name="Common_OK"><value>确定</value></data>
+  <data name="Common_Close"><value>关闭</value></data>
+</root>

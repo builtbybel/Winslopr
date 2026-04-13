@@ -47,3 +47,13 @@ ZuneVideo
 DevHome
 Copilot
 Clipchamp
+Cortana
+Microsoft Teams
+GetHelp
+GameBar
+CapCut
+Weather
+McAfee
+Xbox
+MediaPlayer
+WindowsSoundRecorder

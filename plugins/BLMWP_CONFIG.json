@@ -1,0 +1,19 @@
+{
+    "apps": [
+      "Discord",
+      "OneDrive",
+      "PlariumPlay",
+      "ShareX",
+      "MicrosoftTeams",
+      "McAfee",
+      "Chrome",
+      "WhatsApp",
+      "Terminal",
+      "Steam",
+      "EpicGamesLauncher",
+      "Spotify"
+    ],
+    "abortIfMissing": false,
+    "action": "disable", 
+    "guys": "ADD MORE APPS HERE, I ADDED MINE, IDK MAN WHAT OTHER APPS START UP WHEN YOU BOOT YOUR PC. YOU CAN MODIFY THIS FILE TO YOUR LIKING."
+  }
