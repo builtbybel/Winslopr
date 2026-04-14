@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- ============================================================ -->
+  <!-- Translator credits                                            -->
+  <!-- Fill in your name and website to be credited in the app.      -->
+  <!-- Leave empty if you don't want to be credited.                 -->
+  <!-- ============================================================ -->
+  <data name="Language_TranslatorName"><value>Andrew Poženel</value></data>
+  <data name="Language_TranslatorWebsite">https://github.com/anderlli0053<value></value></data>
+  <data name="Language_TranslatedBy"><value>Prevedel</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Navigation                          -->
+  <!-- ============================================================ -->
+  <data name="NavHome.Text"><value>Domov</value></data>
+  <data name="NavApps.Text"><value>Programi</value></data>
+  <data name="NavInstall.Text"><value>Namesti</value></data>
+  <data name="NavTools.Text"><value>Orodja</value></data>
+  <data name="NavSettings.Text"><value>Nastavitve</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Support flyout + Plugins tip        -->
+  <!-- ============================================================ -->
+  <data name="MenuPlugins.Text"><value>Vtičniki</value></data>
+  <data name="PluginsTip.Title"><value>Odkriti vtičniki!</value></data>
+  <data name="PluginsTip.Subtitle"><value>Razširite Winslopr z izvornimi vtičniki in orodnimi skripti.</value></data>
+  <data name="PluginsTip.ActionButtonContent"><value>Ogled vtičnikov</value></data>
+  <data name="PluginsTip.CloseButtonContent"><value>Pozneje</value></data>
+  <data name="MenuKofi.Text"><value>Kupite mi kavo na Ko-fiju</value></data>
+  <data name="MenuPaypal.Text"><value>Donirajte prek PayPala</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: SettingsPage                                      -->
+  <!-- ============================================================ -->
+  <data name="Settings_Title.Text"><value>Nastavitve</value></data>
+  <data name="Settings_Language.Text"><value>Jezik</value></data>
+  <data name="Settings_LanguageSubtext.Text"><value>Jezik prikaza aplikacije</value></data>
+  <data name="Settings_TranslatedBy.Text"><value>Prevod</value></data>
+  <data name="Settings_Appearance.Text"><value>Videz</value></data>
+  <data name="Settings_Theme.Text"><value>Tema</value></data>
+  <data name="Settings_Backdrop.Text"><value>Ozadje</value></data>
+  <data name="Settings_CompactSpacing.Text"><value>Kompaktni razmik</value></data>
+  <data name="Settings_CompactSpacingSubtext.Text"><value>Zmanjša prostor med elementi uporabniškega vmesnika</value></data>
+  <data name="Settings_ThemeSystem"><value>Uporabi sistemsko nastavitev</value></data>
+  <data name="Settings_ThemeLight"><value>Svetla</value></data>
+  <data name="Settings_ThemeDark"><value>Temna</value></data>
+
+  <data name="Settings_Extensions.Text"><value>Razširitve</value></data>
+  <data name="Settings_Plugins.Text"><value>Vtičniki &amp; skripti</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>Namestite izvorne vtičnike za drevo funkcij in skripte orodij za zavihek Orodja.</value></data>
+  <data name="Settings_ManagePlugins.Text"><value>Upravljanje vtičnikov</value></data>
+  <data name="Settings_Legacy.Text"><value>Winslopr Legacy</value></data>
+  <data name="Settings_LegacyDescription.Text"><value>Klasična WinForms različica programa Winslopr.</value></data>
+  <data name="Settings_LaunchLegacy.Text"><value>Zaženi Legacy</value></data>
+  <data name="Settings_CompatOk"><value>Popolna združljivost</value></data>
+  <data name="Settings_CompatWarn"><value>Omejena združljivost</value></data>
+  <data name="Settings_CheckUpdates.Text"><value>Preveri za posodobitvami</value></data>
+  <data name="Settings_Feedback.Text"><value>Pošlji povratne informacije</value></data>
+  <data name="MenuHelp.Text"><value>Pomoč</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Search & More options menu           -->
+  <!-- ============================================================ -->
+  <data name="SearchBox.PlaceholderText"><value>Iskanje</value></data>
+  <data name="MenuToggle.Text"><value>Preklopi vse</value></data>
+  <data name="MenuUndo.Text"><value>Razveljavi zadnje spremembe</value></data>
+  <data name="MenuRefresh.Text"><value>Osveži</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Log actions submenu                  -->
+  <!-- ============================================================ -->
+  <data name="MenuLogActions.Text"><value>Dejanja dnevnika</value></data>
+  <data name="MenuInspectLog.Text"><value>Pregled dnevnika na spletu</value></data>
+  <data name="MenuCopyLog.Text"><value>Kopiraj dnevnik v odložišče</value></data>
+  <data name="MenuClearLog.Text"><value>Počisti dnevnik</value></data>
+  <data name="MenuLogChecked.Text"><value>Dnevnik: označene funkcije</value></data>
+  <data name="MenuLogUnchecked.Text"><value>Dnevnik: neoznačene funkcije</value></data>
+  <data name="MenuLogSummary.Text"><value>Dnevnik: povzetek</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: MainWindow — Bottom buttons                       -->
+  <!-- ============================================================ -->
+  <data name="BtnAnalyzeText.Text"><value>Pregled sistema</value></data>
+  <data name="BtnFixText.Text"><value>Uporabi izbrane spremembe</value></data>
+  <data name="BtnActions.Content"><value>Dejanja</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: FeaturesPage                                      -->
+  <!-- ============================================================ -->
+  <data name="ComboProfiles.PlaceholderText"><value>&lt;Izberite profil...&gt;</value></data>
+  <data name="ChkIssuesOnly.Content"><value>Prikaži samo napačno konfigurirane</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: AppsPage                                          -->
+  <!-- ============================================================ -->
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: InstallPage                                       -->
+  <!-- ============================================================ -->
+  <data name="ComboCategory.PlaceholderText"><value>Kategorija...</value></data>
+  <data name="ChkInstalledOnly.Content"><value>Nameščeno</value></data>
+  <data name="ChkUpgradesOnly.Content"><value>Nadgradljivo</value></data>
+  <data name="BtnInstall.Content"><value>Namesti</value></data>
+  <data name="BtnUpgradeSelected.Content"><value>Nadgradi</value></data>
+  <data name="BtnUpgradeAll.Content"><value>Nadgradi vse</value></data>
+  <data name="BtnUninstall.Content"><value>Odstrani</value></data>
+  <data name="ColAppName.Text"><value>Ime aplikacije</value></data>
+  <data name="ColPackageId.Text"><value>ID paketa</value></data>
+  <data name="ColInstalled.Text"><value>Nameščeno</value></data>
+  <data name="ColUpdate.Text"><value>Posodobitev</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: ToolsPage                                         -->
+  <!-- ============================================================ -->
+  <data name="ComboFilter.PlaceholderText"><value>Filtriraj...</value></data>
+  <data name="ComboOptions.PlaceholderText"><value>Možnosti...</value></data>
+  <data name="TextInput.PlaceholderText"><value>Vnesite vhodne podatke (npr. ID-je ali surove argumente)</value></data>
+  <data name="BtnRun.Content"><value>Zaženi</value></data>
+  <data name="BtnToolUninstall.Content"><value>Odstrani</value></data>
+  <data name="BtnOpenFolder.ToolTipService.ToolTip"><value>Odpri mapo skriptov</value></data>
+  <data name="Tools_SelectHint.Text"><value>Izberite orodje za začetek</value></data>
+
+  <!-- ============================================================ -->
+  <!-- XAML x:Uid: PluginsDialog                                     -->
+  <!-- ============================================================ -->
+  <data name="PluginsDialog.Title"><value>Upravljanje vtičnikov</value></data>
+  <data name="PluginsDialog.CloseButtonText"><value>Zapri</value></data>
+  <data name="TxtSearch.PlaceholderText"><value>Išči vtičnike...</value></data>
+  <data name="ColPlugin.Text"><value>Vtičnik</value></data>
+  <data name="ColStatus.Text"><value>Stanje</value></data>
+  <data name="ColType.Text"><value>Vrsta</value></data>
+  <data name="BtnPluginInstall.Content"><value>Namesti</value></data>
+  <data name="BtnPluginUpdateAll.Content"><value>Posodobi vse</value></data>
+  <data name="BtnPluginRemove.Content"><value>Odstrani</value></data>
+  <data name="BtnPluginEdit.Content"><value>Uredi</value></data>
+  <data name="BtnPluginOpenFolder.Content"><value>Odpri mapo</value></data>
+  <data name="BtnPluginSubmit.Content"><value>Pošlji</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature categories (FeatureLoader.cs)      -->
+  <!-- ============================================================ -->
+  <data name="Category_Issues"><value>Vzdrževanje</value></data>
+  <data name="Category_System"><value>Sistem</value></data>
+  <data name="Category_MSEdge"><value>MS Edge</value></data>
+  <data name="Category_UI"><value>Uporabniški vmesnik</value></data>
+  <data name="Category_Taskbar"><value>Orodna vrstica</value></data>
+  <data name="Category_Gaming"><value>Igre</value></data>
+  <data name="Category_Privacy"><value>Zasebnost</value></data>
+  <data name="Category_Ads"><value>Oglasi</value></data>
+  <data name="Category_AI"><value>Umetna inteligenca</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — AI                        -->
+  <!-- ============================================================ -->
+  <data name="Feature_ClickToDo"><value>Onemogoči Klik za izvedbo (samo Copilot+ PC-ji)</value></data>
+  <data name="Feature_CopilotTaskbar"><value>Ne prikaži Copilota v orodni vrstici</value></data>
+  <data name="Feature_Recall"><value>Izklopi Recall v Windows 11</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Ads                       -->
+  <!-- ============================================================ -->
+  <data name="Feature_DisableSearchBoxSuggestions"><value>Onemogoči rezultate iskanja Bing</value></data>
+  <data name="Feature_FileExplorerAds"><value>Onemogoči oglase v Raziskovalniku datotek</value></data>
+  <data name="Feature_FinishSetupAds"><value>Onemogoči oglase ob zaključku nastavitve</value></data>
+  <data name="Feature_LockScreenAds"><value>Onemogoči namige in oglase na zaklenjenem zaslonu</value></data>
+  <data name="Feature_PersonalizedAds"><value>Onemogoči prilagojene oglase</value></data>
+  <data name="Feature_SettingsAds"><value>Onemogoči oglase v nastavitvah</value></data>
+  <data name="Feature_StartmenuAds"><value>Onemogoči oglase v začetnem meniju</value></data>
+  <data name="Feature_TailoredExperiences"><value>Onemogoči prilagojene izkušnje</value></data>
+  <data name="Feature_TipsAndSuggestions"><value>Onemogoči splošne namige in oglase</value></data>
+  <data name="Feature_WelcomeExperienceAds"><value>Onemogoči oglase ob pozdravnem oknu</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — MS Edge                   -->
+  <!-- ============================================================ -->
+  <data name="Feature_BrowserSignin"><value>Onemogoči prijavo v brskalnik in storitve sinhronizacije</value></data>
+  <data name="Feature_DefaultTopSites"><value>Ne prikaži sponzoriranih povezav na strani novega zavihka</value></data>
+  <data name="Feature_DefautBrowserSetting"><value>Onemogoči Microsoft Edge kot privzeti brskalnik</value></data>
+  <data name="Feature_EdgeCollections"><value>Onemogoči dostop do funkcije Zbirke</value></data>
+  <data name="Feature_EdgeShoppingAssistant"><value>Onemogoči pomočnika za nakupovanje</value></data>
+  <data name="Feature_FirstRunExperience"><value>Ne prikaži izkušnje ob prvem zagonu</value></data>
+  <data name="Feature_GamerMode"><value>Onemogoči igralski način</value></data>
+  <data name="Feature_HubsSidebar"><value>Onemogoči simbol Copilot v Edge-u</value></data>
+  <data name="Feature_ImportOnEachLaunch"><value>Ne uvozi podatkov iz drugih brskalnikov ob zagonu</value></data>
+  <data name="Feature_StartupBoost"><value>Onemogoči pospešeni zagon</value></data>
+  <data name="Feature_TabPageQuickLinks"><value>Ne prikaži hitrih povezav na strani novega zavihka</value></data>
+  <data name="Feature_UserFeedback"><value>Ne pošiljaj možnosti povratnih informacij uporabnika</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Gaming                    -->
+  <!-- ============================================================ -->
+  <data name="Feature_GameDVR"><value>Onemogoči Game DVR</value></data>
+  <data name="Feature_PowerThrottling"><value>Onemogoči omejevanje porabe energije</value></data>
+  <data name="Feature_VisualFX"><value>Onemogoči vizualne učinke</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — System                    -->
+  <!-- ============================================================ -->
+  <data name="Feature_BSODDetails"><value>Pokaži podrobnosti BSOD namesto žalostnega smeška</value></data>
+  <data name="Feature_DisableHibernation"><value>Onemogoči mirovanje</value></data>
+  <data name="Feature_MenuShowDelay"><value>Pospeši zamik prikaza menija</value></data>
+  <data name="Feature_NetworkThrottling"><value>Onemogoči omejevanje omrežja</value></data>
+  <data name="Feature_SpeedUpShutdown"><value>Pospeši čas zaustavitve</value></data>
+  <data name="Feature_SystemResponsiveness"><value>Optimiziraj odzivnost sistema</value></data>
+  <data name="Feature_VerboseStatus"><value>Omogoči podrobna sporočila stanja prijave</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Privacy                   -->
+  <!-- ============================================================ -->
+  <data name="Feature_ActivityHistory"><value>Onemogoči zgodovino dejavnosti</value></data>
+  <data name="Feature_AppLaunchTracking"><value>Onemogoči sledenje zagonu aplikacij</value></data>
+  <data name="Feature_DiagnosticData"><value>Zmanjšaj diagnostične podatke (osnovno)</value></data>
+  <data name="Feature_LocationTracking"><value>Onemogoči sledenje lokaciji</value></data>
+  <data name="Feature_LockScreenSlideshow"><value>Onemogoči diaprojekcijo na zaklenjenem zaslonu</value></data>
+  <data name="Feature_NarratorOnlineServices"><value>Onemogoči spletne storitve pripovedovalca</value></data>
+  <data name="Feature_OnlineSpeechRecognition"><value>Onemogoči spletno prepoznavanje govora</value></data>
+  <data name="Feature_PrivacyExperience"><value>Onemogoči izkušnjo nastavitev zasebnosti ob prijavi</value></data>
+  <data name="Feature_SilentAppInstallation"><value>Prepreči tiho nameščanje aplikacij</value></data>
+  <data name="Feature_WindowsSpotlightLockScreen"><value>Onemogoči Windows Spotlight na zaklenjenem zaslonu</value></data>
+  <data name="Feature_DisableBingSearch"><value>Onemogoči iskanje Bing</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — UI                        -->
+  <!-- ============================================================ -->
+  <data name="Feature_AppDarkMode"><value>Omogoči temni način za aplikacije</value></data>
+  <data name="Feature_SystemDarkMode"><value>Omogoči temni način za sistem</value></data>
+  <data name="Feature_FullContextMenus"><value>Pokaži celotne kontekstne menije v Windows 11</value></data>
+  <data name="Feature_LockScreen"><value>Ne uporabljaj prilagojenega zaklenjenega zaslona</value></data>
+  <data name="Feature_ShowOrHideMostUsedApps"><value>Skrij najpogosteje uporabljene aplikacije v začetnem meniju</value></data>
+  <data name="Feature_DisableSnapAssistFlyout"><value>Onemogoči pomočnika za razporejanje oken (Snap Assist)</value></data>
+  <data name="Feature_StartLayout"><value>Pripni več aplikacij na začetni meni</value></data>
+  <data name="Feature_Transparency"><value>Onemogoči učinke prosojnosti</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Taskbar                   -->
+  <!-- ============================================================ -->
+  <data name="Feature_AlwaysShowTrayIcons"><value>Vedno prikaži vse ikone v sistemski vrstici</value></data>
+  <data name="Feature_CleanTaskbar"><value>Počisti opravilno vrstico</value></data>
+  <data name="Feature_DisableNewsAndInterests"><value>Onemogoči novice in interese</value></data>
+  <data name="Feature_DisableWidgets"><value>Onemogoči pripomočke</value></data>
+  <data name="Feature_RemoveMeetNowButton"><value>Odstrani gumb »Meet Now« iz sistemske vrstice</value></data>
+  <data name="Feature_SearchboxTaskbarMode"><value>Skrij iskalno polje v opravilni vrstici</value></data>
+  <data name="Feature_ShowTaskViewButton"><value>Skrij gumb pogleda opravil v opravilni vrstici</value></data>
+  <data name="Feature_TaskbarAlignment"><value>Poravnaj gumb Start na levo</value></data>
+  <data name="Feature_TaskbarEndTask"><value>Omogoči končanje opravila</value></data>
+  <data name="Feature_TaskbarSmallIcons"><value>Pomanjšaj opravilno vrstico</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Feature names — Issues                    -->
+  <!-- ============================================================ -->
+  <data name="Feature_BasicCleanup"><value>Osnovno čiščenje diska</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Inapplicable reasons (FeatureTreeItem.cs)  -->
+  <!-- ============================================================ -->
+  <data name="InapplicableReason_Win10Only"><value>Samo Windows 10</value></data>
+  <data name="InapplicableReason_Win11Only"><value>Samo Windows 11</value></data>
+  <data name="InapplicableReason_NotApplicable"><value>ni uporabno</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Log messages (FeatureManager.cs)           -->
+  <!-- ============================================================ -->
+  <data name="Log_General"><value>Splošno</value></data>
+  <data name="Log_Skipped"><value>Preskočeno</value></data>
+  <data name="Log_NotApplicableOS"><value>Ni uporabno za ta operacijski sistem.</value></data>
+  <data name="Log_NotConfigured"><value>Ni konfigurirano po priporočilu.</value></data>
+  <data name="Log_Fixed"><value>Popravljeno</value></data>
+  <data name="Log_FixFailed"><value>Popravilo ni uspelo (ta funkcija lahko zahteva skrbniške pravice)</value></data>
+  <data name="Log_Restored"><value>Obnovljeno</value></data>
+  <data name="Log_RestoreFailed"><value>Obnovitev ni uspela</value></data>
+  <data name="Log_SkippedRestore"><value>Obnovitev preskočena</value></data>
+  <data name="Log_ProperlyConfigured"><value>Funkcija: {0} je pravilno konfigurirana.</value></data>
+  <data name="Log_RequiresAttention"><value>Funkcija: {0} zahteva vašo pozornost.</value></data>
+  <data name="Summary_Fix"><value>{0} popravljenih, {1} preskočenih, {2} neuspešnih</value></data>
+  <data name="Summary_FixTitleDone"><value>Spremembe uporabljene</value></data>
+  <data name="Summary_FixTitleWarning"><value>Spremembe uporabljene z napakami</value></data>
+  <data name="Summary_Fixed"><value>Popravljeno</value></data>
+  <data name="Summary_Skipped"><value>Preskočeno</value></data>
+  <data name="Summary_Failed"><value>Neuspešno</value></data>
+  <data name="Summary_FixAllGood"><value>Vse izbrane spremembe so bile uspešno uporabljene.</value></data>
+  <data name="Summary_FixHasErrors"><value>Nekaterih sprememb ni bilo mogoče uporabiti. Za podrobnosti preverite dnevnik.</value></data>
+  <data name="Summary_Restore"><value>{0} obnovljenih, {1} izpuščenih, {2} neuspešnih</value></data>
+  <data name="Summary_RestoreTitleDone"><value>Obnovitev končana</value></data>
+  <data name="Summary_RestoreTitleWarning"><value>Obnovitev končana z napakami</value></data>
+  <data name="Summary_Restored"><value>Obnovljeno</value></data>
+  <data name="Summary_RestoreAllGood"><value>Vse izbrane funkcije so bile uspešno obnovljene.</value></data>
+  <data name="Summary_RestoreHasErrors"><value>Nekaterih funkcij ni bilo mogoče obnoviti. Za podrobnosti preverite dnevnik.</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Analysis summary (FeaturesPage.xaml.cs)    -->
+  <!-- ============================================================ -->
+  <data name="Analysis_Complete"><value>ANALIZA KONČANA</value></data>
+  <data name="Analysis_TitleAttention"><value>Analiza končana - potrebna je vaša pozornost</value></data>
+  <data name="Analysis_WindowsFeatures"><value>Funkcije sistema Windows</value></data>
+  <data name="Analysis_Plugins"><value>Vtičniki</value></data>
+  <data name="Analysis_Total"><value>Skupaj</value></data>
+  <data name="Analysis_Issues"><value>težava(e)</value></data>
+  <data name="Analysis_IssuesFound"><value>{0} od {1} ni konfiguriranih po priporočilu.</value></data>
+  <data name="Analysis_AllGoodCount"><value>Vseh {0} nastavitev je pravilno konfiguriranih.</value></data>
+  <data name="Analysis_DetailsInLog"><value>Podrobnosti so v dnevniku.</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Context menu (FeaturesPage.xaml.cs)        -->
+  <!-- ============================================================ -->
+  <data name="Context_Analyze"><value>Preglej</value></data>
+  <data name="Context_Fix"><value>Uporabi</value></data>
+  <data name="Context_Restore"><value>Obnovi</value></data>
+  <data name="Context_Help"><value>Pomoč</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Restore dialogs (FeaturesPage.xaml.cs)     -->
+  <!-- ============================================================ -->
+  <data name="Restore_Title"><value>Obnovitev izbire</value></data>
+  <data name="Restore_NoItems"><value>Ni izbranih elementov.
+
+Najprej preverite eno ali več funkcij/vtičnikov v drevesu.</value></data>
+  <data name="Restore_ConfirmTitle"><value>Obnovi izbrane elemente</value></data>
+  <data name="Restore_ConfirmBody"><value>To bo obnovilo SAMO {0} izbrane (označene) elemente v prvotno stanje.
+Vse prejšnje prilagoditve teh elementov bodo morda razveljavljene.
+
+Ali želite nadaljevati?</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Profile actions (FeaturesPage.xaml.cs)     -->
+  <!-- ============================================================ -->
+  <data name="Profile_Export"><value>Izbriši izbiro...</value></data>
+  <data name="Profile_Import"><value>Uvozi iz datoteke...</value></data>
+  <data name="Profile_OpenFolder"><value>Odpri mapo profilov...</value></data>
+  <data name="Profile_ExportedTo"><value>Izbira izvožena v: {0}</value></data>
+  <data name="Profile_ImportedFrom"><value>Uvoženih {0} elementov iz: {1}</value></data>
+  <data name="Profile_Loaded"><value>Profil '{0}' naložen (izbranih {1} elementov).</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Scan modes (AppsPage.xaml.cs)              -->
+  <!-- ============================================================ -->
+  <data name="ScanMode_Standard"><value>Standardno skeniranje (priporočeno)</value></data>
+  <data name="ScanMode_Full"><value>Popolno skeniranje (vse nameščene aplikacije)</value></data>
+  <data name="ScanMode_Community"><value>Skeniranje z uporabo seznama skupnosti (CFEnhancer)</value></data>
+  <data name="ScanMode_BuiltIn"><value>Skeniranje z uporabo vgrajenega seznama</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Apps log messages (AppsPage.xaml.cs)       -->
+  <!-- ============================================================ -->
+  <data name="Apps_DisplayAll"><value>Prikaz vseh nameščenih aplikacij.</value></data>
+  <data name="Apps_NoPlugin"><value>Ni najdenega seznama vtičnikov. Namestite CFEnhancer za uporabo priporočil vtičnikov.</value></data>
+  <data name="Apps_DisplayPlugin"><value>Prikaz priporočil vtičnikov (CFEnhancer).</value></data>
+  <data name="Apps_DisplayBuiltIn"><value>Prikaz vgrajenih priporočil.</value></data>
+  <data name="Apps_DisplayRecommendedPlugin"><value>Prikaz priporočenih aplikacij (vtičnik).</value></data>
+  <data name="Apps_DisplayRecommendedBuiltIn"><value>Prikaz priporočenih aplikacij (vgrajeno).</value></data>
+  <data name="Apps_AnalysisTitle"><value>ANALIZA APLIKACIJ</value></data>
+  <data name="Apps_ShowingAll"><value>Prikaz vseh aplikacij (razen na belem seznamu): {0}</value></data>
+  <data name="Apps_BloatwareDetected"><value>Zaznane nepotrebne (bloatware) aplikacije:</value></data>
+  <data name="Apps_NoBloatware"><value>Nobena nepotrebna aplikacija iz Microsoft Store ni bila najdena.</value></data>
+  <data name="Apps_CleanupComplete"><value>Čiščenje aplikacij končano.</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: InstallPage messages                       -->
+  <!-- ============================================================ -->
+  <data name="Install_Installed"><value>Nameščeno</value></data>
+  <data name="Install_Upgradeable"><value>Nadgradljivo</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: ToolsPage messages                         -->
+  <!-- ============================================================ -->
+<data name="Tools_Loading"><value>Nalaganje razširitev...</value></data>
+<data name="Tools_FolderCreated"><value>Manjkajoča mapa s skripti je bila ustvarjena.</value></data>
+<data name="Tools_Loaded"><value>Naloženih {0} razširitev.</value></data>
+<data name="Tools_SelectExtension"><value>Na levi izberite razširitev.</value></data>
+<data name="Tools_Running"><value>Izvajanje...</value></data>
+<data name="Tools_Done"><value>Končano.</value></data>
+<data name="Tools_OpenedConsole"><value>Odprto v konzoli.</value></data>
+<data name="Tools_CompletedLog"><value>Dnevnik končan.</value></data>
+<data name="Tools_UninstallTitle"><value>Odstrani razširitev</value></data>
+<data name="Tools_UninstallConfirm"><value>Izbrišem "{0}"? Tega ni mogoče razveljaviti.</value></data>
+<data name="Tools_UninstallYes"><value>Izbriši</value></data>
+<data name="Common_Cancel"><value>Prekliči</value></data>
+<data name="Tools_HelpAvailable"><value>To orodje ponuja vodnik za pomoč</value></data>
+<data name="Tools_ShowHelp"><value>Pokaži pomoč</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Donation dialog (DonationHelper.cs)        -->
+  <!-- ============================================================ -->
+  <data name="Donation_Title"><value>Podprite Winslopr &#x2764;</value></data>
+  <data name="Donation_Body"><value>Če vam je Winslopr prihranil čas, razmislite o podpori njegovega nadaljnjega razvoja. Ostaja brezplačen in brez nepotrebnega balasta zahvaljujoč podpornikom, kot ste vi.</value></data>
+  <data name="Donation_AlreadyDonated"><value>Sem že prispeval, ne prikaži več</value></data>
+  <data name="Donation_Donate"><value>Prispevaj</value></data>
+  <data name="Donation_MaybeLater"><value>Morda kasneje</value></data>
+
+  <!-- XAML: Migration InfoBar (MainWindow.xaml)                      -->
+  <!-- ============================================================ -->
+  <data name="InfoMigration.Title"><value>Nov videz, novo poglavje — ali Winslopr potrebuje novo ime?</value></data>
+  <data name="InfoMigration.Message"><value>Winslopr ima nov obraz — ali bi moral dobiti tudi novo ime? S prehodom na WinUI 3 se je aplikacija spremenila. Povejte nam, kaj menite.</value></data>
+  <data name="InfoMigration_Vote.Content"><value>Oddajte svoj glas →</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Plugins status (PluginsDialog.xaml.cs)     -->
+  <!-- ============================================================ -->
+  <data name="Plugins_Installed"><value>Nameščeno</value></data>
+  <data name="Plugins_Updated"><value>Posodobljeno</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Log actions (LoggerActions.cs)             -->
+  <!-- ============================================================ -->
+  <data name="LogActions_NotAvailable"><value>[Funkcije] Ni na voljo.</value></data>
+  <data name="LogActions_Summary"><value>[Funkcije] Skupaj vozlišč: {0}, Označenih: {1}</value></data>
+  <data name="LogActions_NoChecked"><value>[Funkcije] Ni označenih elementov.</value></data>
+  <data name="LogActions_CheckedItems"><value>[Funkcije] Označeni elementi ({0}):</value></data>
+  <data name="LogActions_UncheckedItems"><value>[Funkcije] Neoznačeni končni elementi ({0}):</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Language switcher                          -->
+  <!-- ============================================================ -->
+  <data name="Language_RestartTitle"><value>Jezik je bil spremenjen</value></data>
+  <data name="Language_RestartRequired"><value>Ponovno zaženite Winslopr, da se uveljavi sprememba jezika.</value></data>
+
+  <!-- ============================================================ -->
+  <!-- C# ResourceLoader: Common strings                             -->
+  <!-- ============================================================ -->
+  <data name="Common_Yes"><value>Da</value></data>
+  <data name="Common_No"><value>Ne</value></data>
+  <data name="Common_OK"><value>V redu</value></data>
+  <data name="Common_Close"><value>Zapri</value></data>
+
+</root>
