@@ -54,7 +54,11 @@
   <!-- ============================================================ -->
   <!-- XAML x:Uid: MainWindow — Support flyout                      -->
   <!-- ============================================================ -->
-  <data name="MenuShare.Text"><value>Comparte Winslopr</value></data>
+  <data name="MenuPlugins.Text"><value>Plugins</value></data>
+  <data name="PluginsTip.Title"><value>¡Nuevos Plugins encontrados!</value></data>
+  <data name="PluginsTip.Subtitle"><value>Amplía las funcionalidades de Winslopr con plugins nativos y scripts de herramientas.</value></data>
+  <data name="PluginsTip.ActionButtonContent"><value>Ver Plugins</value></data>
+  <data name="PluginsTip.CloseButtonContent"><value>Más tarde</value></data>
   <data name="MenuKofi.Text"><value>Invítame a un café en Ko-fi</value></data>
   <data name="MenuPaypal.Text"><value>Haz una donación con PayPal</value></data>
 
@@ -75,11 +79,8 @@
   <data name="Settings_ThemeDark"><value>Oscuro</value></data>
   
   <data name="Settings_Extensions.Text"><value>Extensiones</value></data>
-  <data name="Settings_ToolScripts.Text"><value>Extensiones</value></data>
-  <data name="Settings_ToolScriptsDescription.Text"><value>Scripts independientes que se abren y ejecutan desde la página Herramientas.</value></data>
-  <data name="Settings_OpenToolsPage.Text"><value>Abrir página Herramientas</value></data>
-  <data name="Settings_Plugins.Text"><value>Plugins</value></data>
-  <data name="Settings_PluginsDescription.Text"><value>Complementos nativos que se integran con las Funciones de la página de Inicio.</value></data>
+  <data name="Settings_Plugins.Text"><value>Plugins &amp; Scripts</value></data>
+  <data name="Settings_PluginsDescription.Text"><value>Instala complementos nativos para el árbol de características y herramientas de script para la pestaña Herramientas.</value></data>
   <data name="Settings_ManagePlugins.Text"><value>Administrar complementos</value></data>
   <data name="Settings_Legacy.Text"><value>Winslopr Legacy</value></data>
   <data name="Settings_LegacyDescription.Text"><value>La anterior versión WinForms de Winslopr.</value></data>
@@ -171,7 +172,7 @@
   <!-- ============================================================ -->
   <!-- C# ResourceLoader: Feature categories (FeatureLoader.cs)      -->
   <!-- ============================================================ -->
-  <data name="Category_Issues"><value>Problemas</value></data>
+  <data name="Category_Issues"><value>Mantenimiento</value></data>
   <data name="Category_System"><value>Sistema</value></data>
   <data name="Category_MSEdge"><value>MS Edge</value></data>
   <data name="Category_UI"><value>Interfaz</value></data>
